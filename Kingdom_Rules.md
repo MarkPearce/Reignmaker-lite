@@ -61,50 +61,47 @@ Each tier unlocks access to more advanced structures:
 
 Settlements provide the logistical foundation for supporting armies. This represents the infrastructure, supply lines, and population base needed to field and maintain armies.
 
-- **Per Settlement:** Each settlement provides military support independently. Total unit capacity is the sum of all settlements in the kingdom.  
-- **Unit Upkeep:** Units still require upkeep (Food and Gold), even if supported by a settlement. Military support determines only the maximum number of units that can be maintained without penalties.  
-- **Exceeding Capacity:** If the kingdom fields more units than its total military support capacity, each excess unit increases **Unrest by 1 per Kingdom Turn**, reflecting the strain on the population and logistics.  
-- **Structures and Modifiers:** Certain Structures (e.g., future military bases, barracks, fortresses) may enhance or modify unit support. Unless specified, the baseline unit capacity above applies.  
+- **Total Army Capacity:** The kingdom's total army capacity is the sum of all settlements' individual capacities. Each settlement provides military support independently based on its tier.
+- **Exceeding Capacity:** If the kingdom fields more armies than its total military support capacity, each excess army increases **Unrest by 1 per Kingdom Turn**, reflecting the strain on the population and logistics.  
+- **Structures and Modifiers:** Certain Structures (e.g., future military bases, barracks, fortresses) may enhance or modify army support. Unless specified, the baseline army capacity above applies.
 
-#### Unit Capacity by Settlement Tier
+#### Army Capacity by Settlement Tier
 
-| Settlement Tier | Unit Capacity |
+| Settlement Tier | Army Capacity |
 |-----------------|---------------|
-| Village (Tier 1) | 1 Unit |
-| Town (Tier 2)    | 2 Units |
-| City (Tier 3)    | 3 Units |
-| Metropolis (Tier 4) | 4 Units |
+| Village (Tier 1) | 1 Army |
+| Town (Tier 2)    | 2 Armies |
+| City (Tier 3)    | 3 Armies |
+| Metropolis (Tier 4) | 4 Armies |
 
 ---
 #### Loss of Military Support
 
-If a settlement is **lost, destroyed, or captured**, its unit capacity is immediately removed from the kingdom's total. If this causes the kingdom to exceed its military support capacity, the excess units are considered **unsupported**.
+If a settlement is **lost, destroyed, or captured**, its army capacity is immediately removed from the kingdom's total. If this causes the kingdom to exceed its military support capacity, the excess armies are considered **unsupported**.
 
-##### Unsupported Units
+##### Unsupported Armies
 
-- At the start of each Kingdom Turn, each unsupported unit must attempt a **Morale check** to see if it holds together or disbands.
+- At the start of each Kingdom Turn, each unsupported army must attempt a **Morale check** to see if it holds together or disbands.
 
 **Morale Check**
-- **DC:** Use the Level-based DC for the unit's level.  
+- **DC:** Use the Level-based DC for the army's level.  
 - **Skill:** The kingdom may roll **Diplomacy** (rallying loyalty) or **Intimidation** (enforcing discipline).  
 
 | Result | Effect |
 |--------|--------|
-| **Critical Success** | The unit rallies for this turn, despite lack of supplies |
-| **Success** | The unit remains intact for this turn. **+1 Unrest** |
-| **Failure** | The unit disbands (soldiers desert or disperse). **+1 Unrest** |
-| **Critical Failure** | The unit disbands (soldiers defect, riot, or mutiny). **+2 Unrest** |
+| **Critical Success** | The army rallies for this turn, despite lack of supplies |
+| **Success** | The army remains intact for this turn. **+1 Unrest** |
+| **Failure** | The army disbands (soldiers desert or disperse). **+1 Unrest** |
+| **Critical Failure** | The army disbands (soldiers defect, riot, or mutiny). **+2 Unrest** |
 
 ##### Ongoing Penalties
-Each subsequent turn a unit remains unsupported, apply a **–1 circumstance penalty** to its Morale checks. This reflects dwindling supplies, morale loss, and ongoing strain.  
-
+Each subsequent turn an army remains unsupported, apply a **–1 circumstance penalty** to its Morale checks. This reflects dwindling supplies, morale loss, and ongoing strain.  
 ---
 
 ##### Example
-A City (Tier 3) that supported 3 units is captured. The kingdom still fields those 3 units, but now they are **unsupported**.  
-- Each unit must roll a Morale check at the start of the turn, likely causing unrest
+A City (Tier 3) that supported 3 armies is captured. The kingdom still fields those 3 armies, but now they are **unsupported**.  
+- Each army must roll a Morale check at the start of the turn, likely causing unrest
 - If the war drags on, penalties accumulate and the risk of losing armies rises sharply.  
-
 
 ## Structures
 
@@ -118,10 +115,33 @@ Skill structures are specialized buildings where citizens work and train, allowi
 - **T1:** Earn Income at up to Settlement level
 - **T2:** Earn Income at up to Settlement level + 2 (+1 circumstance bonus to skill checks)
 - **T3:** Earn Income at up to Settlement level + 4 (+2 bonus bonus to skill checks)
-- **T4:** Earn Income at up to Settlement level + 6 (+3 bonus bonus to skill checks) **+ **
-        **Once per Kingdom Turn, reroll a failed skill check at this facility**
+- **T4:** Earn Income at up to Settlement level + 6 (+3 bonus bonus to skill checks)
+    **Once per Kingdom Turn, reroll a failed skill check at this facility**
+
+#### Skill Categories and Associated Skills
+
+- **Crime & Intrigue** (Thievery, Deception, Stealth)
+- **Civic & Governance** (Society, Diplomacy, Deception)
+- **Military & Training** (Athletics, Acrobatics, Intimidation)
+- **Crafting & Trade** (Crafting, Lore, Society)
+- **Knowledge & Magic** (Lore, Arcana, Occultism)
+- **Faith & Nature** (Religion, Medicine, Nature)
+- **Medicine & Healing** (Medicine, Lore, Arcana)
+- **Performance & Culture** (Performance, Diplomacy, Lore)
+- **Exploration & Wilderness** (Survival, Nature, Stealth)
 
 ### Support Structures (Economic & Cultural Growth)
+
+Support structures provide essential infrastructure for kingdom management, from storage and defense to commerce and cultural institutions. Unlike skill-based structures that focus on earning income through specialized labor, support structures offer passive benefits and strategic advantages that strengthen your kingdom's foundation.
+
+#### Support Structure Categories
+
+- **Food Storage** - Preserve agricultural surplus
+- **Fortifications** - Defensive walls and battlements
+- **Logistics** - Military housing and support
+- **Commerce** - Trade and resource conversion
+- **Culture** - Morale and unrest management
+- **Revenue** - Tax collection and treasury
 
 ---
 
@@ -150,7 +170,7 @@ Skill structures are specialized buildings where citizens work and train, allowi
 **Phase 4 – Manage Resources:**
 - **Production:** 4 Food, 2 Lumber, 1 Stone
 - **Food Consumption:** Town consumes 4 Food → balanced (no shortage/unrest)
-- **Military Support:** 1 unit active, Town supports 2 units → no morale check needed
+- **Military Support:** 1 army active, Town supports 2 armies → no morale check needed
 - **Construction Queue:** Building a Training Yard (costs 2 Lumber, 2 Stone total)
   - Apply 2 Lumber + 1 Stone this turn automatically
   - 1 Stone still needed to complete (will finish next turn)
