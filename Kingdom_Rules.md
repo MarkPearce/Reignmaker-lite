@@ -94,8 +94,9 @@ If a settlement is **lost, destroyed, or captured**, its army capacity is immedi
 | **Failure** | The army disbands (soldiers desert or disperse). **+1 Unrest** |
 | **Critical Failure** | The army disbands (soldiers defect, riot, or mutiny). **+2 Unrest** |
 
-##### Ongoing Penalties
-Each subsequent turn an army remains unsupported, apply a **–1 circumstance penalty** to its Morale checks. This reflects dwindling supplies, morale loss, and ongoing strain.  
+**Ongoing Penalties**  
+Each subsequent turn an army remains unsupported, apply a **–1 circumstance penalty** to its Morale checks. This reflects dwindling supplies, morale loss, and ongoing strain.
+
 ---
 
 ##### Example
@@ -145,6 +146,32 @@ Support structures provide essential infrastructure for kingdom management, from
 
 ---
 
+## Construction & Trade
+
+### Construction Queue
+
+Structures require resources to build, with costs scaling by tier. When a construction project begins, resources produced each turn are automatically applied toward the project's cost. Once all required resources are provided, the structure is complete.
+
+**Resource Requirements by Tier:**
+- **Tier 1 (Village):** ~2-4 total resources
+- **Tier 2 (Town):** ~4-6 total resources  
+- **Tier 3 (City):** ~8-10 total resources
+- **Tier 4 (Metropolis):** ~14-18 total resources
+
+Each turn, your worksites' production automatically fills the construction queue. Resources not used for construction can be traded for gold through Commerce structures, or are lost at the end of the turn.
+
+### Gold & Trade
+
+Gold serves as a flexible currency that can be converted to and from resources, though at unfavorable base rates to encourage direct resource production.
+
+**Base Conversion Rates:**
+- **Purchase Resources:** 2 Gold → 1 Resource
+- **Sell Resources:** 2 Resources → 1 Gold
+
+Commerce structures improve these conversion rates and provide additional benefits (see Commerce category under Support Structures). Resources that are neither used for construction nor traded are lost at the end of each Kingdom Turn.
+
+---
+
 ## Example Kingdom Turn
 
 **Kingdom:** 1 Town (Level 3, needs 4 Food)  
@@ -177,7 +204,7 @@ Support structures provide essential infrastructure for kingdom management, from
 - **Storage:** No Storehouses built → excess Lumber/Stone/Ore lost at end of turn
 - **Gold:** No income this turn (no commerce structures)
 
-**Phase 5 – Perform Kingdom Actions:** 
+**Phase 5 – Perform Kingdom Actions:**
 - PC 1: **Develop Settlement** to add a Market Square (rolls success)
 - PC 2: **Deal with Unrest** using Diplomacy (rolls success, -2 Unrest)
 - Companions: **Send Scouts** to explore eastern hex (rolls success)
