@@ -28,10 +28,11 @@ _Disaster, uprisings, opportunities—rise to meet them._
 
 ---
 ### Execute or Pardon Prisoners
+_Pass judgment on those who have threatened the kingdom's stability, choosing between mercy and justice._
 
 **Availability:** May be performed in a settlement with a Justice structure that currently holds imprisoned Unrest.  
 
-**Skill Check:** Choose an approach:  
+**Skill:** Choose an approach:  
 - **Execute** → Intimidation  
 - **Pardon** → Diplomacy or Religion  
 
@@ -39,11 +40,12 @@ _Disaster, uprisings, opportunities—rise to meet them._
 - **Stocks (T1)** or **Jail (T2):** Only **Execute** may be chosen.  
 - **Prison (T3)** or **Donjon (T4):** May choose **Execute or Pardon**.  
 
-**Outcomes:**  
-- **Critical Success:** Remove **all imprisoned Unrest** in the settlement and reduce **current Unrest by 1**.  
-- **Success:** Remove **1d4 imprisoned Unrest** from the settlement.  
-- **Failure:** Remove none; gain **+1 current Unrest**.  
-- **Critical Failure:** Remove none; gain **+1d4 current Unrest** (riot, scandal, martyrdom).  
+| Degree of Success | Effect |
+| --- | --- |
+| Critical Success | Remove all imprisoned Unrest in the settlement and reduce current Unrest by 1 |
+| Success | Remove 1d4 imprisoned Unrest from the settlement |
+| Failure | Remove none; gain 1 current Unrest |
+| Critical Failure | Remove none; gain 1d4 current Unrest (riot, scandal, martyrdom) |
 
 ---
 
@@ -201,6 +203,8 @@ _Construct defensive structures and preparations in a hex to improve its resista
 
 **Skill:** Crafting, Nature, Warfare lore
 
+**Fortification Benefits:** Troops defending in a fortified hex gain +1 armor class and +2 initiative circumstance bonus.
+
 | Degree of Success | Effect |
 | --- | --- |
 | Critical Success | Fortify, reduce Unrest by 1 |
@@ -240,8 +244,6 @@ To upgrade, the settlement must meet **both level and structure prerequisites**:
 - **Village → Town:** Must be Level 2+ and have at least 2 Structures built.
 - **Town → City:** Must be Level 5+ and have at least 4 Structures built.
 - **City → Metropolis:** Must be Level 10+ and have at least 6 Structures built.
-
-
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -346,12 +348,14 @@ _Convert excess resources into gold through trade with merchants and neighboring
 
 **Skill:** Society, Diplomacy, or Mercantile Lore
 
-- Trade a single resource type for gold
+Trade a single resource type for gold
 
-- Critical Success: Trade 2 Resources → 2 Gold  
-- Success: Trade 2 Resources → 1 Gold    
-- Failure: No effect  
-- Critical Failure: Gain 1 Unrest  
+| Degree of Success | Effect |
+| --- | --- |
+| Critical Success | Trade 2 Resources → 2 Gold |
+| Success | Trade 2 Resources → 1 Gold |
+| Failure | No effect |
+| Critical Failure | Gain 1 Unrest |
 ---
 
 ### Purchase Resources
@@ -359,12 +363,14 @@ _Use the kingdom's treasury to acquire needed materials from trade partners._
 
 **Skill:** Society, Diplomacy, or Mercantile Lore
 
-- Offer gold in exchange for a single resource type
+Offer gold in exchange for a single resource type
 
-- Critical Success: Spend 2 Gold → Gain 1 Resources, +1 free resource of the same type
-- Success: Spend 2 Gold → Gain 1 Resource    
-- Failure: No effect  
-- Critical Failure: Lose 2 Gold and gain 1 Unrest  
+| Degree of Success | Effect |
+| --- | --- |
+| Critical Success | Spend 2 Gold → Gain 1 Resource, +1 free resource of the same type |
+| Success | Spend 2 Gold → Gain 1 Resource |
+| Failure | No effect |
+| Critical Failure | Lose 2 Gold and gain 1 Unrest |
 
 ---
 
@@ -373,13 +379,14 @@ _Establish resource extraction operations to harness the natural wealth of your 
 
 **Skill:** Crafting, Nature, or Survival
 
-- Choose a controlled hex. Establish a valid Worksite (Farm, Quarry, Mine, or Lumbermill). 
+Choose a controlled hex. Establish a valid Worksite (Farm, Quarry, Mine, or Lumbermill).
 
-- Critical Success: Immediately gain 1 Resource of the appropriate type,The Worksite is established and produces next turn
-- Success: The Worksite is established and produces next turn
-- Failure: No effect  
-- Critical Failure: Gain 1 Unrest  
-- 
+| Degree of Success | Effect |
+| --- | --- |
+| Critical Success | Immediately gain 1 Resource of the appropriate type, the Worksite is established and produces next turn |
+| Success | The Worksite is established and produces next turn |
+| Failure | No effect |
+| Critical Failure | Gain 1 Unrest |
 
 ---
 
@@ -388,28 +395,31 @@ _Harvest materials from your territories, either through established worksites o
 
 **Skill:** Nature, Survival, or Crafting
 
-- Choose one controlled hex. Either:  
-  - Collect 1 resource of the appropriate type without a Worksite or collect from the worksite (once/turn)  
-  
-- Critical Success: Gain an additional +1 Resource of the same type
-- Success: Collect resources from hex or worksite
-- Failure: No effect  
-- Critical Failure: Gain 1 Unrest  
+Choose one controlled hex. Either:  
+- Collect 1 resource of the appropriate type without a Worksite or collect from the worksite (once/turn)  
 
-## Collect Stipend
+| Degree of Success | Effect |
+| --- | --- |
+| Critical Success | Gain an additional +1 Resource of the same type |
+| Success | Collect resources from hex or worksite |
+| Failure | No effect |
+| Critical Failure | Gain 1 Unrest |
+
+### Collect Stipend
 _Draw personal funds from the kingdom's treasury as compensation for your service._
 
 **Availability:** PCs may use this action if the kingdom controls a settlement with a **Counting House (T2)** or higher Taxation structure.  
 
-**Skill Check:** The PC attempts a check using **Intimidation, Deception, Diplomacy, or Society**.  
+**Skill:** Intimidation, Deception, Diplomacy, or Society  
 
-**Effect:** The PC gains personal Gold based on the settlement’s level and the highest active Taxation tier in the kingdom, using the **Income Table** below.  
+**Effect:** The PC gains personal Gold based on the settlement's level and the highest active Taxation tier in the kingdom, using the **Income Table** below.  
 
-### Outcomes
-- **Critical Success:** Gain **double** the listed amount.  
-- **Success:** Gain the **listed amount**.  
-- **Failure:** Gain **half** the listed amount, and the kingdom gains **+1 Unrest**.  
-- **Critical Failure:** Gain **nothing**, and the kingdom gains **+1d4 Unrest**.  
+| Degree of Success | Effect |
+| --- | --- |
+| Critical Success | Gain double the listed amount |
+| Success | Gain the listed amount |
+| Failure | Gain half the listed amount, and the kingdom gains +1 Unrest |
+| Critical Failure | Gain nothing, and the kingdom gains +1d4 Unrest |
 
 ### 📊 Income Table (for Personal Income action)
 

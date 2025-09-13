@@ -1,5 +1,8 @@
-# Skill-Based Facilities
-| Category                 | Facility              | Settlement Size   | Earn Income                                          | Bonus   | Skills Supported                    | Cost                     |
+# Skill-Based Structures
+
+Skill-based structures follow a progression tied to settlement growth. Each structure category advances through four tiers (Village, Town, City, Metropolis), with each tier requiring larger settlements but providing greater benefits. Job level for earn income scales predictably (Settlement Level +0/+2/+4/+6), as do skill bonuses (+0/+1/+2/+3), with Metropolis structures granting a reroll on one failed skill check per turn. Each structure begins supporting a single primary skill and expands to cover 2-3 related skills at higher tiers, creating natural upgrade paths within each category.
+
+| Category                 | Structure             | Settlement Size   | Earn Income Level                                         | Bonus   | Skills Supported                    | Cost                     |
 |:-------------------------|:----------------------|:------------------|:-----------------------------------------------------|:--------|:------------------------------------|:-------------------------|
 | Crime & Intrigue         | Rats’ Warren          | Village           | Settlement lvl                                       | —       | Thievery                            | 2 Lumber                 |
 |                          | Smugglers’ Den        | Town              | Settlement lvl + 2                                   | +1      | Thievery, Deception                 | 2 Lumber, 2 Stone        |
@@ -37,4 +40,3 @@
 |                          | Ranger’s Outpost      | Town              | Settlement lvl + 2                                   | +1      | Survival, Nature                    | 2 Lumber, 2 Stone        |
 |                          | Druids’ Grove         | City              | Settlement lvl + 4                                   | +2      | Survival, Nature, Stealth           | 4 Lumber, 2 Stone, 2 Ore |
 |                          | Wildskeepers’ Enclave | Metropolis        | Settlement lvl + 6; Reroll 1 failed skill check/turn | +3      | Survival, Nature, Stealth           | 6 Lumber, 6 Stone, 4 Ore |
-
