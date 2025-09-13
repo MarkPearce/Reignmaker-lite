@@ -8,7 +8,9 @@ This document merges all Kingdom Actions into a single reference. Actions are gr
 _Maintain the kingdom’s cohesion by resolving crises, supporting allies, and quelling unrest before it can take root._
 
 ### Provide Support
-Forgo your action to aid another PC’s Kingdom Action. If unused by the end of the turn, you may **Deal with Unrest** instead.  
+_Lend your expertise to assist an ally's efforts, coordinating your kingdom's resources to ensure their success._
+
+Forgo your action to aid another PC's Kingdom Action. If unused by the end of the turn, you may **Deal with Unrest** instead.  
 **Skill:** Any appropriate
 
 | Degree of Success | Effect |
@@ -46,6 +48,8 @@ _Disaster, uprisings, opportunities—rise to meet them._
 ---
 
 ### Deal with Unrest (End of Turn Only)
+_Address grievances and calm tensions through public speeches, religious ceremonies, shows of force, or diplomatic engagement._
+
 **Skill:** Performance, Religion, Intimidation, or Diplomacy
 
 | Degree of Success | Effect |
@@ -60,7 +64,9 @@ _Disaster, uprisings, opportunities—rise to meet them._
 ## 2. Military Operations
 _War must be waged with steel and strategy._
 
-### Recruit a Unit #
+### Recruit a Unit
+_Rally citizens to arms, drawing from the population to form new military units._
+
 **Skill:** Diplomacy, Intimidation, or Society
 
 | Degree of Success | Effect |
@@ -73,6 +79,8 @@ _War must be waged with steel and strategy._
 ---
 
 ### Outfit Army
+_Equip your troops with superior arms, armor, and supplies to enhance their battlefield effectiveness._
+
 **Skill:** Diplomacy, Crafting, or Warfare Lore
 
 | Degree of Success | Effect |
@@ -91,6 +99,8 @@ equipment: +1 saving throws
 ---
 
 ### Deploy Army
+_Mobilize and maneuver your military forces across the kingdom's territory._
+
 **Skill:** Nature, Survival, or Warfare Lore
 
 | Degree of Success | Effect |
@@ -103,6 +113,8 @@ equipment: +1 saving throws
 ---
 
 ### Recover Army
+_Tend to wounded troops, restore morale, and replenish ranks after battle losses._
+
 **Skill:** Medicine, Performance, or Warfare Lore
 
 | Degree of Success | Effect |
@@ -115,6 +127,8 @@ equipment: +1 saving throws
 ---
 
 ### Train Army
+_Drill your troops in tactics and discipline to improve their combat effectiveness._
+
 **Skill:** Intimidate, Diplomacy, or Warfare Lore
 
 | Degree of Success | Effect |
@@ -125,20 +139,24 @@ equipment: +1 saving throws
 | Critical Failure | +1 Unrest |
 
 ### Disband Army
+_Release military units from service, returning soldiers to civilian life._
+
 **Skill:** Intimidate, Diplomacy, or Warfare Lore
 
 | Degree of Success | Effect |
 | --- | --- |
-| Critical Success | people welcome home them with honours! | -2 Unrest|
-| Success | Army disbands | -1 Unrest|
+| Critical Success | people welcome home them with honours!, -2 Unrest|
+| Success | Army disbands , -1 Unrest|
 | Failure | Army disbands | 
-| Critical Failure | Army disbands | +1 Unrest |
+| Critical Failure | Army disbands, +1 Unrest |
 ---
 
 ## 3. Expand the Borders
 _The land beckons. Seize new territory to grow your influence and resources._
 
 ### Claim Hexes
+_Assert sovereignty over new territories, expanding your kingdom's borders into unclaimed lands._
+
 **Skill:** Nature or Survival
 
 | Degree of Success | Effect |
@@ -151,6 +169,8 @@ _The land beckons. Seize new territory to grow your influence and resources._
 ---
 
 ### Build Roads
+_Construct pathways between settlements to improve trade, travel, and military movement._
+
 **Skill:** Crafting or Survival
 
 | Degree of Success | Effect |
@@ -163,6 +183,8 @@ _The land beckons. Seize new territory to grow your influence and resources._
 ---
 
 ### Send Scouts
+_Dispatch explorers to gather intelligence about neighboring territories and potential threats._
+
 **Skill:** Diplomacy or Society
 
 | Degree of Success | Effect |
@@ -175,6 +197,8 @@ _The land beckons. Seize new territory to grow your influence and resources._
 ---
 
 ### Fortify Hex
+_Construct defensive structures and preparations in a hex to improve its resistance against invasion._
+
 **Skill:** Crafting, Nature, Warfare lore
 
 | Degree of Success | Effect |
@@ -190,6 +214,8 @@ _The land beckons. Seize new territory to grow your influence and resources._
 _Your people need places to live, work, trade, and worship._
 
 ### Establish a Settlement
+_Found a new community where settlers can establish homes and begin building infrastructure._
+
 You may found a new **Village** in a controlled hex.
 - Villages are typically Level 0–1.
 - A new settlement begins as a Village unless special story or GM circumstances apply.
@@ -205,6 +231,8 @@ You may found a new **Village** in a controlled hex.
 ---
 
 ### Upgrade a Settlement
+_Expand an existing settlement's size and capabilities, transforming villages into thriving centers of civilization._
+
 **Skill:** Crafting or Diplomacy
 
 To upgrade, the settlement must meet **both level and structure prerequisites**:
@@ -225,6 +253,8 @@ To upgrade, the settlement must meet **both level and structure prerequisites**:
 ---
 
 ### Develop a Settlement
+_Construct new buildings and infrastructure within a settlement to enhance its capabilities._
+
 **Skill:** Crafting or Society
 
 | Degree of Success | Effect |
@@ -240,6 +270,8 @@ To upgrade, the settlement must meet **both level and structure prerequisites**:
 _No kingdom stands alone._
 
 ### Establish Diplomatic Relations
+_Open formal channels of communication with neighboring powers to enable future cooperation._
+
 **Skill:** Diplomacy or Society
 
 | Degree of Success | Effect |
@@ -252,6 +284,8 @@ _No kingdom stands alone._
 ---
 
 ### Request Economic Aid
+_Appeal to allied nations for material support in times of need._
+
 **Skill:** Diplomacy or Society
 
 | Degree of Success | Effect |
@@ -264,6 +298,8 @@ _No kingdom stands alone._
 ---
 
 ### Request Military Aid
+_Call upon allies to provide troops or military support during conflicts._
+
 **Skill:** Diplomacy, Intimidation, or Warfare Lore
 
 | Degree of Success | Effect |
@@ -276,6 +312,8 @@ _No kingdom stands alone._
 ---
 
 ### Infiltration
+_Deploy spies and agents to gather intelligence on rival kingdoms or potential threats._
+
 **Skill:** Deception, Stealth, or Thievery
 
 | Degree of Success | Effect |
@@ -286,6 +324,8 @@ _No kingdom stands alone._
 | Critical Failure | Gain 2 Unrest; spies are captured |
 
 ### Hire Adventurers
+_Contract independent heroes and mercenaries to handle dangerous tasks or resolve kingdom events._
+
 **Skill:** Diplomacy or Society  
 **Cost:** Pay **2 Gold** when this action is attempted (contracts, supplies, and promises of treasure).  
 **Limit:** This action may only be attempted **once per Kingdom Turn**.  
@@ -302,9 +342,11 @@ _No kingdom stands alone._
 ## 6. Economic & Resource Actions
 
 ### Sell Surplus
+_Convert excess resources into gold through trade with merchants and neighboring kingdoms._
+
 **Skill:** Society, Diplomacy, or Mercantile Lore
 
-- trade a single resource type for gold
+- Trade a single resource type for gold
 
 - Critical Success: Trade 2 Resources → 2 Gold  
 - Success: Trade 2 Resources → 1 Gold    
@@ -313,9 +355,11 @@ _No kingdom stands alone._
 ---
 
 ### Purchase Resources
+_Use the kingdom's treasury to acquire needed materials from trade partners._
+
 **Skill:** Society, Diplomacy, or Mercantile Lore
 
--offer gold in exhange for a single resource type
+- Offer gold in exchange for a single resource type
 
 - Critical Success: Spend 2 Gold → Gain 1 Resources, +1 free resource of the same type
 - Success: Spend 2 Gold → Gain 1 Resource    
@@ -325,9 +369,11 @@ _No kingdom stands alone._
 ---
 
 ### Create Worksite
+_Establish resource extraction operations to harness the natural wealth of your territories._
+
 **Skill:** Crafting, Nature, or Survival
 
-- Choose a controlled hex. Establish a valid Worksite (Farm, Quarry, Mine,or lumbermill.). 
+- Choose a controlled hex. Establish a valid Worksite (Farm, Quarry, Mine, or Lumbermill). 
 
 - Critical Success: Immediately gain 1 Resource of the appropriate type,The Worksite is established and produces next turn
 - Success: The Worksite is established and produces next turn
@@ -338,10 +384,12 @@ _No kingdom stands alone._
 ---
 
 ### Collect Resources
+_Harvest materials from your territories, either through established worksites or direct extraction._
+
 **Skill:** Nature, Survival, or Crafting
 
 - Choose one controlled hex. Either:  
-  - Collect 1 resource of the approriate type without a Worksite or collect from the worksite (once/turn)  
+  - Collect 1 resource of the appropriate type without a Worksite or collect from the worksite (once/turn)  
   
 - Critical Success: Gain an additional +1 Resource of the same type
 - Success: Collect resources from hex or worksite
@@ -349,6 +397,7 @@ _No kingdom stands alone._
 - Critical Failure: Gain 1 Unrest  
 
 ## Collect Stipend
+_Draw personal funds from the kingdom's treasury as compensation for your service._
 
 **Availability:** PCs may use this action if the kingdom controls a settlement with a **Counting House (T2)** or higher Taxation structure.  
 
