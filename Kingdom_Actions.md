@@ -7,18 +7,25 @@ This document merges all Kingdom Actions into a single reference. Actions are gr
 ## 1. Uphold Stability
 _Maintain the kingdom’s cohesion by resolving crises, supporting allies, and quelling unrest before it can take root._
 
-### Provide Support
-_Lend your expertise to assist an ally's efforts, coordinating your kingdom's resources to ensure their success._
+### Coordinated Effort
+_When multiple leaders work toward the same goal, their combined expertise ensures the best possible outcome._
 
-Forgo your action to aid another PC's Kingdom Action. If unused by the end of the turn, you may **Deal with Unrest** instead.  
-**Skill:** Any appropriate
+When two or more PCs choose the same Kingdom Action this turn, they work together:
+- All participating PCs roll the skill check for that action with a +1 circumstance bonus
+- Take the highest result among all participants
+- The action succeeds using this best result
 
-| Degree of Success | Effect |
-| --- | --- |
-| Critical Success | +2 Circumstance bonus; +3 if Master, +4 if Legendary |
-| Success | +1 Circumstance bonus |
-| Failure | Gain 1 Unrest |
-| Critical Failure | Gain 2 Unrest |
+**Special Benefits:**
+- No risk of failure for coordination itself
+- The +1 bonus represents teamwork and shared knowledge
+- If only one PC takes an action, it proceeds normally without this benefit
+- PCs who participate in a Coordinated Effort cannot take a different action this turn
+
+**Example:** Three PCs all choose "Build Roads"
+- PC1 rolls Crafting: 1d20+8+1 = 16
+- PC2 rolls Survival: 1d20+12+1 = 24  
+- PC3 rolls Crafting: 1d20+10+1 = 19
+- Result: The Build Roads action uses the 24
 
 ---
 
@@ -44,8 +51,8 @@ _Pass judgment on those who have threatened the kingdom's stability, choosing be
 | --- | --- |
 | Critical Success | Remove all imprisoned Unrest in the settlement and reduce current Unrest by 1 |
 | Success | Remove 1d4 imprisoned Unrest from the settlement |
-| Failure | Remove none; gain 1 current Unrest |
-| Critical Failure | Remove none; gain 1d4 current Unrest (riot, scandal, martyrdom) |
+| Failure | Remove none |
+| Critical Failure | Remove none; gain 1 current Unrest (riot, scandal, martyrdom) |
 
 ---
 
@@ -59,7 +66,7 @@ _Address grievances and calm tensions through public speeches, religious ceremon
 | Critical Success | Reduce Unrest by 3 |
 | Success | Reduce Unrest by 2 |
 | Failure | Reduce Unrest by 1 |
-| Critical Failure | Gain 1 Unrest |
+| Critical Failure | no effect |
 
 ---
 
@@ -90,7 +97,7 @@ _Equip your troops with superior arms, armor, and supplies to enhance their batt
 | Critical Success | Outfit a troop with two upgrades, or 2 troops with the same upgrade |
 | Success | Outfit troop |
 | Failure | No gear |
-| Critical Failure | No gear; +2 Unrest |
+| Critical Failure | No gear; +1 Unrest |
 
 There are 4 types of equipment you can add to your troop
 armour: +1 AC
@@ -165,8 +172,8 @@ _Assert sovereignty over new territories, expanding your kingdom's borders into 
 | --- | --- |
 | Critical Success | Claim all +1 extra hex |
 | Success | Claim chosen hexes |
-| Failure | Gain 1 Unrest |
-| Critical Failure | Gain 2 Unrest |
+| Failure | no effect |
+| Critical Failure | Gain 1 Unrest |
 
 ---
 
@@ -179,8 +186,8 @@ _Construct pathways between settlements to improve trade, travel, and military m
 | --- | --- |
 | Critical Success | Build roads +1 hex |
 | Success | Build roads |
-| Failure | Gain 1 Unrest |
-| Critical Failure | Gain 2 Unrest |
+| Failure | no effect |
+| Critical Failure | Gain 1 Unrest |
 
 ---
 
@@ -209,8 +216,8 @@ _Construct defensive structures and preparations in a hex to improve its resista
 | --- | --- |
 | Critical Success | Fortify, reduce Unrest by 1 |
 | Success | Fortify |
-| Failure | Fail, gain 1 Unrest |
-| Critical Failure | Gain 2 Unrest |
+| Failure | Fail |
+| Critical Failure | Gain 1 Unrest |
 
 ---
 
@@ -229,8 +236,8 @@ You may found a new **Village** in a controlled hex.
 | --- | --- |
 | Critical Success | Found village +1 Structure |
 | Success | Found village |
-| Failure | Gain 1 Unrest |
-| Critical Failure | Gain 2 Unrest |
+| Failure | no effect |
+| Critical Failure | Gain 1 Unrest |
 
 ---
 
@@ -249,8 +256,8 @@ To upgrade, the settlement must meet **both level and structure prerequisites**:
 | --- | --- |
 | Critical Success | Increase Level +1 Structure |
 | Success | Increase Level |
-| Failure | Gain 1 Unrest |
-| Critical Failure | Gain 2 Unrest |
+| Failure | no effect |
+| Critical Failure | Gain 1 Unrest |
 
 ---
 
@@ -263,8 +270,8 @@ _Construct new buildings and infrastructure within a settlement to enhance its c
 | --- | --- |
 | Critical Success | Build 2 Structures |
 | Success | Build 1 Structure |
-| Failure | Gain 1 Unrest |
-| Critical Failure | Gain 2 Unrest |
+| Failure | no effect |
+| Critical Failure | Gain 1 Unrest |
 
 ---
 
@@ -280,8 +287,8 @@ _Open formal channels of communication with neighboring powers to enable future 
 | --- | --- |
 | Critical Success | Allies + request aid |
 | Success | Allies |
-| Failure | Gain 1 Unrest |
-| Critical Failure | Gain 1 Unrest; blocked 3 turns |
+| Failure | no effect |
+| Critical Failure | Gain 1 Unrest |
 
 ---
 
@@ -322,8 +329,8 @@ _Deploy spies and agents to gather intelligence on rival kingdoms or potential t
 | --- | --- |
 | Critical Success | Valuable intel |
 | Success | Broad intel |
-| Failure | Gain 1 Unrest |
-| Critical Failure | Gain 2 Unrest; spies are captured |
+| Failure | no effect |
+| Critical Failure | Gain 1 Unrest; spies are captured |
 
 ### Hire Adventurers
 _Contract independent heroes and mercenaries to handle dangerous tasks or resolve kingdom events._
