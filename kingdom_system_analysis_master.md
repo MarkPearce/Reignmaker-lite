@@ -4,10 +4,10 @@
 This document aggregates and analyzes results from multiple kingdom simulations for the Pathfinder 2E Reignmaker-lite subsystem. Each simulation follows the Kingdom_Simulation_Runner.md guidelines with unique randomization to test system balance and consistency.
 
 ## Simulation Index
-- **Simulation #001:** Successful test with predetermined d20 sequence
-  - Result: Exceptional Success (Metropolis, 28 hexes, 156 gold)
-  - Date: Initial corrected simulation
-  - Key finding: Proper mechanics produce expected results
+- **Simulation #001:** September 14, 2025
+  - Result: Standard Success (City Level 6, 24 hexes, 73 gold)
+  - Seed: 20250914-145900
+  - Key finding: Strong early growth that plateaued in later turns
 
 ---
 
@@ -43,41 +43,42 @@ Using flat averages or success percentages alone misses critical successes and f
 ### Settlement Progression
 | Metric | Sim #001 | Average | Target |
 |--------|----------|---------|--------|
-| Final Level | 8 (Metropolis) | 8.0 | 8+ |
-| Turn Achieved | 43 | 43.0 | 40-50 |
-| Town by Turn | 2 | 2.0 | 5-10 |
-| City by Turn | 16 | 16.0 | 20-30 |
+| Final Level | 6 (City) | 6.0 | 8+ |
+| Turn Achieved City | 9 | 9.0 | 20-30 |
+| Town by Turn | 4 | 4.0 | 5-10 |
+| City by Turn | 9 | 9.0 | 20-30 |
 
 ### Territory Control
 | Metric | Sim #001 | Average | Target |
 |--------|----------|---------|--------|
-| Final Hexes | 28 | 28.0 | 25-30 |
-| Turn 10 Hexes | 8 | 8.0 | 6-8 |
-| Turn 30 Hexes | 20 | 20.0 | 15-20 |
-| Turn 50 Hexes | 28 | 28.0 | 25-30 |
+| Final Hexes | 24 | 24.0 | 25-30 |
+| Turn 10 Hexes | 10 | 10.0 | 6-8 |
+| Turn 20 Hexes | 21 | 21.0 | 10-14 |
+| Turn 30 Hexes | 24 | 24.0 | 15-20 |
+| Turn 50 Hexes | 24 | 24.0 | 25-30 |
 
 ### Economic Performance
 | Metric | Sim #001 | Average | Target |
 |--------|----------|---------|--------|
-| Final Gold | 156 | 156.0 | 100+ |
-| Peak Gold | 156 | 156.0 | - |
-| Structures Built | 15 | 15.0 | 10-12 |
-| Worksites Active | 14 | 14.0 | 13-15 |
+| Final Gold | 73 | 73.0 | 100+ |
+| Peak Gold | 450+ | 450.0 | - |
+| Structures Built | 10 | 10.0 | 10-12 |
+| Worksites Active | 8 | 8.0 | 13-15 |
 
 ### Military & Conflict
 | Metric | Sim #001 | Average | Target |
 |--------|----------|---------|--------|
-| Final Armies | 6 | 6.0 | 4-5 |
+| Final Armies | 3 | 3.0 | 4-5 |
 | Peak Armies | 6 | 6.0 | - |
-| Wars Won | 1 | 1.0 | 1+ |
+| Major Victories | 3 | 3.0 | 1+ |
 | Unrest Incidents | 2 | 2.0 | <5 |
 
 ### Critical Results
 | Type | Sim #001 | Average | Expected |
 |------|----------|---------|----------|
-| Critical Successes | 13 | 13.0 | 10-15 |
-| Critical Failures | 7 | 7.0 | 5-10 |
-| Success Rate | ~75% | 75% | 60-70% |
+| Critical Successes | 8 | 8.0 | 10-15 |
+| Critical Failures | 4 | 4.0 | 5-10 |
+| Success Rate | ~65% | 65% | 60-70% |
 
 ---
 
@@ -107,19 +108,21 @@ The slight overperformance was due to the specific d20 sequence used, but within
 
 ## Critical Results Impact
 
-### Critical Successes (13 total in simulation)
+### Critical Successes (8 total in simulation)
 **Major Benefits Provided:**
-- Settlement level jumps (Turn 2: Village→Town instantly)
-- Resource windfalls (Turn 5: Rich ore vein, +2 Ore/turn)
-- Military advantages (Turn 11: Elite barracks)
-- War victories (Turn 49-50: United kingdom)
+- Territory expansion (Turn 2: 2 hexes claimed)
+- Settlement development (Turn 7: Town jumps to Level 4)
+- Military advantages (Turn 5: Bonus army with barracks)
+- Dragon slaying (Turn 15: +5 Fame, +20 Gold)
+- Arena construction (Turn 13: Grand Arena with bonuses)
+- Trade network (Turn 18: +10 Gold/turn)
 
-### Critical Failures (7 total in simulation)
+### Critical Failures (4 total in simulation)
 **Complications Created:**
-- Social unrest (+2 Unrest events)
-- Diplomatic incidents
-- Construction disasters
-- Trade losses
+- Development failure (Turn 6: +2 Unrest)
+- Construction accident (Turn 11: +2 Unrest)
+- Exploration failure (Turn 26: mentioned in summary)
+- Economic crisis (Turn 44: Market crash)
 
 **These swings created memorable narrative moments and prevented the simulation from feeling mechanical.**
 
@@ -161,27 +164,27 @@ Not overused due to action economy constraints.
 ## Success Metrics Achievement
 
 ### Against Minimum Targets
-- ✅ Town status (achieved Metropolis)
-- ✅ 15+ hexes (achieved 28)
-- ✅ Unrest below 10 (never exceeded 2)
+- ✅ Town status (achieved City)
+- ✅ 15+ hexes (achieved 24)
+- ✅ Unrest below 10 (average 0.8)
 - ✅ No settlement loss
-- ✅ Positive gold (156!)
+- ✅ Positive gold (73)
 
 ### Against Standard Success
-- ✅ City status (achieved Metropolis)
-- ✅ 20-25 hexes (achieved 28)
-- ✅ Unrest below 5 average
-- ✅ Military victory
-- ✅ 50+ gold (achieved 156)
+- ✅ City status (achieved Level 6)
+- ✅ 20-25 hexes (achieved 24)
+- ✅ Unrest below 5 average (0.8)
+- ✅ Won conflicts (Dragon, Demon, Invasion)
+- ✅ 50+ gold (achieved 73)
 
 ### Against Exceptional Success
-- ✅ Metropolis reached
-- ✅ 30+ hexes (nearly, at 28)
-- ✅ Unrest below 3 average
-- ✅ Multiple victories (diplomatic and military)
-- ✅ 100+ gold accumulated
+- ❌ Metropolis reached (only City Level 6)
+- ❌ 30+ hexes (only 24)
+- ✅ Unrest below 3 average (0.8)
+- ✅ Multiple victories (3 major)
+- ❌ 100+ gold accumulated (only 73 final)
 
-**The system achieves ALL success metrics when properly implemented.**
+**The system achieves STANDARD SUCCESS metrics with this simulation.**
 
 ---
 
@@ -236,16 +239,16 @@ Not overused due to action economy constraints.
 ## Patterns & Insights
 
 ### Consistent Success Factors (from simulations)
-1. **Master Proficiency at Level 7** - Game-changing power spike
+1. **Early Infrastructure** - Farmsteads and Granaries prevent food crises
 2. **Critical Successes on Development** - Can jump settlement levels
-3. **Economic Structure Synergies** - Trade buildings compound benefits
-4. **Coordinated Actions** - Essential for major milestones
+3. **Theater/Arena for Unrest** - Consistent reduction prevents spirals
+4. **Economic Development Chain** - Marketplace → Grand Market → Trade Networks
 
 ### Common Challenges
-1. **Early Unrest Events** - Difficult without Master proficiency
-2. **Level 4-6 Expansion** - Limited by success rates
-3. **Military Recruitment** - Challenging until mid-game
-4. **Resource Storage** - Critical bottleneck without structures
+1. **Turn 11 Disease Event** - Difficult even with preparation
+2. **Storage Caps** - Repeatedly hit limits until more Granaries
+3. **Level 13-15 Progression** - DCs become very challenging
+4. **Late Game Stagnation** - Growth plateaus after Level 12
 
 ### Strategic Recommendations
 - Rush to Master proficiency in key skills
@@ -272,7 +275,9 @@ Based on current simulations, the system shows:
 - Alternative strategies viability
 
 ### Potential Issues ⚠️
-- None identified yet (need more simulations)
+- Late game progression (Levels 13-15) may need DC adjustment
+- Settlement growth plateaus after reaching City status
+- Final hex count below target despite strong early growth
 
 ---
 
@@ -287,7 +292,8 @@ To fully validate system balance, we need:
 ---
 
 ## Version History
-- v1.0: Initial analysis with Simulation #001
+- v1.0: Initial framework document
+- v1.1: Updated with Simulation #001 (September 14, 2025)
 - [Future updates will add more simulation data]
 
 ---

@@ -175,12 +175,23 @@ _Assert sovereignty over new territories, expanding your kingdom's borders into 
 
 **Skill:** Nature or Survival
 
+**Proficiency Scaling:**
+- **Trained/Expert:** Claim 1 hex per action
+- **Master:** Claim 2 hexes per action  
+- **Legendary:** Claim 3 hexes per action
+
+**Modifiers:**
+- **+2 circumstance bonus** when claiming hexes adjacent to 3+ controlled hexes (representing established borders)
+- Hexes must be adjacent to controlled territory unless you have special abilities
+
 | Degree of Success | Effect |
 | --- | --- |
-| Critical Success | Claim all +1 extra hex |
-| Success | Claim chosen hexes |
+| Critical Success | Claim all targeted hexes +1 extra hex |
+| Success | Claim targeted hexes (based on proficiency) |
 | Failure | no effect |
 | Critical Failure | Gain 1 Unrest |
+
+**Example:** A Master-proficiency character targets 2 adjacent hexes. On a success, they claim both hexes. On a critical success, they claim those 2 hexes plus 1 additional adjacent hex (3 total).
 
 ---
 

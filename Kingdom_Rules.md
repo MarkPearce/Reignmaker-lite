@@ -97,6 +97,17 @@ Resource production forms the economic backbone of your kingdom. Each hex of con
 
 Settlements are the heart of your kingdom, representing population centers that drive growth, cultural development, and military power. From humble villages to sprawling metropolises, each settlement serves as a hub for resource consumption, structure construction, and army support. As settlements grow in size and sophistication, they unlock access to more advanced structures, support larger military forces, and become centers of specialized knowledge and industry. The careful development and protection of settlements forms the cornerstone of any successful kingdom's strategy.
 
+### Road Network Bonus
+
+**Connected Settlements:** Any settlement connected to another settlement by roads provides a **+1 circumstance bonus to all kingdom checks**. This bonus represents improved communication, trade, and administrative efficiency across your realm.
+
+- Roads must form a continuous path between settlements
+- Each connected settlement provides +1 (multiple connected settlements stack)
+- Maximum bonus from road networks: +3
+- Roads can be built with the Build Road action (see Kingdom Actions)
+
+Example: If you have 3 settlements all connected by roads, you gain +3 to all kingdom checks.
+
 ### Settlement Levels & Structure Limits
 
 Settlement advancement is gated by both **level thresholds** and **structure prerequisites**.
