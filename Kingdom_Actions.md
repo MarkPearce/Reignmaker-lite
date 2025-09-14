@@ -8,24 +8,31 @@ This document merges all Kingdom Actions into a single reference. Actions are gr
 _Maintain the kingdom’s cohesion by resolving crises, supporting allies, and quelling unrest before it can take root._
 
 ### Coordinated Effort
-_When multiple leaders work toward the same goal, their combined expertise ensures the best possible outcome._
+_When two leaders form a partnership on a single action, their combined expertise ensures the best possible outcome._
 
-When two or more PCs choose the same Kingdom Action this turn, they work together:
-- All participating PCs roll the skill check for that action with a +1 circumstance bonus
-- Take the highest result among all participants
-- The action succeeds using this best result
+**Limitations:**
+- **Partnership:** Exactly TWO PCs may use Coordinated Effort together
+- **Frequency:** May only be used ONCE per Kingdom Turn (one partnership total)
+- **Other PCs:** May take any action independently, including the same action as the partnership (but without the coordination bonus)
+
+**How it Works:**
+- Two PCs declare they are using Coordinated Effort on a specific Kingdom Action
+- Both participating PCs roll the skill check for that action with a +1 circumstance bonus
+- Take the highest result between the two participants
+- Other PCs may also choose the same action if they wish, but they roll independently without the +1 bonus
 
 **Special Benefits:**
 - No risk of failure for coordination itself
-- The +1 bonus represents teamwork and shared knowledge
-- If only one PC takes an action, it proceeds normally without this benefit
-- PCs who participate in a Coordinated Effort cannot take a different action this turn
+- The +1 bonus represents teamwork and shared knowledge 
+- Creates a strategic choice: which action is most important to coordinate?
 
-**Example:** Three PCs all choose "Build Roads"
+**Example:** PC1 and PC2 form a partnership to "Build Roads" using Coordinated Effort
 - PC1 rolls Crafting: 1d20+8+1 = 16
 - PC2 rolls Survival: 1d20+12+1 = 24  
-- PC3 rolls Crafting: 1d20+10+1 = 19
-- Result: The Build Roads action uses the 24
+- Result: The Build Roads action uses the 24 for their partnership
+- PC3 could also choose "Build Roads" independently and would roll normally (without +1)
+- PC4 could choose any action
+- Only one Coordinated Effort partnership is allowed per turn
 
 ---
 

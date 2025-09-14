@@ -4,6 +4,67 @@ This document provides  details for kingdom management structures and economic s
 
 ---
 
+## **Unrest**
+
+Unrest represents the dissatisfaction, tension, and disorder within your kingdom. It accumulates from various sources—failed actions, food shortages, unsupported armies, and unresolved events—and creates increasingly severe penalties as it builds.
+
+### **Effects of Unrest**
+
+Unrest imposes cumulative penalties on all kingdom actions:
+- **0-4 Unrest:** No penalty
+- **5-9 Unrest:** –1 status penalty to all kingdom rolls
+- **10-14 Unrest:** –2 status penalty to all kingdom rolls
+- **15-19 Unrest:** –3 status penalty to all kingdom rolls
+- **20+ Unrest:** –4 status penalty to all kingdom rolls (and so on)
+
+### **Common Sources of Unrest**
+
+**Failed Actions:**
+- Critical failures on kingdom actions typically cause +1 or +2 Unrest
+- Some regular failures may also generate +1 Unrest
+
+**Resource Shortages:**
+- Food shortage: +1 Unrest per missing Food each turn
+- Unsupported armies: +1 Unrest per excess army each turn
+
+**Military Issues:**
+- Failed army morale checks: +1 Unrest (or +2 on critical failure)
+- Army disbanding: +1 Unrest (or +2 if through mutiny/desertion)
+
+**Other Sources:**
+- Being at war: +1 Unrest per turn
+- Unresolved kingdom events
+- Certain narrative consequences
+
+### **Imprisoned Unrest**
+
+Imprisoned Unrest represents dissidents, troublemakers, and malcontents who have been detained by your justice system. This unrest is stored separately and does not count toward your kingdom's total Unrest penalties.
+
+- **Storage:** Imprisoned Unrest is held in settlements with Justice structures (Courts, Tribunals, etc.)
+- **Not Counted:** Does not contribute to kingdom roll penalties while imprisoned
+- **Resolution:** Can be dealt with through the Execute or Pardon Prisoners action
+- **Risk:** If not addressed, may escape or cause problems through events
+
+### **Reducing Unrest**
+
+**Direct Actions:**
+- **Deal with Unrest** action (End of Turn only): Reduces 1-3 Unrest based on success
+- **Execute or Pardon Prisoners**: Removes imprisoned Unrest (can also reduce current Unrest on critical success)
+
+**Passive Reduction:**
+- Certain structures automatically reduce Unrest each turn:
+  - Theater (T3): –1 Unrest per turn
+  - Grand Coliseum (T4): –1 Unrest per turn
+  - Citadel (T4): –1 Unrest per turn
+- Special events and critical successes may reduce Unrest
+
+**Indirect Methods:**
+- Maintaining adequate food supplies prevents Unrest from shortages
+- Supporting all armies prevents military Unrest
+- Resolving kingdom events prevents their lingering effects
+
+---
+
 ## **Resource Production**
 
 Resource production forms the economic backbone of your kingdom. Each hex of controlled territory generates resources based on its terrain type and the worksite you construct there. Food sustains your settlements and armies, while Lumber, Stone, and Ore provide the raw materials needed for construction and development. Strategic placement of worksites based on terrain advantages and kingdom needs is crucial for maintaining a thriving realm.
