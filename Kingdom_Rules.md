@@ -27,7 +27,9 @@ Resource production forms the economic backbone of your kingdom. Each hex of con
 ### **Storage**
 
 - **Food is the only stockpiled resource**
-- **Resources (Lumber, Stone, Ore)** must be used or traded on the turn they are aquired → otherwise lost.
+- **Resources (Lumber, Stone, Ore)** must be used or traded on the turn they are acquired otherwise, they are lost at the end of the turn.
+- Excess Resources can be traded for Gold as a Kingdom Action (2 resources: gold. The ratio improves with structures). 
+- Resources can be purchased as a Kingdom Action (1 gold: 2 resources)
 
 
 ## Settlements
@@ -41,12 +43,12 @@ To advance to the next tier of settlement, you must:
 1. First reach the **maximum number of structures** for your current tier
 2. Then promote your settlement level to the minimum threshold of the next tier
 
-| Tier       | Level Range | Max Structures | Advancement Requirement |
-|------------|-------------|----------------|-----------------------------
-| Village    | 0–1         | 2              | Level 2 + 2 structures → Town |
-| Town       | 2–4         | 4              | Level 5 + 4 structures → City |
-| City       | 5–7         | 8              | Level 8 + 8 structures → Metropolis |
-| Metropolis | 8+          | Unlimited      | — |
+| Settlement | Tier       | Food/Turn | Level Range | Max Structures | Advancement Requirement |
+|------------|-------------|----------------|-----------------------------|-----------------------------|-----------------------------|
+| Village | 1    | 1   | 0–1         | 2              | Level 2 + 2 structures → Town |
+| Town   | 2       | 4      | 2–4         | 4              | Level 5 + 4 structures → City |
+| City   | 3      | 8     | 5–7         | 8              | Level 8 + 8 structures → Metropolis |
+| Metropolis | 4 | 12 | 8+          | Unlimited      | — |
 
 **A settlement without the maximum number of structures may not exceed its current tier's level range.** For example, a Town with only 3 structures cannot advance beyond level 4, until it has all 4 structures built.
 
