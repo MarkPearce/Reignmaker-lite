@@ -48,12 +48,7 @@ _Round up troublemakers and malcontents, converting unrest into imprisoned unres
 **Availability:** May be performed in a settlement with a Justice structure that has available capacity for imprisoned Unrest.  
 **Failure Consequences:** Critical failures cause +1 Unrest (public order action)
 
-**Skill:** Choose an approach:
-- **Intimidation** (show of force)
-- **Society** (legal procedures)
-- **Stealth** (covert operations)
-- **Deception** (infiltration tactics)
-- **Athletics** (physical pursuit)
+**Skill:** **Intimidation** (show of force), **Society** (legal procedures), **Stealth** (covert operations), **Deception** (infiltration tactics), **Athletics** (physical pursuit)
 
 **Capacity Limits:** Cannot exceed the structure's imprisoned unrest capacity:
 - **Stocks (T1):** 1 imprisoned unrest
@@ -76,9 +71,9 @@ _Pass judgment on those who have threatened the kingdom's stability, choosing be
 **Availability:** May be performed in a settlement with a Justice structure that currently holds imprisoned Unrest.  
 **Failure Consequences:** Critical failures cause +1 Unrest (crisis response action)
 
-**Skill:** Choose an approach:  
-- **Execute** → Intimidation or Society  
-- **Pardon** → Diplomacy, Religion, or Performance  
+**Skill:**  
+- **Execute** → **Intimidation** (harsh justice), **Society** (legal proceedings)  
+- **Pardon** → **Diplomacy** (clemency), **Religion** (divine forgiveness), **Performance** (public ceremony)
 
 **Tier Access:**  
 - **Stocks (T1)** or **Jail (T2):** Only **Execute** may be chosen.  
@@ -98,15 +93,7 @@ _Address grievances and calm tensions through various approaches: entertainment,
 
 **Failure Consequences:** Critical failures cause no additional unrest (crisis response action but already dealing with the problem)
 
-**Skill:** Choose an approach:
-- **Performance** (entertainment and festivities)
-- **Religion** (religious ceremonies)
-- **Intimidation** (shows of force)
-- **Diplomacy** (diplomatic engagement)
-- **Arcana** (magical persuasion)
-- **Medicine** (public health initiatives)
-- **Occultism** (mystical demonstrations)
-- **Acrobatics** (impressive physical feats)
+**Skill:** **Performance** (entertainment and festivities), **Religion** (religious ceremonies), **Intimidation** (shows of force), **Diplomacy** (diplomatic engagement), **Arcana** (magical persuasion), **Medicine** (public health initiatives), **Occultism** (mystical demonstrations), **Acrobatics** (impressive physical feats)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -125,12 +112,7 @@ _Rally citizens to arms, drawing from the population to form new military units 
 
 **Failure Consequences:** Critical failures cause +1 Unrest (military operation)
 
-**Skill:** Choose an approach:
-- **Diplomacy** (inspire patriotism)
-- **Intimidation** (conscription)
-- **Society** (civic duty)
-- **Performance** (recruitment rallies)
-- **Athletics** (demonstrations of prowess)
+**Skill:** **Diplomacy** (inspire patriotism), **Intimidation** (conscription), **Society** (civic duty), **Performance** (recruitment rallies), **Athletics** (demonstrations of prowess)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -146,12 +128,7 @@ _Equip your troops with superior arms, armor, and supplies to enhance their batt
 
 **Failure Consequences:** Critical failures cause NO unrest (equipment action, not crisis/military operation)
 
-**Skill:** Choose an approach:
-- **Crafting** (forge equipment)
-- **Society** (requisition supplies)
-- **Intimidation** (commandeer resources)
-- **Thievery** (acquire through subterfuge)
-- **Warfare Lore** (military procurement)
+**Skill:** **Crafting** (forge equipment), **Society** (requisition supplies), **Intimidation** (commandeer resources), **Thievery** (acquire through subterfuge), **Warfare Lore** (military procurement)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -173,12 +150,7 @@ _Mobilize and maneuver your military forces across the kingdom's territory using
 
 **Failure Consequences:** Critical failures cause +1 Unrest (military operation)
 
-**Skill:** Choose an approach:
-- **Nature** (natural pathways)
-- **Survival** (wilderness navigation)
-- **Athletics** (forced march)
-- **Stealth** (covert movement)
-- **Warfare Lore** (military tactics)
+**Skill:** **Nature** (natural pathways), **Survival** (wilderness navigation), **Athletics** (forced march), **Stealth** (covert movement), **Warfare Lore** (military tactics)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -194,13 +166,7 @@ _Tend to wounded troops, restore morale, and replenish ranks after battle losses
 
 **Failure Consequences:** Critical failures cause NO unrest (support action, not crisis/military operation)
 
-**Skill:** Choose an approach:
-- **Medicine** (heal the wounded)
-- **Performance** (boost morale)
-- **Religion** (spiritual restoration)
-- **Nature** (natural remedies)
-- **Crafting** (repair equipment)
-- **Warfare Lore** (veteran experience)
+**Skill:** **Medicine** (heal the wounded), **Performance** (boost morale), **Religion** (spiritual restoration), **Nature** (natural remedies), **Crafting** (repair equipment), **Warfare Lore** (veteran experience)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -216,12 +182,7 @@ _Drill your troops in tactics and discipline to improve their combat effectivene
 
 **Failure Consequences:** Critical failures cause NO unrest (training action, not crisis/military operation)
 
-**Skill:** Choose an approach:
-- **Intimidation** (harsh discipline)
-- **Athletics** (physical conditioning)
-- **Acrobatics** (agility training)
-- **Survival** (endurance exercises)
-- **Warfare Lore** (tactical doctrine)
+**Skill:** **Intimidation** (harsh discipline), **Athletics** (physical conditioning), **Acrobatics** (agility training), **Survival** (endurance exercises), **Warfare Lore** (tactical doctrine)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -235,12 +196,7 @@ _Release military units from service, returning soldiers to civilian life._
 
 **Failure Consequences:** Critical failures cause +1 Unrest (military operation)
 
-**Skill:** Choose an approach:
-- **Intimidation** (stern dismissal)
-- **Diplomacy** (honorable discharge)
-- **Society** (reintegration programs)
-- **Performance** (farewell ceremony)
-- **Warfare Lore** (military protocol)
+**Skill:** **Intimidation** (stern dismissal), **Diplomacy** (honorable discharge), **Society** (reintegration programs), **Performance** (farewell ceremony), **Warfare Lore** (military protocol)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -258,12 +214,7 @@ _Assert sovereignty over new territories, expanding your kingdom's borders into 
 
 **Failure Consequences:** Critical failures cause NO unrest (development action)
 
-**Skill:** Choose an approach:
-- **Nature** (harmonize with the land)
-- **Survival** (establish frontier camps)
-- **Intimidation** (force submission)
-- **Occultism** (mystical claiming rituals)
-- **Religion** (divine mandate)
+**Skill:** **Nature** (harmonize with the land), **Survival** (establish frontier camps), **Intimidation** (force submission), **Occultism** (mystical claiming rituals), **Religion** (divine mandate)
 
 **Proficiency Scaling:**
 - **Trained/Expert:** Claim 1 hex per action
@@ -290,11 +241,7 @@ _Construct pathways between settlements to improve trade, travel, and military m
 
 **Failure Consequences:** Critical failures cause NO unrest (development action)
 
-**Skill:** Choose an approach:
-- **Crafting** (engineering expertise)
-- **Survival** (pathfinding routes)
-- **Athletics** (manual labor)
-- **Nature** (work with terrain)
+**Skill:** **Crafting** (engineering expertise), **Survival** (pathfinding routes), **Athletics** (manual labor), **Nature** (work with terrain)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -310,13 +257,7 @@ _Dispatch explorers to gather intelligence about neighboring territories and pot
 
 **Failure Consequences:** Critical failures cause NO unrest (exploration action)
 
-**Skill:** Choose an approach:
-- **Stealth** (covert reconnaissance)
-- **Survival** (wilderness expertise)
-- **Nature** (read the land)
-- **Society** (gather local information)
-- **Athletics** (rapid exploration)
-- **Acrobatics** (navigate obstacles)
+**Skill:** **Stealth** (covert reconnaissance), **Survival** (wilderness expertise), **Nature** (read the land), **Society** (gather local information), **Athletics** (rapid exploration), **Acrobatics** (navigate obstacles)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -332,12 +273,7 @@ _Construct defensive structures and preparations in a hex to improve its resista
 
 **Failure Consequences:** Critical failures cause NO unrest (development action)
 
-**Skill:** Choose an approach:
-- **Crafting** (build fortifications)
-- **Athletics** (manual construction)
-- **Intimidation** (defensive displays)
-- **Thievery** (trap placement)
-- **Warfare Lore** (strategic defenses)
+**Skill:** **Crafting** (build fortifications), **Athletics** (manual construction), **Intimidation** (defensive displays), **Thievery** (trap placement), **Warfare Lore** (strategic defenses)
 
 **Fortification Benefits:** Troops defending in a fortified hex gain +1 armor class and +2 initiative circumstance bonus.
 
@@ -362,12 +298,7 @@ You may found a new **Village** in a controlled hex.
 - Villages are typically Level 0–1.
 - A new settlement begins as a Village unless special story or GM circumstances apply.
 
-**Skill:** Choose an approach:
-- **Society** (organized settlement)
-- **Survival** (frontier establishment)
-- **Diplomacy** (attract settlers)
-- **Religion** (blessed founding)
-- **Medicine** (healthy community planning)
+**Skill:** **Society** (organized settlement), **Survival** (frontier establishment), **Diplomacy** (attract settlers), **Religion** (blessed founding), **Medicine** (healthy community planning)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -383,12 +314,7 @@ _Expand an existing settlement's size and capabilities, transforming villages in
 
 **Failure Consequences:** Critical failures cause NO unrest (development action)
 
-**Skill:** Choose an approach:
-- **Crafting** (infrastructure expansion)
-- **Society** (urban planning)
-- **Performance** (inspire growth)
-- **Arcana** (magical enhancement)
-- **Medicine** (public health improvements)
+**Skill:** **Crafting** (infrastructure expansion), **Society** (urban planning), **Performance** (inspire growth), **Arcana** (magical enhancement), **Medicine** (public health improvements)
 
 To upgrade, the settlement must meet **both level and structure prerequisites**:
 
@@ -410,12 +336,7 @@ _Construct new buildings and infrastructure within a settlement to enhance its c
 
 **Failure Consequences:** Critical failures cause NO unrest (development action)
 
-**Skill:** Choose an approach:
-- **Crafting** (construction expertise)
-- **Society** (organize workforce)
-- **Athletics** (physical labor)
-- **Acrobatics** (specialized construction)
-- **Stealth** (discrete building)
+**Skill:** **Crafting** (construction expertise), **Society** (organize workforce), **Athletics** (physical labor), **Acrobatics** (specialized construction), **Stealth** (discrete building)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -434,13 +355,7 @@ _Open formal channels of communication with neighboring powers to enable future 
 
 **Failure Consequences:** Critical failures cause NO unrest (diplomatic action)
 
-**Skill:** Choose an approach:
-- **Diplomacy** (formal negotiations)
-- **Society** (cultural exchange)
-- **Performance** (diplomatic ceremonies)
-- **Deception** (strategic positioning)
-- **Occultism** (mystical bonds)
-- **Religion** (sacred alliances)
+**Skill:** **Diplomacy** (formal negotiations), **Society** (cultural exchange), **Performance** (diplomatic ceremonies), **Deception** (strategic positioning), **Occultism** (mystical bonds), **Religion** (sacred alliances)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -456,12 +371,7 @@ _Appeal to allied nations for material support in times of need._
 
 **Failure Consequences:** Critical failures cause NO unrest (diplomatic action)
 
-**Skill:** Choose an approach:
-- **Diplomacy** (formal request)
-- **Society** (leverage connections)
-- **Performance** (emotional appeal)
-- **Thievery** (creative accounting)
-- **Medicine** (humanitarian aid)
+**Skill:** **Diplomacy** (formal request), **Society** (leverage connections), **Performance** (emotional appeal), **Thievery** (creative accounting), **Medicine** (humanitarian aid)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -477,12 +387,7 @@ _Call upon allies to provide troops or military support during conflicts._
 
 **Failure Consequences:** Critical failures cause NO unrest (diplomatic action)
 
-**Skill:** Choose an approach:
-- **Diplomacy** (alliance obligations)
-- **Intimidation** (pressure tactics)
-- **Society** (mutual defense)
-- **Arcana** (magical pacts)
-- **Warfare Lore** (strategic necessity)
+**Skill:** **Diplomacy** (alliance obligations), **Intimidation** (pressure tactics), **Society** (mutual defense), **Arcana** (magical pacts), **Warfare Lore** (strategic necessity)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -498,13 +403,7 @@ _Deploy spies and agents to gather intelligence on rival kingdoms or potential t
 
 **Failure Consequences:** Critical failures cause NO unrest (espionage action)
 
-**Skill:** Choose an approach:
-- **Deception** (false identities)
-- **Stealth** (covert operations)
-- **Thievery** (steal secrets)
-- **Society** (social infiltration)
-- **Arcana** (magical espionage)
-- **Acrobatics** (daring infiltration)
+**Skill:** **Deception** (false identities), **Stealth** (covert operations), **Thievery** (steal secrets), **Society** (social infiltration), **Arcana** (magical espionage), **Acrobatics** (daring infiltration)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -518,12 +417,7 @@ _Contract independent heroes and mercenaries to handle dangerous tasks or resolv
 
 **Failure Consequences:** Critical failures still cause unrest (crisis response action - hiring mercenaries)
 
-**Skill:** Choose an approach:
-- **Diplomacy** (negotiate contracts)
-- **Society** (use connections)
-- **Deception** (exaggerate rewards)
-- **Performance** (inspire heroes)
-- **Thievery** (recruit rogues)
+**Skill:** **Diplomacy** (negotiate contracts), **Society** (use connections), **Deception** (exaggerate rewards), **Performance** (inspire heroes), **Thievery** (recruit rogues)
 
 **Cost:** Pay **2 Gold** when this action is attempted (contracts, supplies, and promises of treasure).  
 **Limit:** This action may only be attempted **once per Kingdom Turn**.
@@ -544,14 +438,7 @@ _Convert excess resources into gold through trade with merchants and neighboring
 
 **Failure Consequences:** Critical failures cause NO unrest (economic action)
 
-**Skill:** Choose an approach:
-- **Society** (market knowledge)
-- **Diplomacy** (trade negotiations)
-- **Deception** (inflate value)
-- **Performance** (showcase goods)
-- **Thievery** (black market)
-- **Occultism** (mystical trade)
-- **Mercantile Lore** (trade expertise)
+**Skill:** **Society** (market knowledge), **Diplomacy** (trade negotiations), **Deception** (inflate value), **Performance** (showcase goods), **Thievery** (black market), **Occultism** (mystical trade), **Mercantile Lore** (trade expertise)
 
 Trade a single resource type for gold
 
@@ -568,12 +455,7 @@ _Use the kingdom's treasury to acquire needed materials from trade partners._
 
 **Failure Consequences:** Critical failures cause NO unrest (economic action)
 
-**Skill:** Choose an approach:
-- **Society** (find suppliers)
-- **Diplomacy** (negotiate deals)
-- **Intimidation** (demand better prices)
-- **Deception** (misleading negotiations)
-- **Mercantile Lore** (market expertise)
+**Skill:** **Society** (find suppliers), **Diplomacy** (negotiate deals), **Intimidation** (demand better prices), **Deception** (misleading negotiations), **Mercantile Lore** (market expertise)
 
 Offer gold in exchange for a single resource type
 
@@ -591,13 +473,7 @@ _Establish resource extraction operations to harness the natural wealth of your 
 
 **Failure Consequences:** Critical failures cause NO unrest (development action)
 
-**Skill:** Choose an approach:
-- **Crafting** (build infrastructure)
-- **Nature** (identify resources)
-- **Survival** (frontier operations)
-- **Athletics** (manual labor)
-- **Arcana** (magical extraction)
-- **Religion** (blessed endeavors)
+**Skill:** **Crafting** (build infrastructure), **Nature** (identify resources), **Survival** (frontier operations), **Athletics** (manual labor), **Arcana** (magical extraction), **Religion** (blessed endeavors)
 
 Choose a controlled hex. Establish a valid Worksite (Farm, Quarry, Mine, or Lumbermill).
 
@@ -615,13 +491,7 @@ _Harvest materials from your territories, either through established worksites o
 
 **Failure Consequences:** Critical failures cause NO unrest (economic action)
 
-**Skill:** Choose an approach:
-- **Nature** (natural harvesting)
-- **Survival** (efficient extraction)
-- **Crafting** (process materials)
-- **Athletics** (physical labor)
-- **Occultism** (mystical gathering)
-- **Medicine** (herb collection)
+**Skill:** **Nature** (natural harvesting), **Survival** (efficient extraction), **Crafting** (process materials), **Athletics** (physical labor), **Occultism** (mystical gathering), **Medicine** (herb collection)
 
 Choose one controlled hex. Either:  
 - Collect 1 resource of the appropriate type without a Worksite or collect from the worksite (once/turn)  
@@ -640,14 +510,7 @@ _Draw personal funds from the kingdom's treasury as compensation for your servic
 
 **Failure Consequences:** Failures and critical failures still cause unrest (taking from treasury can anger citizens)
 
-**Skill:** Choose an approach:
-- **Intimidation** (demand payment)
-- **Deception** (creative accounting)
-- **Diplomacy** (formal request)
-- **Society** (proper procedures)
-- **Performance** (justify worth)
-- **Acrobatics** (impressive service)
-- **Thievery** (skim the treasury)
+**Skill:** **Intimidation** (demand payment), **Deception** (creative accounting), **Diplomacy** (formal request), **Society** (proper procedures), **Performance** (justify worth), **Acrobatics** (impressive service), **Thievery** (skim the treasury)
 
 **Effect:** The PC gains personal Gold based on the settlement's level and the highest active Taxation tier in the kingdom, using the **Income Table** below.  
 

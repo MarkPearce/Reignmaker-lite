@@ -10,11 +10,7 @@ _Ancient ruins or artifacts are discovered in your territory._
 
 **Type:** Beneficial  
 **Location:** Largest settlement  
-**Skill:** Choose an approach:
-
-- **Society** (historical research)
-- **Religion** (divine significance)
-- **Occultism** (arcane investigation)
+**Skill:** **Society** (historical research), **Religion** (divine significance), **Occultism** (arcane investigation)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -32,11 +28,7 @@ _Someone attempts to kill one of your leaders._
 
 **Type:** Dangerous  
 **Target:** Random PC 
-**Skill:** Choose an approach:
-
-- **Stealth** (avoid the assassin)
-- **Intimidation** (deter through fear)
-- **Medicine** (survive wounds)
+**Skill:** **Stealth** (avoid the assassin), **Intimidation** (deter through fear), **Medicine** (survive wounds)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -54,10 +46,7 @@ _Bandits establish a camp and begin raiding travelers._
 
 **Type:** Dangerous, Continuous  
 **Location:** Random border hex  
-**Skill:** Choose an approach:
-- **Intimidation** (crush them with force)
-- **Diplomacy** (negotiate their surrender)
-- **Stealth** (infiltrate and dismantle)
+**Skill:** **Intimidation** (crush them with force), **Diplomacy** (negotiate their surrender), **Stealth** (infiltrate and dismantle)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -75,10 +64,7 @@ _A settlement experiences sudden, dramatic growth._
 
 **Type:** Beneficial, Continuous  
 **Location:** Random settlement  
-**Skill:** Each turn, choose an approach:
-- **Society** (manage growth)
-- **Crafting** (expand infrastructure)
-- **Diplomacy** (maintain order)
+**Skill:** **Society** (manage growth), **Crafting** (expand infrastructure), **Diplomacy** (maintain order)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -92,16 +78,12 @@ _A settlement experiences sudden, dramatic growth._
 ---
 
 ## Demand Structure
-_Citizens demand that a specific structure be built.
+_Citizens demand that a specific structure be built._
 
 **Type:** Dangerous, Continuous  
 **Location:** Largest settlement  
 **Demand:** Roll 1d6: 1-2 = Market/Commerce, 3-4 = Military/Defense, 5-6 = Cultural/Religious  
-**Skill:** Choose an approach:
-
-- **Diplomacy** (negotiate a compromise)
-- **Intimidation** (enforce order)
-- **Society** (understand their needs)
+**Skill:** **Diplomacy** (negotiate a compromise), **Intimidation** (enforce order), **Society** (understand their needs)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -118,11 +100,7 @@ _Citizens demand that a specific structure be built.
 _Disease, weather, or pests destroy agricultural production._
 
 **Type:** Dangerous, Continuous  
-**Skill:** Choose an approach:
-
-- **Nature** (agricultural expertise)
-- **Survival** (emergency measures)
-- **Diplomacy** (coordinate relief)
+**Skill:** **Nature** (agricultural expertise), **Survival** (emergency measures), **Diplomacy** (coordinate relief)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -138,10 +116,7 @@ _A dangerous cult begins operating in secret within your kingdom._
 
 **Type:** Dangerous, Continuous  
 **Location:** Random settlement  
-**Skill:** First locate the cult, then defeat it:
-- **Stealth** (infiltrate the cult)
-- **Religion** (counter their beliefs)
-- **Intimidation** (root them out)
+**Skill:** **Stealth** (infiltrate the cult), **Religion** (counter their beliefs), **Intimidation** (root them out)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -160,10 +135,7 @@ _A neighboring kingdom reaches out to establish or improve diplomatic relations.
 
 **Type:** Beneficial  
 **Target:** Choose or roll for a neighboring kingdom  
-**Skill:** Choose an approach:
-- **Diplomacy** (formal negotiations)
-- **Society** (cultural exchange)
-- **Deception** (gain advantage)
+**Skill:** **Diplomacy** (formal negotiations), **Society** (cultural exchange), **Deception** (gain advantage)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -184,10 +156,7 @@ _An illicit drug trade threatens to corrupt your settlement._
 
 **Type:** Dangerous, Continuous  
 **Location:** Largest settlement  
-**Skill:** Choose an approach:
-- **Stealth** (undercover investigation)
-- **Medicine** (treat addicts, trace source)
-- **Intimidation** (crack down hard)
+**Skill:** **Stealth** (undercover investigation), **Medicine** (treat addicts, trace source), **Intimidation** (crack down hard)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -205,10 +174,7 @@ _Trade and productivity boom throughout your kingdom._
 
 **Type:** Beneficial, Continuous  
 **Location:** Kingdom-wide (check in capital or largest settlement)  
-**Skill:** Choose an approach:
-- **Society** (manage growth)
-- **Diplomacy** (attract traders)
-- **Crafting** (increase production)
+**Skill:** **Society** (manage growth), **Diplomacy** (attract traders), **Crafting** (increase production)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -225,10 +191,7 @@ _Trade and productivity boom throughout your kingdom._
 _Citizens demand the kingdom claim new territory._
 
 **Type:** Dangerous, Continuous  
-**Skill:** Choose an approach:
-- **Diplomacy** (promise future growth)
-- **Survival** (show expansion plans)
-- **Intimidation** (demand patience)
+**Skill:** **Diplomacy** (promise future growth), **Survival** (show expansion plans), **Intimidation** (demand patience)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -245,11 +208,7 @@ _Citizens demand the kingdom claim new territory._
 _A neighboring kingdom invites your leaders to a grand festival._
 
 **Type:** Beneficial  
-**Skill:** Choose an approach:
-
-- **Diplomacy** (formal attendance)
-- **Performance** (entertain hosts)
-- **Society** (navigate customs)
+**Skill:** **Diplomacy** (formal attendance), **Performance** (entertain hosts), **Society** (navigate customs)
 
 **Gifts:** You may bring 0-2 Resources as gifts from this turn's production.
 
@@ -269,10 +228,7 @@ _Rival factions from different settlements escalate their conflict._
 
 **Type:** Dangerous, Continuous  
 **Location:** Two settlements (if less than 2, no effect)  
-**Skill:** Choose an approach:
-- **Diplomacy** (mediate peace)
-- **Intimidation** (enforce order)
-- **Deception** (manipulate resolution)
+**Skill:** **Diplomacy** (mediate peace), **Intimidation** (enforce order), **Deception** (manipulate resolution)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -287,10 +243,7 @@ _Rival factions from different settlements escalate their conflict._
 _Exceptional harvests provide abundant food._
 
 **Type:** Beneficial  
-**Skill:** Choose an approach:
-- **Nature** (maximize the bounty)
-- **Society** (organize distribution)
-- **Crafting** (preserve excess)
+**Skill:** **Nature** (maximize the bounty), **Society** (organize distribution), **Crafting** (preserve excess)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -305,10 +258,7 @@ _Exceptional harvests provide abundant food._
 _Perfect weather conditions boost morale and productivity._
 
 **Type:** Beneficial, Continuous  
-**Skill:** No check required first turn, then:
-- **Nature** (predict weather patterns)
-- **Society** (organize activities)
-- **Performance** (celebrate the weather)
+**Skill:** No check required first turn, then: **Nature** (predict weather patterns), **Society** (organize activities), **Performance** (celebrate the weather)
 
 | Degree of Success | Effect (each turn) |
 | --- | --- |
@@ -323,10 +273,7 @@ _Perfect weather conditions boost morale and productivity._
 _New settlers arrive seeking homes in your kingdom._
 
 **Type:** Beneficial  
-**Skill:** Choose an approach:
-- **Diplomacy** (welcome newcomers)
-- **Society** (integrate settlers)
-- **Survival** (find them land)
+**Skill:** **Diplomacy** (welcome newcomers), **Society** (integrate settlers), **Survival** (find them land)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -342,10 +289,7 @@ _Zealots mobilize against a minority group or belief._
 
 **Type:** Dangerous, Continuous  
 **Location:** Largest settlement  
-**Skill:** Choose an approach:
-- **Religion** (theological debate)
-- **Intimidation** (suppress zealots)
-- **Diplomacy** (protect victims)
+**Skill:** **Religion** (theological debate), **Intimidation** (suppress zealots), **Diplomacy** (protect victims)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -363,10 +307,7 @@ _Authorities catch a notorious criminal or resolve a major injustice._
 
 **Type:** Beneficial  
 **Location:** Capital or largest settlement  
-**Skill:** Choose an approach:
-- **Intimidation** (show of force)
-- **Diplomacy** (public ceremony)
-- **Society** (legal proceedings)
+**Skill:** **Intimidation** (show of force), **Diplomacy** (public ceremony), **Society** (legal proceedings)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -383,10 +324,7 @@ _Authorities catch a notorious criminal or resolve a major injustice._
 _Settlers attempt to claim wilderness at the kingdom's border._
 
 **Type:** Dangerous  
-**Skill:** Choose an approach:
-- **Diplomacy** (negotiate with settlers)
-- **Survival** (guide their efforts)
-- **Intimidation** (assert control)
+**Skill:** **Diplomacy** (negotiate with settlers), **Survival** (guide their efforts), **Intimidation** (assert control)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -404,10 +342,7 @@ _Fire, flood, or structural collapse strikes a settlement._
 
 **Type:** Dangerous  
 **Location:** Random settlement  
-**Skill:** Choose an approach:
-- **Crafting** (emergency repairs)
-- **Survival** (evacuation and rescue)
-- **Society** (organize response)
+**Skill:** **Crafting** (emergency repairs), **Survival** (evacuation and rescue), **Society** (organize response)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -425,10 +360,7 @@ _A powerful magical site or artifact is discovered in your kingdom._
 
 **Type:** Beneficial  
 **Location:** Largest settlement  
-**Skill:** Choose an approach:
-- **Arcana** (understand the magic)
-- **Religion** (divine its purpose)
-- **Occultism** (unlock its secrets)
+**Skill:** **Arcana** (understand the magic), **Religion** (divine its purpose), **Occultism** (unlock its secrets)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -446,11 +378,7 @@ _A dangerous creature attacks a settlement or travellers._
 
 **Type:** Dangerous  
 **Location:** Random settlement  
-**Skill:** Choose an approach:
-
-- **Intimidation** (drive it off)
-- **Nature** (understand and redirect)
-- **Stealth** (track and ambush)
+**Skill:** **Intimidation** (drive it off), **Nature** (understand and redirect), **Stealth** (track and ambush)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -468,11 +396,7 @@ _Earthquake, tornado, wildfire, or severe flooding strikes the kingdom._
 
 **Type:** Dangerous  
 **Location:** a random worksite and 2 adjacent hexes (roll 1d6)
-**Skill:** Choose an approach for each affected hex, and roll for each one
-
-- **Survival** (evacuation and rescue)
-- **Crafting** (emergency shelters)
-- **Society** (coordinate relief)
+**Skill:** For each affected hex: **Survival** (evacuation and rescue), **Crafting** (emergency shelters), **Society** (coordinate relief)
 
 | Degree of Success | Effect (per hex) |
 | --- | --- |
@@ -492,10 +416,7 @@ _A natural wonder appears in your kingdom - rare flowers, aurora, or returning w
 
 **Type:** Beneficial  
 **Location:** Largest settlement  
-**Skill:** Choose an approach:
-- **Nature** (understand the blessing)
-- **Performance** (celebrate it)
-- **Society** (organize festivals)
+**Skill:** **Nature** (understand the blessing), **Performance** (celebrate it), **Society** (organize festivals)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -513,10 +434,7 @@ _Religious pilgrims seek passage or sanctuary in your kingdom._
 
 **Type:** Beneficial  
 **Location:** Largest settlement  
-**Skill:** Choose an approach:
-- **Religion** (provide sanctuary)
-- **Diplomacy** (welcome pilgrims)
-- **Society** (organize accommodations)
+**Skill:** **Religion** (provide sanctuary), **Diplomacy** (welcome pilgrims), **Society** (organize accommodations)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -534,10 +452,7 @@ _Disease spreads rapidly through your settlements._
 
 **Type:** Dangerous, Continuous  
 **Location:** Largest settlement, then spreads  
-**Skill:** Choose an approach:
-- **Medicine** (treat the sick)
-- **Religion** (divine healing)
-- **Society** (quarantine measures)
+**Skill:** **Medicine** (treat the sick), **Religion** (divine healing), **Society** (quarantine measures)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -555,11 +470,7 @@ _A leader is implicated in an embarrassing or criminal situation._
 
 **Type:** Dangerous
 **Target:** Random PC   
-**Skill:** Choose an approach:
-
-- **Deception** (cover up)
-- **Diplomacy** (public apology)
-- **Intimidation** (silence critics)
+**Skill:** **Deception** (cover up), **Diplomacy** (public apology), **Intimidation** (silence critics)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -575,11 +486,7 @@ _Armed raiders threaten settlements and trade routes._
 
 **Type:** Dangerous, Continuous  
 **Location:** Random settlement  
-**Skill:** Choose an approach:
-
-- **Intimidation** (military response)
-- **Diplomacy** (negotiate tribute)
-- **Stealth** (track to their base)
+**Skill:** **Intimidation** (military response), **Diplomacy** (negotiate tribute), **Stealth** (track to their base)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -596,10 +503,7 @@ _Armed raiders threaten settlements and trade routes._
 _Explorers discover valuable resources or ancient treasure._
 
 **Type:** Beneficial  
-**Skill:** Choose an approach:
-- **Society** (appraise value)
-- **Thievery** (secure it safely)
-- **Diplomacy** (negotiate claims)
+**Skill:** **Society** (appraise value), **Thievery** (secure it safely), **Diplomacy** (negotiate claims)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -617,10 +521,7 @@ _A notorious crime captures public attention._
 
 **Type:** Dangerous  
 **Location:** Largest settlement  
-**Skill:** Choose an approach:
-- **Intimidation** (harsh justice)
-- **Society** (investigation)
-- **Diplomacy** (calm fears)
+**Skill:** **Intimidation** (harsh justice), **Society** (investigation), **Diplomacy** (calm fears)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -638,10 +539,7 @@ _Merchants propose a lucrative trade arrangement._
 
 **Type:** Beneficial  
 **Location:** Capital or largest settlement  
-**Skill:** Choose an approach:
-- **Diplomacy** (negotiate terms)
-- **Society** (assess markets)
-- **Deception** (leverage position)
+**Skill:** **Diplomacy** (negotiate terms), **Society** (assess markets), **Deception** (leverage position)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -659,11 +557,7 @@ _The dead rise from their graves to threaten the living._
 
 **Type:** Dangerous, Continuous  
 **Location:** Random Settlement  
-**Skill:** Choose an approach:
-
-- **Religion** (consecrate and bless)
-- **Arcana** (magical containment)
-- **Intimidation** (destroy by force)
+**Skill:** **Religion** (consecrate and bless), **Arcana** (magical containment), **Intimidation** (destroy by force)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -681,10 +575,7 @@ _A famous person visits your kingdom, bringing attention and opportunity._
 
 **Type:** Beneficial  
 **Location:** Random settlement  
-**Skill:** Choose an approach:
-- **Diplomacy** (formal reception)
-- **Performance** (entertainment)
-- **Society** (social events)
+**Skill:** **Diplomacy** (formal reception), **Performance** (entertainment), **Society** (social events)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -702,11 +593,7 @@ _Your kingdom conducts large-scale military training maneuvers._
 
 **Type:** Beneficial  
 **Location:** Settlement with military structures or the largest settlement  
-**Skill:** Choose an approach:
-
-- **Athletics** (physical conditioning drills)
-- **Acrobatics** (agility and combat maneuvers)
-- **Intimidation** (discipline and morale)
+**Skill:** **Athletics** (physical conditioning drills), **Acrobatics** (agility and combat maneuvers), **Intimidation** (discipline and morale)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -724,10 +611,7 @@ _Researchers in your kingdom make an important academic breakthrough._
 
 **Type:** Beneficial  
 **Location:** Settlement with knowledge structures or largest settlement  
-**Skill:** Choose an approach:
-- **Lore** (historical research)
-- **Arcana** (theoretical magic)
-- **Society** (social sciences)
+**Skill:** **Lore** (historical research), **Arcana** (theoretical magic), **Society** (social sciences)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -745,10 +629,7 @@ _A daring theft threatens your kingdom's security and reputation._
 
 **Type:** Dangerous  
 **Location:** Largest settlement with valuable structures  
-**Skill:** Choose an approach:
-- **Thievery** (understand criminal methods)
-- **Stealth** (track the thieves)
-- **Society** (investigate connections)
+**Skill:** **Thievery** (understand criminal methods), **Stealth** (track the thieves), **Society** (investigate connections)
 
 | Degree of Success | Effect |
 | --- | --- |
@@ -766,10 +647,7 @@ _A martial competition draws competitors from across the realm._
 
 **Type:** Beneficial  
 **Location:** Largest settlement  
-**Skill:** Choose an approach:
-- **Athletics** (strength competitions)
-- **Acrobatics** (agility contests)
-- **Performance** (pageantry and ceremonies)
+**Skill:** **Athletics** (strength competitions), **Acrobatics** (agility contests), **Performance** (pageantry and ceremonies)
 
 | Degree of Success | Effect |
 | --- | --- |

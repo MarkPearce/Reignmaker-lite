@@ -161,7 +161,7 @@ Cultural buildings reduce social tensions and improve morale throughout the king
 |------|-----------|-----------------|--------|------|
 | T1 | Open stage | Village+ | PCs in this settlement gain +1 to checks made to reduce Unrest. | 2 Lumber |
 | T2 | Amphitheater | Town+ | PCs in this settlement gain +2 to checks made to reduce Unrest. | 3 Lumber, 1 Stone |
-| T3 | Playhouse | City+ | At the start of each Kingdom Turn, the kingdom reduces Unrest by 1. PCs in this settlement gain +2 to checks made to reduce Unrest. | 4 Lumber, 3 Stone, 1 Ore |
+| T3 | Playhouse | City+ | PCs in this settlement gain +2 to checks made to reduce Unrest. | 4 Lumber, 3 Stone, 1 Ore |
 | T4 | Auditorium | Metropolis | +1 Fame each turn. At the start of each Kingdom Turn, reduce Unrest by 1. PCs in this settlement gain +2 to checks made to reduce Unrest. | 6 Lumber, 6 Stone, 4 Ore |
 
 ## Revenue
@@ -190,7 +190,7 @@ Justice structures maintain law and order in settlements by holding imprisoned u
 
 ## Diplomacy
 
-Diplomacy structures enable and maintain relationships with neighboring realms and factions. They determine how many Helpful diplomatic relationships your kingdom can sustain and provide economic and social benefits from international relations.
+Diplomacy structures enable and maintain relationships with neighbouring realms and factions. They determine how many Helpful diplomatic relationships your kingdom can sustain and provide economic and social benefits from international relations.
 
 | Tier | Facility           | Settlement Size | Diplomatic Capacity | Additional Benefits                             | Cost                     |
 | :--- | :----------------- | :-------------- | :------------------ | :---------------------------------------------- | :----------------------- |

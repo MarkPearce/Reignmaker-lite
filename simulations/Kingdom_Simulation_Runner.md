@@ -79,6 +79,23 @@ This document serves as a simulation runner for the Reignmaker-lite subsystem fo
 
 ## Core Mechanics
 
+### Unrest Generation Rules (Updated)
+
+#### Passive Unrest Sources
+**Territory Size:** The administrative burden of controlling territory generates unrest:
+- **8-15 hexes:** +1 Unrest per turn
+- **16-23 hexes:** +2 Unrest per turn
+- **24-31 hexes:** +3 Unrest per turn
+- **32+ hexes:** +4 Unrest per turn
+
+**Metropolis Burden:** Each Metropolis generates **+1 additional Unrest per turn** due to urban complexity and population density.
+
+#### Unrest Mitigation
+- **Culture Buildings (T1-T3):** Provide bonuses to Deal with Unrest checks only
+- **Auditorium (T4):** -1 Unrest per turn (automatic) + bonuses to checks
+- **Critical Failures:** All critical failures generate +1 Unrest
+- **Imprisonment:** Arrest Dissidents converts regular unrest to imprisoned unrest
+
 ### Critical Implementation Requirements
 
 #### 1. Kingdom Level = Party Level
