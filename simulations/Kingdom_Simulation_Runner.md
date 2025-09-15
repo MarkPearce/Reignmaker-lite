@@ -116,13 +116,20 @@ Using flat averages or success percentages alone misses critical successes and f
 
 **No fixed DCs exist** - everything scales with kingdom/party level.
 
-### Dice Resolution
+### Dice Resolution (Pathfinder 2e Rules)
 **Use actual d20 rolls for each check:**
 - Roll: 1d20 + modifier vs DC
-- **Critical Success:** Beat DC by 10+ OR natural 20
-- **Critical Failure:** Fail DC by 10+ OR natural 1
-- **Success:** Meet or exceed DC (without critical)
-- **Failure:** Below DC (without critical)
+- **Critical Success:** Total beats DC by 10 or more
+- **Critical Failure:** Total fails DC by 10 or more  
+- **Success:** Total meets or exceeds DC (without critical)
+- **Failure:** Total below DC (without critical)
+
+**IMPORTANT:** Natural 20s and 1s do NOT automatically create critical results in Pathfinder 2e. Only the degree of success matters (beating/failing by 10+).
+
+**Example at Level 4 (DC 19):**
+- Expert (+11): Needs 8+ to succeed, 18+ to crit succeed, fails on 7 or less, crit fails on roll of 1-7 (total 8 or less)
+- Trained (+8): Needs 11+ to succeed, never crits (can't reach 29), fails on 10 or less, crit fails on 1 (total 9 or less)
+- Companions (+6): Needs 13+ to succeed, never crits, fails on 12 or less, crit fails on 1-3 (total 9 or less)
 
 ### PC Skill Progression
 **Proficiency levels by party level:**

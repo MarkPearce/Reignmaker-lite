@@ -1,174 +1,357 @@
 # Kingdom Events Complete Audit
+_Comprehensive analysis of Kingdom Events against core game systems_
 
 ## Executive Summary
 
-This audit examines all kingdom events for alignment with the game system, skill availability, and gameplay balance. The analysis reveals that while most events are well-designed and engaging, there are several critical issues that need addressing:
-
-1. **Skill Misalignments**: Several events use skills that don't exist in the core system
-2. **Structure Reference Issues**: Some events reference non-existent structure categories
-3. **Balance Concerns**: A few events have disproportionate rewards or penalties
-4. **Mechanical Clarity**: Some events lack clear progression mechanics
+This audit examines all 40 kingdom events for:
+1. **System Alignment** - Integration with kingdom rules and mechanics
+2. **Skill Availability** - Whether required skills exist in kingdom actions
+3. **Balance & Fun** - Resource scales, risk/reward, and player engagement
 
 ---
 
-## Critical Issues Requiring Immediate Fix
+## SECTION 1: SKILL AVAILABILITY ANALYSIS
 
+### Core Kingdom Skills (Available through Kingdom Actions)
+These skills appear in Kingdom Actions and are readily available to players:
+- **Diplomacy** (11 actions)
+- **Society** (9 actions)
+- **Intimidation** (8 actions)
+- **Survival** (5 actions)
+- **Nature** (5 actions)
+- **Crafting** (5 actions)
+- **Medicine** (2 actions)
+- **Performance** (2 actions)
+- **Religion** (1 action)
+- **Warfare Lore** (6 actions)
+- **Mercantile Lore** (2 actions)
+- **Intrigue Lore** (1 action)
 
+### Problematic Skills in Events
+These skills appear in events but NOT in any Kingdom Actions:
 
-## Moderate Issues
+#### **Critical Issues (No Kingdom Action Access)**
+| Skill | Events Using It | Problem |
+|-------|----------------|---------|
+| **Stealth** | 8 events | Zero kingdom actions use this |
+| **Thievery** | 3 events | Zero kingdom actions use this |
+| **Deception** | 5 events | Zero kingdom actions use this |
+| **Arcana** | 4 events | Zero kingdom actions use this |
+| **Occultism** | 3 events | Zero kingdom actions use this |
+| **Athletics** | 2 events | Zero kingdom actions use this |
+| **Acrobatics** | 2 events | Zero kingdom actions use this |
+| **Lore** | 1 event | Zero kingdom actions use this (only specific Lores) |
 
-### 2. Structure Category Mismatches
+### Event-by-Event Skill Problems
 
-Several events reference structure categories incorrectly or unclearly:
-
-#### **Grand Coliseum Confusion**
-- Listed in both **Military & Training** (skill structures) and **Culture** (support structures)
-- Creates confusion about which structure provides which benefit
-- **Fix**: Clarify that there are two different structures:
-  - "Grand Coliseum" (Military & Training T4) - for earn income
-  - "Grand Coliseum" (Culture T4) - for unrest reduction and fame
-
-#### **Justice Structure References**
-Events mention "Justice structures" but this category doesn't exist:
-- **Execute or Pardon Prisoners** references Stocks, Jail, Prison, Donjon
-- These appear to be missing from structure lists
-- **Fix**: Add Justice category to support structures or clarify these are part of Civic & Governance
-
-#### **Diplomatic Structure References**
-- **Diplomatic Overture** mentions Embassy, Grand Embassy, Diplomatic Quarter
-- These aren't in the structure lists provided
-- **Fix**: Add these as Civic & Governance structures or create a Diplomacy category
-
----
-
-## Balance Issues
-
-### 3. Overpowered Rewards
-
-#### **Land Rush Event**
-- Can grant 2 free hexes on critical success
-- No resource cost for expansion
-- **Issue**: Normally claiming hexes requires actions and potential failures
-- **Recommendation**: Reduce to 1 hex on critical success, or require some resource investment
-
-#### **Magical Discovery Event**
-- Critical success grants a FREE Tier 1 magical structure or upgrade
-- **Issue**: This bypasses normal resource costs entirely
-- **Recommendation**: Provide a discount (50% off) rather than free structure
-
-### 4. Underpowered or Unclear Rewards
-
-#### **Justice Prevails Event**
-- Only provides unrest reduction
-- No other tangible benefits
-- **Recommendation**: Add Fame or Gold reward to make it more appealing
-
-#### **Military Exercises Event**
-- References "military kingdom actions" but these aren't clearly defined
-- **Fix**: Specify exactly which actions benefit (Deploy Army, Outfit Army, etc.)
+#### Events with Unavailable Skills:
+1. **Archaeological Find** - Occultism (unavailable)
+2. **Assassination Attempt** - Stealth (unavailable)
+3. **Bandit Activity** - Stealth (unavailable)
+4. **Cult Activity** - Stealth (unavailable)
+5. **Diplomatic Overture** - Deception (unavailable)
+6. **Drug Den** - Stealth (unavailable)
+7. **Feud** - Deception (unavailable)
+8. **Grand Tournament** - Athletics, Acrobatics (both unavailable)
+9. **Infiltration** - Deception, Stealth, Thievery (all unavailable in actions)
+10. **Magical Discovery** - Arcana, Occultism (both unavailable)
+11. **Military Exercises** - Athletics, Acrobatics (both unavailable)
+12. **Monster Attack** - Stealth (unavailable)
+13. **Notorious Heist** - Thievery, Stealth (both unavailable)
+14. **Sensational Crime** - Uses Society (available)
+15. **Scholarly Discovery** - Lore, Arcana (both unavailable)
+16. **Trade Agreement** - Deception (unavailable)
+17. **Undead Uprising** - Arcana (unavailable)
 
 ---
 
-## Gameplay and Fun Factor Analysis
+## SECTION 2: STRUCTURAL MECHANICS ISSUES
 
-### Positive Design Elements ✓
+### Structure Bonus System - CORRECTED UNDERSTANDING
 
-1. **Meaningful Choices**: Most events offer 3+ skill approaches, allowing different character builds to contribute
-2. **Risk/Reward Balance**: Critical failures have meaningful consequences without being game-ending
-3. **Narrative Hooks**: Events like Cult Activity and Drug Den create ongoing storylines
-4. **Progressive Challenges**: Continuous events that escalate create tension
-5. **Structure Integration**: Many events reward infrastructure investment
+**Events provide UNTYPED bonuses** (which stack with other bonuses)
+**Structures provide CIRCUMSTANCE bonuses** (which don't stack with each other)
 
-### Areas for Improvement
+This is actually correct design - events check for the presence of structures and grant untyped bonuses based on their tier:
+- T1: +1 untyped bonus from events
+- T2: +2 untyped bonus from events
+- T3: +3 untyped bonus from events  
+- T4: +4 untyped bonus from events
 
-#### **Repetitive Outcomes**
-Many events follow the pattern:
-- Critical Success: +Gold, -Unrest
-- Success: +Gold OR -Unrest
-- Failure: +Unrest
-- Critical Failure: +2 Unrest
+The structure's own circumstance bonuses (+1/+2/+3) are separate and apply to earn income actions.
 
-**Recommendation**: Diversify outcomes with:
-- Temporary bonuses to specific actions
-- Relationship changes with NPCs/factions
-- Unlock special one-time actions
-- Affect specific structures or settlements differently
+**Current Event Language is Correct:**
+Events properly state "gain an untyped bonus equal to the tier" - this is intentional to allow stacking with other bonuses. No changes needed to event bonus language.
 
-#### **Limited Player Agency in Some Events**
-Events like **Natural Disaster** feel purely punitive with no way to prepare or mitigate.
+### Structure Category References
 
-**Recommendation**: Add preparedness mechanics:
-- Structures that reduce disaster severity
-- Advance warning systems for some events
-- Stockpiling resources to mitigate effects
+Most events correctly reference structure categories, with minor clarifications needed:
+- Events say "Performance & Culture" - should clarify if this means Performance skill structures OR Culture support structures
+- Events say "Knowledge & Magic" which correctly matches the skill structure category
+- Events say "Faith & Nature" which correctly matches the skill structure category
+- Events say "Crime & Intrigue" which correctly matches the skill structure category
 
 ---
 
-## Missing Mechanical Clarity
+## SECTION 3: RESOURCE & BALANCE ISSUES
 
-### Events Needing Clarification
+### Overly Punishing Events
 
-1. **Demand Expansion**
-   - What happens if the kingdom has no adjacent unclaimed hexes?
-   - Can this event trigger for island nations?
+#### **Food Shortage**
+- **Problem**: Losing 6-8 Food per turn can instantly starve a small kingdom
+- **Context**: A Village needs 1 Food, Town needs 4 Food
+- **Fix Needed**: Scale to kingdom size (e.g., lose 50% of Food production)
 
-2. **Feud**
-   - "Two settlements (if less than 2, no effect)" - should specify this event doesn't trigger with <2 settlements
+#### **Natural Disaster**  
+- **Problem**: Can destroy ALL worksites in 3 hexes
+- **Context**: Worksites cost actions to build and are core economy
+- **Fix Needed**: Damage worksites, don't destroy; limit to 1 worksite per hex
 
-3. **Food Shortage**
-   - Can kingdoms with massive food storage use it to offset losses?
-   - Interaction with Strategic Reserves unclear
+#### **Raiders (Continuous)**
+- **Problem**: -2 Gold, -2 Food per turn is devastating
+- **Context**: Small kingdoms may only produce 2-4 Food total
+- **Fix Needed**: Scale losses or make it -1 Gold, -1 Food
+
+#### **Plague (Continuous)**
+- **Problem**: -2 Gold per turn plus spreading is too harsh
+- **Context**: Can cascade across entire kingdom via roads
+- **Fix Needed**: Remove Gold loss or reduce spread chance
+
+### Overly Generous Events
+
+#### **Land Rush**
+- **Problem**: Gaining 1-2 free hexes is massive (normally costs a full Kingdom Action)
+- **Fix Needed**: Grant 1 hex maximum, or give bonus to next Claim Hex action
+
+#### **Magical Discovery**
+- **Problem**: Free structure or upgrade worth 8-18 resources
+- **Fix Needed**: Discount on next magical structure instead
+
+#### **Remarkable Treasure**
+- **Problem**: +4 Gold on critical success is huge for early game
+- **Fix Needed**: Cap at +3 Gold or scale to kingdom size
+
+---
+
+## SECTION 4: MISSING GAME MECHANICS
+
+### Undefined or Inconsistent Mechanics
+
+1. **"Convert X Unrest to imprisoned Unrest"** (Drug Den, Notorious Heist)
+   - This happens without using the Arrest Dissidents action
+   - No capacity check mentioned
+
+2. **Structure Damage/Destruction**
+   - Referenced in 12+ events but no repair rules in main system
+   - Repair costs mentioned as "half original" but not in core rules
+
+3. **Fame Persistence**
+   - Events grant Fame but rules say Fame resets each turn
+   - Should these be permanent Fame or just for current turn?
+
+4. **PC Targeting**
+   - "Random PC" mechanism not defined
+   - What if PC is absent/dead?
+
+5. **Hex Selection**
+   - "Random hex" selection method not defined
+   - "Random settlement" selection not defined
+
+---
+
+## SECTION 5: THEMATIC & GAMEPLAY ANALYSIS
+
+### What Works Well
+
+1. **Choice Variety** - Most events offer 2-3 skill approaches
+2. **Continuous Events** - Create ongoing narrative pressure
+3. **Risk/Reward Balance** - Beneficial events can fail, dangerous can succeed
+4. **Diverse Themes** - Political, economic, military, supernatural variety
+
+### What's Missing
+
+1. **No Road Network Events** - Roads are major investment but no events interact
+2. **No Diplomatic Relationship Events** - System tracks relationships but events don't use them
+3. **No Structure-Specific Events** - Could have events for specific structures
+4. **No Seasonal Events** - No weather/harvest cycle
+5. **Limited PC Integration** - Only 3 events target specific PCs
+
+### Repetitive Consequences
+
+Too many events use "+1/+2 Unrest" as the failure state. Consider alternatives:
+- Temporary structure shutdown
+- Resource production penalties  
+- Diplomatic reputation effects
+- Movement restrictions
+- Temporary skill penalties
+
+---
+
+## SECTION 6: SPECIFIC EVENT RECOMMENDATIONS
+
+### Priority 1: Events Requiring Immediate Fixes
+
+#### **Events with Completely Unavailable Skills** (17 events)
+These MUST be fixed for the system to function:
+
+1. **Archaeological Find**
+   - Replace Occultism → Religion or Nature
+
+2. **Assassination Attempt**  
+   - Replace Stealth → Survival (evading) or Society (intelligence network)
+
+3. **Bandit Activity**
+   - Replace Stealth → Survival or Nature (tracking)
 
 4. **Cult Activity**
-   - "First locate the cult, then defeat it" - needs clearer two-stage mechanics
-   - Does it require two separate checks? Two successes?
+   - Replace Stealth → Society or Survival
 
-5. **Raiders**
-   - "Can pay 2 Gold tribute to immediately end" - should this require an action?
+5. **Diplomatic Overture**
+   - Replace Deception → Diplomacy (already an option)
+
+6. **Drug Den**
+   - Replace Stealth → Society or Survival
+
+7. **Feud**
+   - Replace Deception → Society or Performance
+
+8. **Grand Tournament**
+   - Replace Athletics → Intimidation or Warfare Lore
+   - Replace Acrobatics → Performance or Diplomacy
+
+9. **Magical Discovery**
+   - Replace Arcana → Religion or Nature
+   - Replace Occultism → Society or Medicine
+
+10. **Military Exercises**
+    - Replace Athletics → Intimidation or Warfare Lore
+    - Replace Acrobatics → Survival or Nature
+
+11. **Monster Attack**
+    - Replace Stealth → Survival (already has Nature option)
+
+12. **Notorious Heist**
+    - Replace Thievery → Society or Intrigue Lore
+    - Replace Stealth → Survival or Nature
+
+13. **Scholarly Discovery**
+    - Replace Lore → Society or Diplomacy
+    - Replace Arcana → Religion or Medicine
+
+14. **Trade Agreement**
+    - Replace Deception → Mercantile Lore or Crafting
+
+15. **Undead Uprising**
+    - Replace Arcana → Medicine or Nature
+
+16. **Infiltration** (Kingdom Action)
+    - Already has this issue noted in Kingdom Actions
+    - Replace with Society, Intrigue Lore, or Diplomacy options
+
+### Priority 2: Balance Adjustments
+
+#### **Scaling Fixes Required**
+
+**Food Shortage**
+```
+Current: Lose 2/4/6/8 Food (flat)
+Suggested: Lose 25%/50%/75%/100% of Food production
+```
+
+**Natural Disaster**
+```
+Current: Can destroy all worksites in 3 hexes
+Suggested: Damages (not destroys) 1 worksite per hex, settlements get separate save
+```
+
+**Raiders**
+```
+Current: -2 Gold, -2 Food per turn
+Suggested: -1 Gold OR -1 Food (choose one) per turn
+```
+
+### Priority 3: Structure Bonus Language Clarification
+
+The current event language is CORRECT. Events should continue to use:
+```
+"If you have [Structure Category] structures, gain an untyped bonus 
+equal to the tier of the structure"
+```
+
+This is intentional design - untyped bonuses from events stack with circumstance bonuses from structures and other sources.
 
 ---
 
-## Recommended New Events for Better Balance
+## SECTION 7: IMPLEMENTATION CHECKLIST
 
-### Add More Beneficial Events
-Current ratio seems heavily weighted toward Dangerous events. Consider adding:
-- **Trade Caravan**: Opportunity for bonus resources
-- **Talented Artisan**: Temporary structure bonus
-- **Bountiful Season**: Reduces all DCs by 1 for the turn
+### Immediate Actions Required
+- [ ] Replace all unavailable skills in 17 events
+- [ ] Add scaling to resource loss events (4 events)
+- [ ] Define repair mechanics for damaged structures
+- [ ] Clarify Fame persistence from events
+- [ ] Add "random selection" tables for hexes/settlements/PCs
 
-### Add More Skill Coverage
-Underused skills in events:
-- **Acrobatics**: Only in Grand Tournament and Military Exercises
-- **Thievery**: Only in Sensational Crime, Infiltration, and one other
-- **Occultism**: Underrepresented compared to Arcana and Religion
+### System Additions Recommended
+- [ ] Add Stealth skill to 1-2 Kingdom Actions (perhaps Infiltration)
+- [ ] Add Deception skill to 1-2 Kingdom Actions
+- [ ] Consider adding Investigation/Detective type action using multiple skills
+- [ ] Create repair structure action for damaged buildings
 
----
-
-## Implementation Priority
-
-### High Priority (Game-Breaking)
-1. Fix skill references (Warfare Lore → Lore)
-2. Clarify structure categories and references
-3. Add missing Justice structures
-
-### Medium Priority (Balance)
-1. Adjust overpowered event rewards
-2. Clarify continuous event mechanics
-3. Add variety to event outcomes
-
-### Low Priority (Enhancement)
-1. Add new events for variety
-2. Expand skill coverage
-3. Create event chains and prerequisites
+### New Events to Consider
+- [ ] Road network completion bonus event
+- [ ] Diplomatic relationship change events
+- [ ] Structure-specific events (e.g., "University Discovery" for Knowledge structures)
+- [ ] Seasonal/weather cycle events
+- [ ] Trade route establishment events
 
 ---
 
-## Summary Recommendations
+## SECTION 8: FUN FACTOR ANALYSIS
 
-1. **Immediate Action**: Fix all skill references to align with PF2e core skills
-2. **Structure Clarity**: Create comprehensive structure list with clear categories
-3. **Balance Pass**: Review and adjust rewards/penalties for outlier events
-4. **Mechanical Documentation**: Add section explaining continuous events, multi-stage events
-5. **Variety Enhancement**: Design 5-10 new events focusing on underused skills and beneficial outcomes
+### High Engagement Events (Keep As-Is)
+1. **Festive Invitation** - Interesting resource gamble mechanic
+2. **Immigration** - Clear benefits, good risk/reward
+3. **Visiting Celebrity** - Simple but flavorful
+4. **Archaeological Find** - Good variety of outcomes
+5. **Good Weather** - Continuous benefit that can end
 
-The event system shows strong foundational design with engaging narrative hooks and meaningful choices. With these adjustments, it will provide excellent gameplay variety while maintaining system consistency.
+### Low Engagement Events (Need Improvement)
+1. **Demand Structure** - Too binary (build or suffer)
+2. **Demand Expansion** - Too similar to Demand Structure
+3. **Public Scandal** - Minimal interesting choices
+4. **Local Disaster** - Pure negative, no upside potential
+5. **Execute or Pardon Prisoners** - Mechanical, lacks narrative
+
+### Suggested Improvements for Low Engagement Events
+
+**Demand Structure** → "Development Petition"
+- Citizens request specific structure type
+- Success: They help fund it (reduced cost)
+- Failure: Normal cost but must build within 2 turns
+
+**Public Scandal** → "Political Intrigue"  
+- Choose: Cover up (risky), Confess (costly), or Investigate (time-consuming)
+- Each path has different skill checks and outcomes
+
+---
+
+## CONCLUSIONS
+
+### System Viability
+The event system is **fundamentally sound** but requires **significant skill adjustments** to function with the current Kingdom Actions. 17 of 40 events (42.5%) use skills that players cannot develop through kingdom play.
+
+### Balance Assessment  
+Resource losses need **scaling mechanics** rather than flat values. Several events are too punishing for small kingdoms while being trivial for large ones.
+
+### Fun Factor
+The variety and narrative potential are **strong**. The main issues are mechanical (skill availability) rather than conceptual. Once skills are aligned, this system will provide excellent gameplay variety.
+
+### Priority Fixes
+1. **Replace unavailable skills** (Critical - system doesn't function without this)
+2. **Scale resource losses** (High - prevents kingdom death spirals)
+3. **Define missing mechanics** (Medium - repair rules, random selection, etc.)
+4. **Add missing events** (Low - enhancement rather than fix)
+
+---
+
+_Audit Complete - Date: 9/15/2025_

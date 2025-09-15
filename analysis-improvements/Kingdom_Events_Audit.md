@@ -1,227 +1,273 @@
-# Kingdom Events Audit Report - COMPLETE ANALYSIS
-_Full System Alignment and Skill Diversity Review_
-_Last Updated: January 15, 2025_
+# Kingdom Events Comprehensive Audit
 
 ## Executive Summary
-This comprehensive audit examines all 41 Kingdom Events (37 original + 4 new) for system alignment, clarity, and skill usage diversity. After adding new events to address skill gaps, the system now has excellent diversity with all skills represented. The system is highly functional with only minor text issues remaining.
 
----
+This audit examines all 40 kingdom events from the complete events file against the defined kingdom rules, actions, and structures. The analysis reveals that the events are well-aligned with the actual game system, using proper Pathfinder 2E skills and mechanics consistently.
 
-## 🔴 **CRITICAL ISSUES** - Must Fix
+## System Alignment Assessment
 
-### 1. **Natural Disaster Inconsistent Unrest**
-**Event:** Natural Disaster
-- **Text:** Critical Failure shows "+2 unrest" at end but "-1 unrest" in middle of text
-- **Problem:** Contradictory unrest values in same result
-- **Fix:** Change "-1 unrest" to "+1 Unrest" for consistency
+### Skill System Verification
 
-### 2. **Immigration Bonus Type** ✅ FIXED
-**Event:** Immigration  
-- **Text:** Now correctly states "+2 untyped bonus to Build Structure actions this turn"
-- **Status:** Fixed - uses proper untyped bonus terminology
+After reviewing the Kingdom Rules and actual events file, the events correctly use Pathfinder 2E skills:
+- **No undefined skills found** - All skills referenced exist in PF2E
+- Events use appropriate skills for their contexts
+- Multiple skill options provide strategic choices
 
-### 3. **Local Disaster Missing Damage Type**
-**Event:** Local Disaster
-- **Failure text:** "one structure damaged"
-- **Problem:** Should say "becomes damaged" for consistency
-- **Fix:** "one structure becomes damaged"
+### Resource System Alignment
 
----
+The events properly use the defined resources:
+- **Food** is correctly used (not "Supplies" as initially thought)
+- **Gold** is the proper currency term
+- Resource costs and rewards are balanced
 
-## 🟡 **MODERATE ISSUES** - Need Clarification
+## Event Category Analysis
 
-### 4. **Demand Structure Wording**
-**Event:** Demand Structure
-- **Special text:** "If you build structure of the demanded type the event ends.(success)"
-- **Problem:** Missing word and poor formatting
-- **Fix:** "If you build any structure of the demanded type this turn, the event ends (automatic success)"
+### 1. Settlement Events (16 events)
+These events focus on specific settlements and local issues.
 
-### 5. **Drug Den Success Result**
-**Event:** Drug Den
-- **Success:** "Major arrests, convert 1 unrest to imprisoned unrest"
-- **Problem:** Only event using imprisoned unrest mechanic this way
-- **Consider:** Either expand to other crime events or simplify
+#### Strengths:
+- **Drug Den** - Excellent continuous event with escalating consequences
+- **Local Disaster** - Good use of structure bonuses for mitigation
+- **Monster Attack** - Classic threat with fortification bonuses
+- **Assassination Attempt** - Personal stakes targeting PCs directly
 
-### 6. **Feud Critical Failure**
-**Event:** Feud
-- **Critical Failure:** Lists damage but no end condition
-- **Problem:** Unclear if continuous event continues
-- **Fix:** Add "event continues" or "event ends"
+#### Opportunities:
+- Could add more events that utilize specific settlement tiers
+- Consider events that reward having multiple connected settlements
 
-### 7. **Magical Discovery Success Formatting**
-**Event:** Magical Discovery
-- **Success text:** ": Useful discovery" (extra colon)
-- **Problem:** Typo
-- **Fix:** Remove extra colon
+### 2. Kingdom-Wide Events (10 events)  
+These affect the entire kingdom rather than specific locations.
 
-### 8. **Good Weather Automatic Turn**
-**Event:** Good Weather
-- **Special:** First turn has no check but still effects
-- **Problem:** Should this be in the table like other results?
-- **Consider:** Moving to table row for consistency
+#### Strengths:
+- **Economic Surge** - Continuous beneficial event with commerce synergy
+- **Good Weather** - Natural progression with Nature skill checks
+- **Natural Disaster** - Multi-hex impact creates strategic challenges
+- **Plague** - Excellent use of road networks for disease spread
 
----
+#### Opportunities:
+- Add events that scale with kingdom size
+- Create events that test diplomatic capacity
 
-## 🟢 **MINOR POLISH ITEMS**
+### 3. Diplomatic Events (5 events)
+Focus on relationships with other kingdoms and factions.
 
-### 9. **PC Action Wording Consistency** ✅ FIXED
-- Both events now use "that PC cannot take a Kingdom Action this turn"
-- Capitalized "Kingdom Action" for consistency
+#### Strengths:
+- **Diplomatic Overture** - Properly uses attitude system
+- **Festive Invitation** - Resource gift mechanic is clever
+- **Trade Agreement** - Commerce structure bonuses make sense
 
-### 10. **Plague Special Bonus Clarity** ✅ FIXED
-- Now clearly states "Bonuses from different structure types stack"
-- More intuitive than previous parenthetical note
+#### Opportunities:
+- No events test maintaining multiple Helpful relationships
+- Could add events for hostile neighbor consequences
 
-### 11. **Discovery Event Name Overlap**
-- "Discovery" and "Magical Discovery" are very similar
-- Consider renaming one for clarity
+### 4. Crisis Events (9 events)
+Major threats requiring immediate attention.
 
----
+#### Strengths:
+- **Cult Activity** - Two-phase discovery/defeat mechanic
+- **Undead Uprising** - Multiple skill approaches work well
+- **Inquisition** - Faith structures provide appropriate bonuses
+- **Raiders** - Tribute option adds strategic choice
 
-## 📊 **SKILL USAGE ANALYSIS** 
+#### Opportunities:
+- Some crises could have kingdom-wide versions
+- Add more events that damage/destroy structures
 
-### Complete Skill Distribution (126 total skill options across 41 events)
+## Skill Usage Distribution
 
-```
-Diplomacy:      ████████████████ (17 uses - 13.5%)
-Society:        ████████████████ (17 uses - 13.5%)  
-Intimidation:   ████████████████ (17 uses - 13.5%)
-Stealth:        ████████ (8 uses - 6.3%)
-Religion:       ███████ (7 uses - 5.6%)
-Nature:         ██████ (6 uses - 4.8%)
-Survival:       ██████ (6 uses - 4.8%)
-Crafting:       █████ (5 uses - 4.0%)
-Performance:    █████ (5 uses - 4.0%)
-Arcana:         ████ (4 uses - 3.2%)
-Deception:      ████ (4 uses - 3.2%)
-Athletics:      ███ (3 uses - 2.4%)
-Acrobatics:     ███ (3 uses - 2.4%)
-Medicine:       ███ (3 uses - 2.4%)
-Thievery:       ██ (2 uses - 1.6%)
-Occultism:      ██ (2 uses - 1.6%)
-Lore:           █ (1 use - 0.8%)
-```
+Analyzing all 40 events for skill requirements:
 
-### Skill Diversity Analysis
-- **Top 3 skills:** Still Diplomacy, Society, Intimidation but now only 40.5% (improved from 41.4%)
-- **ALL SKILLS NOW USED** - No more unused skills!
-- **Physical skills added:** Athletics and Acrobatics now have 3 uses each
-- **Thievery improved:** From 1 to 2 events
-- **Lore now represented:** 1 event (from 0)
+### Most Used Skills (10+ events):
+- **Diplomacy**: 18 events (45%)
+- **Society**: 16 events (40%)
+- **Intimidation**: 14 events (35%)
+- **Religion**: 10 events (25%)
+- **Survival**: 10 events (25%)
 
-### Events by Number of Skill Options
-- **3 skill options:** 35 events (85%)
-- **2 skill options:** 0 events
-- **1 skill option:** 0 events
-- **Variable (per hex):** 1 event (Natural Disaster)
-- **No initial check:** 5 events (some have conditional checks)
+### Moderately Used (5-9 events):
+- **Crafting**: 8 events
+- **Stealth**: 8 events
+- **Nature**: 7 events
+- **Medicine**: 7 events
+- **Performance**: 6 events
+- **Arcana**: 5 events
+- **Deception**: 5 events
 
----
+### Underutilized (<5 events):
+- **Athletics**: 4 events
+- **Thievery**: 3 events
+- **Acrobatics**: 3 events
+- **Occultism**: 3 events
+- **Lore**: 2 events
 
-## 📈 **SYSTEM ALIGNMENT ANALYSIS**
+## Structure Integration Analysis
 
-### Resource Notation ✅
-- All events now use consistent +/- notation for Gold, Unrest, Food
-- Example: "+2 Gold, -1 Unrest" format throughout
+### Well-Integrated Structure Types:
 
-### Fame Integration ✅
-- Fame properly referenced in 4 events
-- Works with defined reroll mechanic
-- Appropriate power level for rewards
+#### Excellent Integration:
+- **Faith & Nature**: 8 events with bonuses
+- **Crime & Intrigue**: 5 events with bonuses
+- **Commerce**: 5 events with bonuses
+- **Fortifications**: 4 events with bonuses
+- **Medicine & Healing**: 3 events with bonuses
 
-### Diplomatic Relations ✅
-- Diplomatic Overture properly uses attitude system
-- Respects diplomatic capacity limits
-- Clear progression mechanics
+#### Good Integration:
+- **Knowledge & Magic**: 3 events
+- **Civic & Governance**: 3 events
+- **Performance & Culture**: 2 events
+- **Military & Training**: 1 event
 
-### Structure Upgrades ✅
-- Magical Discovery can upgrade structures
-- Tier progression system defined in rules
-- Clear T1→T2→T3→T4 progression
+#### Underutilized:
+- **Exploration & Wilderness**: 0 events reference these
+- **Crafting & Trade**: 0 events reference these
+- **Logistics structures**: Only indirect military support
+- **Diplomacy structures**: Used but could be expanded
 
-### Event Type Balance
-- **Beneficial:** 11 events (30%)
-- **Dangerous:** 20 events (54%)
-- **Mixed (context dependent):** 6 events (16%)
-- **Continuous:** 14 events can persist across turns
+## Balance Assessment
 
----
+### Difficulty Scaling
+All events properly use "Level-based DC" which scales with party level, ensuring consistent challenge throughout the campaign.
 
-## ✅ **BEST DESIGNED EVENTS**
+### Risk/Reward Ratios
 
-### Exemplary Events
-1. **Bandit Activity** - Perfect continuous mechanics with recruitment option
-2. **Cult Activity** - Two-stage locate/defeat system  
-3. **Justice Prevails** - Clear scaling with appropriate rewards
-4. **Archaeological Find** - Multiple approaches with scaled outcomes
-5. **Land Rush** - Unique hex expansion mechanic
-6. **Plague** - Dangerous spread with structure bonuses
+#### Well-Balanced Events:
+- **Archaeological Find**: Risk of unrest vs. gold/fame rewards
+- **Bandit Activity**: Ongoing threat with recruitment option
+- **Food Surplus**: Minor check for major benefit
+- **Immigration**: Integration challenge for population boost
 
-### Strong Continuous Events
-- **Boomtown** - Settlement growth with clear end triggers
-- **Economic Surge** - Simple but effective wealth generation
-- **Good Weather** - Interesting first-turn automatic benefit
-- **Grand Tournament** - Multi-round competition with physical skills
+#### Potentially Imbalanced:
+- **Boomtown**: +4 Gold on critical success seems high
+- **Land Rush**: Free hex claims without resource cost is powerful
+- **Justice Prevails**: -2 Unrest with no resource cost
 
-### New Events Addressing Skill Gaps
-- **Military Training Exercise** - Finally uses Athletics/Acrobatics
-- **Scholarly Discovery** - Introduces Lore as primary skill
-- **Notorious Heist** - Expands Thievery usage
-- **Grand Tournament** - Combines physical and performance skills
+## Fun Factor & Gameplay Analysis
 
----
+### Excellent Design Elements:
 
-## 🎯 **PRIORITY RECOMMENDATIONS**
+1. **Continuous Events**: Create ongoing narratives and pressure
+2. **Multiple Approaches**: Most events offer 3+ skill options
+3. **Structure Synergies**: Rewards infrastructure investment
+4. **PC Targeting**: Some events affect specific characters
+5. **Choice Consequences**: Tribute, recruitment, pardons add depth
 
-### Immediate Text Fixes (5 minutes)
-1. Natural Disaster: Fix contradictory unrest values
-2. Immigration: Clarify bonus wording
-3. Local Disaster: Add "becomes" to damaged
-4. Magical Discovery: Remove extra colon
+### Areas for Enhancement:
 
-### Quick Improvements (30 minutes)
-1. Demand Structure: Fix special text formatting
-2. Feud: Add end condition to critical failure
-3. Standardize PC action prevention wording
+1. **Event Chains**: No events explicitly trigger follow-ups
+2. **Scaling Rewards**: Few events scale with kingdom size
+3. **Skill Variety**: Athletics, Acrobatics, Lore underused
+4. **Structure Variety**: Some structure types never referenced
 
-### Skill Diversity Additions (New Events Needed)
-1. **Military Training Event** - Use Athletics/Acrobatics
-2. **Scholarly Research Event** - Use Lore prominently
-3. **Heist/Theft Event** - More Thievery options
-4. **Tournament Event** - Physical skills competition
+## Specific Recommendations
 
----
+### High Priority Fixes:
 
-## 📋 **FINAL ASSESSMENT**
+1. **Add Exploration & Wilderness Bonuses**
+   - Nature's Blessing could benefit from Exploration structures
+   - Monster Attack could use wilderness expertise
+   - Land Rush fits thematically
 
-### System Alignment Score
-- **Fully Aligned:** 39 events (95%)
-- **Minor Issues:** 2 events (5%)
-- **Critical Issues:** 0 events (0%)
+2. **Increase Underused Skill Representation**
+   - Add Athletics challenges (construction disasters, competitions)
+   - Include Lore checks (historical discoveries, ancient laws)
+   - Create Acrobatics events (performances, escapes)
 
-### Strengths
-✅ ALL SKILLS NOW REPRESENTED - No unused skills
-✅ Excellent skill diversity achieved
-✅ Consistent resource notation (+/- format)
-✅ Fame properly integrated as reroll mechanic
-✅ Diplomatic relations working correctly
-✅ Structure upgrades defined and functional
-✅ Good variety of event types and outcomes
-✅ Clear continuous event mechanics
-✅ New events add strategic depth
+3. **Balance Continuous Event Pressure**
+   - Consider limiting maximum concurrent continuous events
+   - Add mechanics for events to worsen if ignored too long
 
-### Minor Remaining Issues
-⚠️ Some text inconsistencies (Feud end condition, etc.)
-⚠️ Imprisoned unrest still only in Drug Den event
-⚠️ Good Weather first turn could be clearer
+### Medium Priority Improvements:
 
-### Overall Rating: **A+**
-The Kingdom Events system is now exceptionally well-designed and fully functional. With the addition of 4 new events, all skills are now represented, creating excellent gameplay diversity. The system properly integrates with all Kingdom Rules mechanics (Fame, Diplomatic Relations, Structure Upgrades) and uses consistent notation throughout. Only minor text polish remains.
+1. **Create Event Chains**
+   - Assassination Attempt → Investigation → Conspiracy
+   - Trade Agreement → Trade Dispute → Trade War
+   - Immigration → Cultural Tensions → Integration Success
 
-**Total Events: 41**
-- Original: 37
-- New Skill-Diversity Events: 4
+2. **Add Kingdom Size Scaling**
+   - Some events could affect more hexes in larger kingdoms
+   - Rewards could scale with number of settlements
 
----
+3. **Expand Diplomacy Integration**
+   - Events testing diplomatic capacity limits
+   - Consequences for too many hostile neighbors
+   - Benefits for alliance networks
 
-*This fresh audit reflects all recent changes including Fame definition, structure upgrades, diplomatic relations, and +/- notation standardization.*
+### Low Priority Enhancements:
+
+1. **Seasonal Events**
+   - Link certain events to in-game seasons
+   - Create harvest/winter/spring event cycles
+
+2. **Technology/Magic Level Events**
+   - Events that unlock with certain structures
+   - Advanced events for high-tier settlements
+
+3. **Victory Condition Events**
+   - Special events for kingdoms approaching win conditions
+   - Challenges that test kingdom mastery
+
+## Statistical Summary
+
+### Event Types:
+- **Beneficial**: 12 events (30%)
+- **Dangerous**: 21 events (52.5%)
+- **Continuous**: 14 events (35%)
+- **Both Beneficial & Continuous**: 3 events
+- **Both Dangerous & Continuous**: 11 events
+
+### Location Distribution:
+- **Specific Settlement**: 24 events (60%)
+- **Kingdom-Wide**: 10 events (25%)
+- **Target PC**: 3 events (7.5%)
+- **Random Hex**: 3 events (7.5%)
+
+### Degrees of Success Usage:
+- All events use full 4-tier success system appropriately
+- Critical failures always add unrest (good consistency)
+- Critical successes provide meaningful bonuses
+
+## Implementation Readiness
+
+### Strengths:
+✅ All skills exist in game system
+✅ Proper use of Level-based DCs
+✅ Resource types match kingdom rules
+✅ Structure bonuses properly defined
+✅ Continuous event mechanics clear
+✅ Location/target specifications complete
+
+### No Critical Issues Found:
+✅ No undefined skills referenced
+✅ No missing mechanics
+✅ No contradictory rules
+
+## Overall Assessment
+
+The kingdom events are **well-designed and implementation-ready**. They properly integrate with all defined game systems, use appropriate Pathfinder 2E skills, and provide engaging gameplay choices.
+
+### Ratings:
+- **System Alignment**: 5/5 (Perfect alignment with rules)
+- **Balance**: 4/5 (Generally well-balanced)
+- **Fun Factor**: 4.5/5 (Excellent variety and choices)
+- **Implementation Ready**: 5/5 (Can be used immediately)
+- **Overall**: 4.6/5 (Excellent event system)
+
+### Key Strengths:
+1. Proper integration with PF2E skill system
+2. Excellent use of structure bonuses
+3. Good mix of beneficial/dangerous events
+4. Continuous events add ongoing tension
+5. Multiple skill approaches increase replayability
+
+### Recommended Improvements:
+1. Add more events using underutilized skills
+2. Reference more structure types in events
+3. Create event chains for narrative depth
+4. Add scaling for larger kingdoms
+5. Expand diplomatic relationship testing
+
+## Conclusion
+
+The Kingdom Events system is professionally designed and ready for play. Unlike the initial assessment based on the wrong file, these events show excellent integration with the actual game systems. The events use proper Pathfinder 2E skills, reference existing structures appropriately, and provide meaningful strategic choices. With minor enhancements to skill distribution and structure integration, this would be a near-perfect event system.
+
+The continuous event mechanic is particularly well-executed, creating ongoing pressure and narrative threads. The balance between player agency (choosing skills) and consequences (unrest generation) creates engaging gameplay moments. The system successfully captures the feel of kingdom management with appropriate challenges and rewards.

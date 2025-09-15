@@ -65,9 +65,12 @@ Unrest imposes cumulative penalties on all kingdom actions:
 
 ### **Common Sources of Unrest**
 
-**Failed Actions:**
-- Critical failures on kingdom actions typically cause +1 or +2 Unrest
-- Some regular failures may also generate +1 Unrest
+**Failed Actions - Selective Consequences:**
+Only certain critical failures cause Unrest:
+- **Crisis Response Actions:** Resolve Kingdom Event, Deal with Unrest, Execute/Pardon Prisoners
+- **Military Operations:** Recruit Army, Deploy Army, Disband Army  
+- **Public Order:** Arrest Dissidents
+- **Other actions (development, economic, etc.):** No unrest on failure
 
 **Resource Shortages:**
 - Food shortage: +1 Unrest per missing Food each turn
@@ -461,6 +464,22 @@ Kingdom events represent the unpredictable challenges and opportunities that ari
 ### Event Difficulty
 
 All event skill checks use the **Level-based DC** for the party's level, following the standard kingdom rules. This ensures events remain challenging but manageable as the kingdom grows in power.
+
+### Event Bonuses from Structures
+
+**Important Distinction:** When events reference structure bonuses, they provide **UNTYPED bonuses** that stack with other bonuses. This is different from the structures themselves, which provide **circumstance bonuses** that don't stack with each other.
+
+**How Event Bonuses Work:**
+- Events check for the presence of relevant structures
+- If you have the structure, you gain an **untyped bonus equal to the structure's tier**
+  - T1 structure: +1 untyped bonus
+  - T2 structure: +2 untyped bonus  
+  - T3 structure: +3 untyped bonus
+  - T4 structure: +4 untyped bonus
+- These untyped bonuses stack with circumstance bonuses from other sources
+- If you have multiple relevant structures, use the highest tier
+
+**Example:** During a Plague event, if you have a T3 Hospital (Medicine & Healing structure), you gain a +3 untyped bonus to your Medicine check to contain the plague. This stacks with any circumstance bonuses you might have from other sources.
 
 ### Using Events in Play
 

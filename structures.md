@@ -190,10 +190,11 @@ Justice structures maintain law and order in settlements by holding imprisoned u
 
 ## Diplomacy
 
-Diplomacy structures enable and maintain relationships with neighboring realms and factions. They determine how many Helpful diplomatic relationships your kingdom can sustain and provide bonuses to diplomatic efforts.
+Diplomacy structures enable and maintain relationships with neighboring realms and factions. They determine how many Helpful diplomatic relationships your kingdom can sustain and provide economic and social benefits from international relations.
 
-| Tier | Facility           | Diplomatic Capacity     | Additional Benefits                                          | Cost                     |
-| :--- | :----------------- | :---------------------- | :----------------------------------------------------------- | :----------------------- |
-| T2   | Embassy            | 1 Helpful relationship  | +1 circumstance bonus to diplomatic checks with one chosen faction | 2 Lumber, 2 Stone        |
-| T3   | Grand Embassy      | 2 Helpful relationships | +2 bonus with one faction, +1 with all others                | 2 Lumber, 4 Stone, 2 Ore |
-| T4   | Diplomatic Quarter | 3 Helpful relationships | +2 bonus to diplomatic checks with all factions              | 4 Lumber, 6 Stone, 6 Ore |
+| Tier | Facility           | Settlement Size | Diplomatic Capacity | Additional Benefits                             | Cost                     |
+| :--- | :----------------- | :-------------- | :------------------ | :---------------------------------------------- | :----------------------- |
+| T1   | Envoy's Office     | Village+        | +1                  | Enables "Establish Diplomatic Relations" action | 2 Stone                  |
+| T2   | Embassy            | Town+           | +2                  |                                                 | 2 Lumber, 2 Stone        |
+| T3   | Grand Embassy      | City+           | +3                  | +1 Fame                                         | 2 Lumber, 4 Stone, 2 Ore |
+| T4   | Diplomatic Quarter | Metropolis      | +4                  | +1 Fame; -1 Unrest each Kingdom Turn            | 4 Lumber, 6 Stone, 6 Ore |
