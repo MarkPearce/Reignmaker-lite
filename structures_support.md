@@ -63,7 +63,7 @@ Cultural buildings reduce social tensions and improve morale throughout the king
 
 ## Diplomacy
 
-Diplomacy structures enable and maintain relationships with neighboring realms and factions. They determine how many Helpful diplomatic relationships your kingdom can sustain and provide bonuses to diplomatic efforts.
+Diplomacy structures enable and maintain relationships with neighbouring realms and factions. They determine how many Helpful diplomatic relationships your kingdom can sustain and provide bonuses to diplomatic efforts.
 
 | Category   | Tier   | Facility           | Settlement Size   | Diplomatic Capacity   | Additional Benefits                                           | Cost                     |
 |:-----------|:-------|:-------------------|:------------------|:---------------------|:--------------------------------------------------------------|:-------------------------|
