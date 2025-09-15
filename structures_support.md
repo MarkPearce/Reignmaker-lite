@@ -61,6 +61,18 @@ Cultural buildings reduce social tensions and improve morale throughout the king
 | T3 | Theater | City+ | At the start of each Kingdom Turn, the kingdom reduces **Unrest by 1**. PCs in this settlement gain **+2** to checks made to reduce Unrest. | 4 Lumber, 3 Stone, 1 Ore |
 | T4 | Grand Coliseum | Metropolis | Gain **+1 Fame** each turn. At the start of each Kingdom Turn, reduce **Unrest by 1**. PCs in this settlement gain **+2** to checks made to reduce Unrest. | 6 Lumber, 6 Stone, 4 Ore |
 
+## Diplomacy
+
+Diplomacy structures enable and maintain relationships with neighboring realms and factions. They determine how many Helpful diplomatic relationships your kingdom can sustain and provide bonuses to diplomatic efforts.
+
+| Category   | Tier   | Facility           | Settlement Size   | Diplomatic Capacity   | Additional Benefits                                           | Cost                     |
+|:-----------|:-------|:-------------------|:------------------|:---------------------|:--------------------------------------------------------------|:-------------------------|
+| Diplomacy  | T2     | Embassy            | Town+             | 1 Helpful relationship | +1 circumstance bonus to diplomatic checks with one chosen faction | 2 Lumber, 2 Stone        |
+|            | T3     | Grand Embassy      | City+             | 2 Helpful relationships | +2 bonus with one faction, +1 with all others               | 2 Lumber, 4 Stone, 2 Ore |
+|            | T4     | Diplomatic Quarter | Metropolis        | 3 Helpful relationships | +2 bonus to diplomatic checks with all factions             | 4 Lumber, 6 Stone, 6 Ore |
+
+*Note: These structures also function as skill-based structures for earning income through Diplomacy, Society, and Deception skills (see structures_skill.md for skill benefits).*
+
 ## Revenue
 
 Revenue structures manage tax collection and financial administration, providing regular gold income to the kingdom treasury. Higher tiers offer greater income and special financial abilities.

@@ -41,6 +41,28 @@ _Disaster, uprisings, opportunities—rise to meet them._
 **Skill:** Varies (see Kingdom Skills)
 
 ---
+### Arrest Dissidents
+_Round up troublemakers and malcontents, converting unrest into imprisoned unrest that can be dealt with through the justice system._
+
+**Availability:** May be performed in a settlement with a Justice structure that has available capacity for imprisoned Unrest.
+
+**Skill:** Intimidation, Society, or Intrigue Lore
+
+**Capacity Limits:** Cannot exceed the structure's imprisoned unrest capacity:
+- **Stocks (T1):** 1 imprisoned unrest
+- **Jail (T2):** 2 imprisoned unrest  
+- **Prison (T3):** 4 imprisoned unrest
+- **Donjon (T4):** 8 imprisoned unrest
+
+| Degree of Success | Effect |
+| --- | --- |
+| Critical Success | Convert 2 Unrest to imprisoned Unrest (up to structure capacity) |
+| Success | Convert 1 Unrest to imprisoned Unrest (up to structure capacity) |
+| Failure | No effect |
+| Critical Failure | Botched arrests cause riots; gain 1 Unrest |
+
+---
+
 ### Execute or Pardon Prisoners
 _Pass judgment on those who have threatened the kingdom's stability, choosing between mercy and justice._
 

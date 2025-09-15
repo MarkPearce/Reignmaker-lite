@@ -55,11 +55,13 @@ Unrest represents the dissatisfaction, tension, and disorder within your kingdom
 ### **Effects of Unrest**
 
 Unrest imposes cumulative penalties on all kingdom actions:
-- **0-4 Unrest:** No penalty
-- **5-9 Unrest:** –1 status penalty to all kingdom rolls
-- **10-14 Unrest:** –2 status penalty to all kingdom rolls
-- **15-19 Unrest:** –3 status penalty to all kingdom rolls
-- **20+ Unrest:** –4 status penalty to all kingdom rolls (and so on)
+- **0-3 Unrest:** No penalty
+- **4-7 Unrest:** –1 status penalty to all kingdom rolls
+- **8-11 Unrest:** –2 status penalty to all kingdom rolls
+- **12-15 Unrest:** –3 status penalty to all kingdom rolls
+- **16-19 Unrest:** –4 status penalty to all kingdom rolls
+- **20-23 Unrest:** –5 status penalty to all kingdom rolls
+- **24+ Unrest:** –6 status penalty to all kingdom rolls (and so on, -1 per 4 points)
 
 ### **Common Sources of Unrest**
 
@@ -506,7 +508,7 @@ Events should tie into the campaign story when possible, reflecting consequences
 **Phase 2 – Apply Ongoing Modifiers:** 
 - Not at war (no unrest penalty)
 - No special structure bonuses active
-- Current Unrest: 2 (no penalty, remains under 5)
+- Current Unrest: 2 (no penalty, remains under 4)
 
 **Phase 3 – Check for Kingdom Events:** 
 - Roll flat check DC 16: Rolled 14 (failure)
