@@ -279,17 +279,17 @@ To upgrade, the settlement must meet **both level and structure prerequisites**:
 
 ---
 
-### Develop a Settlement
+### Build Structure
 _Construct new buildings and infrastructure within a settlement to enhance its capabilities._
 
 **Skill:** Crafting or Society
 
 | Degree of Success | Effect |
 | --- | --- |
-| Critical Success | Build 2 Structures |
+| Critical Success | Build Structures for half cost |
 | Success | Build 1 Structure |
-| Failure | no effect |
-| Critical Failure | Gain 1 Unrest |
+| Failure | no progress  |
+| Critical Failure | opposition to plans, Gain 1 Unrest |
 
 ---
 

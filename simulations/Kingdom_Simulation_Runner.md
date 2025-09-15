@@ -21,8 +21,9 @@ This document serves as a simulation runner for the Reignmaker-lite subsystem fo
    - Or create a random d20 sequence (100-200 rolls)
    - Document the seed/sequence at the start of your simulation
 
-3. **Create new simulation file:**
-   - Filename: `kingdom_simulation_###.md` (e.g., kingdom_simulation_001.md)
+3. **Create simulation files:**
+   - Main file: `kingdom_simulation_###.md` (detailed turn-by-turn log)
+   - Summary file: `kingdom_simulation_###_summary.md` (readable highlights)
    - Follow the structure and rules below
    - Use actual d20 rolls (not flat averages)
 
@@ -78,8 +79,25 @@ This document serves as a simulation runner for the Reignmaker-lite subsystem fo
 
 ## Core Mechanics
 
-### Kingdom Level = Party Level
-The kingdom level advances in lockstep with the party level. They are the same number.
+### Critical Implementation Requirements
+
+#### 1. Kingdom Level = Party Level
+The kingdom level advances in lockstep with party level. This represents the PCs' growing expertise as leaders and the kingdom's increasing sophistication.
+
+#### 2. All Actions Use On-Level DCs
+**Every kingdom action uses the On-Level DC from the skill progression table:**
+There are no fixed DCs - everything scales with kingdom/party level.
+
+#### 3. Skill Proficiency Distribution
+- 2 PCs always have the highest available proficiency
+- 2 PCs always have the second-highest available proficiency
+- Proficiency unlocks: Expert (L3), Master (L7), Legendary (L15)
+
+#### 4. Actual d20 Rolls Required
+Using flat averages or success percentages alone misses critical successes and failures, which are essential for:
+- Narrative drama
+- Risk/reward decisions
+- Mechanical benefits/penalties
 
 ### DC Structure
 **ALL kingdom actions use On-Level DCs:**
@@ -374,36 +392,55 @@ When deciding PC actions each turn:
 
 ## Simulation Output Format
 
-Your simulation file should include:
+### Main Simulation File (`kingdom_simulation_###.md`)
+Should include:
+- Header with date, seed, runner, result
+- Initial statistics summary
+- Detailed turn-by-turn logs (all 50 turns)
+- Each turn showing rolls, decisions, and outcomes
+- Final statistics and analysis
 
-### Header
+### Summary File (`kingdom_simulation_###_summary.md`)
+Should include a concise, readable summary with:
+
 ```markdown
-# Kingdom Simulation #[Number]
+# Kingdom Simulation #[Number] - Summary
+
 **Date:** [When run]
-**Seed:** [Unique identifier]
-**Runner:** [Who ran it]
-**Result:** [Success level achieved]
+**Result:** [Success level]
+
+## Quick Stats
+- Final Settlement: [Level and type]
+- Territory: [X hexes]
+- Gold: [Final amount]
+- Armies: [Final count]
+
+## Growth Trajectory
+[Brief timeline showing major phases]
+
+## Unrest Management
+- Maximum Unrest: [Peak value and when]
+- Crisis/Rebellion Thresholds: [Were they crossed?]
+- Average Unrest: [Overall average]
+
+## Critical Moments
+### Game-Changing Successes
+[2-4 most impactful critical successes]
+
+### Major Setbacks
+[2-3 significant failures or challenges]
+
+## Key Turning Points
+[3-5 moments that defined the simulation]
+
+## Strategic Insights
+- What Worked: [Key successful strategies]
+- Challenges: [Main difficulties faced]
+- Sweet Spot: [Optimal configuration discovered]
+
+## Final Assessment
+[Brief narrative of overall progression and whether success criteria were met]
 ```
-
-### Summary Statistics
-- Final settlement level
-- Total hexes controlled
-- Gold accumulated
-- Armies maintained
-- Structures built
-- Critical successes/failures
-- Unrest incidents
-
-### Turn Logs
-- Detailed record of all 50 turns
-- Key decision points noted
-- Critical moments highlighted
-
-### Analysis Section
-- Comparison to expected milestones
-- Notable deviations
-- Strategic insights
-- Recommendations
 
 ---
 
@@ -411,7 +448,9 @@ Your simulation file should include:
 
 After completing your simulation:
 
-1. **Save simulation file** as `kingdom_simulation_###.md`
+1. **Save simulation files:**
+   - Main file: `kingdom_simulation_###.md` (detailed turns)
+   - Summary: `kingdom_simulation_###_summary.md` (highlights)
 
 2. **Update master analysis** in `kingdom_system_analysis.md`:
    - Add summary statistics
@@ -460,6 +499,24 @@ After completing your simulation:
 ---
 
 ## Troubleshooting
+
+### Common Implementation Errors to Avoid
+
+#### 1. Using Fixed DCs
+❌ **Wrong:** "Claim Hex is always DC 14"
+✅ **Correct:** Use On-Level DC from table
+
+#### 2. Ignoring Critical Results
+❌ **Wrong:** Using only success percentages
+✅ **Correct:** Roll actual d20s for full outcome range
+
+#### 3. Wrong Proficiency Distribution
+❌ **Wrong:** All PCs at same proficiency
+✅ **Correct:** 2 at highest, 2 at second-highest
+
+#### 4. Separating Kingdom and Party Level
+❌ **Wrong:** Tracking separate progression
+✅ **Correct:** They advance together
 
 ### Common Issues
 

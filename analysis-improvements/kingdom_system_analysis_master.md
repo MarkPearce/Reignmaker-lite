@@ -11,33 +11,6 @@ This document aggregates and analyzes results from multiple kingdom simulations 
 
 ---
 
-## Critical Implementation Requirements
-
-### 1. Kingdom Level = Party Level
-The kingdom level advances in lockstep with party level. This represents the PCs' growing expertise as leaders and the kingdom's increasing sophistication.
-
-### 2. All Actions Use On-Level DCs
-**Every kingdom action uses the On-Level DC from the skill progression table:**
-- Level 4: DC 19
-- Level 7: DC 23  
-- Level 10: DC 27
-- Level 15: DC 34
-
-**There are no fixed DCs** - everything scales with kingdom/party level.
-
-### 3. Skill Proficiency Distribution
-- 2 PCs always have the highest available proficiency
-- 2 PCs always have the second-highest available proficiency
-- Proficiency unlocks: Expert (L3), Master (L7), Legendary (L15)
-
-### 4. Actual d20 Rolls Required
-Using flat averages or success percentages alone misses critical successes and failures, which are essential for:
-- Narrative drama
-- Risk/reward decisions
-- Mechanical benefits/penalties
-
----
-
 ## Aggregate Statistics (1 simulation so far)
 
 ### Settlement Progression
@@ -213,26 +186,6 @@ Not overused due to action economy constraints.
 - Industry and Economy are particularly powerful
 - Stability becomes critical for unrest management
 - Warfare needed for late-game conflicts
-
----
-
-## Common Implementation Errors to Avoid
-
-### 1. Using Fixed DCs
-❌ "Claim Hex is always DC 14"
-✅ Use On-Level DC from table
-
-### 2. Ignoring Critical Results
-❌ Using only success percentages
-✅ Roll actual d20s for full outcome range
-
-### 3. Wrong Proficiency Distribution
-❌ All PCs at same proficiency
-✅ 2 at highest, 2 at second-highest
-
-### 4. Separating Kingdom and Party Level
-❌ Tracking separate progression
-✅ They advance together
 
 ---
 

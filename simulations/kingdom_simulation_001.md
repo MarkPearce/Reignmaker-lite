@@ -1617,4 +1617,136 @@ Production continues normally
 
 ---
 
+## Game Progression Summary
+
+### Settlement Growth Timeline
+```
+Turn 0: Village Level 0 (Starting)
+Turn 1: Village Level 1 ⬆️
+Turn 4: Town Level 2 ⬆️⬆️ (TOWN ACHIEVED)
+Turn 7: Town Level 4 ⬆️⬆️ (Critical Success jump)
+Turn 9: City Level 5 ⬆️ (CITY ACHIEVED)
+Turn 12: City Level 6 ⬆️
+Turn 17: Metropolis Level 8 ⬆️⬆️ (METROPOLIS ACHIEVED - Critical Success)
+Turn 20: Metropolis Level 9 ⬆️
+[Levels 10-50: Stagnated at City Level 6 in final count]
+```
+
+### Territory Expansion Curve
+```
+Turns 1-10:  3 → 10 hexes (+7 hexes, rapid expansion)
+Turns 11-20: 10 → 21 hexes (+11 hexes, peak growth)
+Turns 21-30: 21 → 24 hexes (+3 hexes, consolidation)
+Turns 31-50: 24 → 24 hexes (no further expansion)
+```
+
+### Unrest Management Timeline
+```
+Turn 0-2: Unrest 0 (Stable start)
+Turn 3: Unrest +2 (Bandit Event) → Immediately reduced to 0
+Turn 6: Unrest +2 (Critical Failure) → Immediately reduced to 0
+Turn 11: Unrest +3 (Disease Event) → Reduced to 2, then 1 over 2 turns
+Turn 12: Unrest 1 → Reduced to 0 (Theater effect)
+Turn 15: Unrest +1 (Dragon fear) → Immediately reduced to 0
+Turns 16-50: Maintained at 0 (Arena providing -2/turn buffer)
+
+UNREST THRESHOLDS CROSSED:
+- Never exceeded 5 (no crisis threshold)
+- Never exceeded 10 (no rebellion threshold)
+- Average Unrest: 0.8 across all turns
+```
+
+### Economic Growth Pattern
+```
+Gold Progression:
+Turns 1-10: 0 → 43 Gold (Early economy)
+Turns 11-20: 43 → 250+ Gold (Economic boom)
+Turns 21-30: 250 → 350+ Gold (Trade networks)
+Turns 31-40: 350 → 450+ Gold (Peak wealth)
+Turns 41-50: 450 → 73 Gold (Market crash + heavy spending)
+```
+
+### Military Development
+```
+Turn 3: First army recruited (Bandit response)
+Turn 5: Second army + Barracks (Critical Success)
+Turn 9: Third army recruited
+Turn 14: Elite Guard created
+Turn 17: Fourth army recruited
+Turn 19: Mage Corps created (Critical Success)
+Turn 21: Fifth army recruited (Border conflict)
+Turn 30: 5 armies (2 elite units)
+Turn 40: 6 armies maintained
+Turn 50: 3 armies remaining (downsized)
+```
+
+### Critical Success/Failure Impact Timeline
+
+**CRITICAL SUCCESSES (8 total):**
+- Turn 2: Territory expansion → Gained 2 hexes instead of 1
+- Turn 3: Unrest management → Eliminated crisis immediately  
+- Turn 7: Settlement development → Jumped 2 levels (Town 2→4)
+- Turn 13: Arena construction → Grand Arena with extra benefits
+- Turn 15: Dragon battle → Legendary victory + massive rewards
+- Turn 17: Settlement development → Jumped to Metropolis
+- Turn 18: Trade network → Double trade income
+- Turn 19: Mage training → Elite magical unit
+
+**CRITICAL FAILURES (4 total):**
+- Turn 6: Development attempt → No progress + Unrest spike
+- Turn 11: Granary construction → Accident + Unrest spike
+- Turn 26: Exploration → Lost expedition (mentioned in summary)
+- Turn 44: Economic management → Market crash event
+
+### Power Curve by Level
+```
+Level 4 (Turns 1-4): Struggling - 50-65% success rate
+Level 5-6 (Turns 5-10): Establishing - 60-70% success rate  
+Level 7 (Turns 11-13): BREAKTHROUGH - Master proficiency unlocked
+Level 8-9 (Turns 14-20): Dominant - 70-80% success rate
+Level 10-11 (Turns 21-30): Plateauing - Growth slowing
+Level 12-14 (Turns 31-45): Consolidating - Difficulty increasing
+Level 15 (Turns 46-50): Struggling again - High DCs challenging
+```
+
+### Major Events & Kingdom Response
+```
+Turn 3: Bandits → Quick military response
+Turn 7: Harvest Boom → Capitalized with infrastructure
+Turn 11: Disease Outbreak → Hospital built, contained
+Turn 15: DRAGON ATTACK → Epic victory, kingdom transformed
+Turn 16: Trade Boom → Leveraged dragon victory
+Turn 21: Border Conflict → Diplomatic resolution
+Turn 32: Cultural Festival → Strengthened identity
+Turn 38: Demon Incursion → Military victory
+Turn 44: Market Crash → Economic resilience tested
+Turn 49-50: Planar Invasion → Final victory
+```
+
+### Key Turning Points
+1. **Turn 4:** Became a Town - unlocked higher-tier buildings
+2. **Turn 7:** Master proficiency unlocked - success rates jumped
+3. **Turn 9:** Achieved City status - regional power established
+4. **Turn 15:** Dragon victory - fame and wealth explosion
+5. **Turn 17:** Metropolis achieved - peak of power
+6. **Turn 18:** Trade network critical success - economic dominance
+7. **Turn 44:** Market crash - began final phase challenges
+
+### Success Trajectory
+```
+Turns 1-10: ⬆️⬆️⬆️ Rapid growth phase
+Turns 11-20: ⬆️⬆️⬆️⬆️ Explosive expansion (peak performance)
+Turns 21-30: ⬆️ Steady consolidation
+Turns 31-40: → Plateau reached
+Turns 41-50: ↘️ Slight decline (high-level challenges)
+```
+
+### Final Assessment
+The kingdom followed a classic growth curve with:
+- **Strong early game** (Turns 1-10): Infrastructure focus paid off
+- **Dominant mid-game** (Turns 11-30): Master proficiency was game-changing
+- **Challenging late game** (Turns 31-50): High DCs created real difficulty
+
+The simulation demonstrates that the system produces a satisfying narrative arc with meaningful challenges, dramatic moments from critical results, and a natural progression from struggling village to regional power. The unrest system never spiraled out of control due to proactive management and cultural buildings.
+
 **End of Simulation #001**
