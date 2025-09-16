@@ -78,11 +78,11 @@ The unrest system creates dynamic challenges that require strategic response rat
 ### **Common Sources of Unrest**
 
 **Failed Actions - Selective Consequences:**
-Only certain critical failures cause Unrest:
+Only certain critical failures on specific actions cause +1 Unrest:
 - **Crisis Response Actions:** Resolve Kingdom Event, Deal with Unrest, Execute/Pardon Prisoners
 - **Military Operations:** Recruit Army, Deploy Army, Disband Army  
 - **Public Order:** Arrest Dissidents
-- **Other actions (development, economic, etc.):** No unrest on failure
+- **Other actions (development, economic, etc.):** No unrest on critical failure
 
 **Resource Shortages:**
 - Food shortage: +1 Unrest per missing Food each turn
@@ -574,16 +574,19 @@ Events should tie into the campaign story when possible, reflecting consequences
 - 2x Plains with Farmsteads = 4 Food
 - 1x Forest with Logging Camp = 2 Lumber
 - 1x Hills with Quarry = 1 Stone
+- Total: 4 hexes (no territory unrest)
 
 ### Turn Sequence:
 
 **Phase 1 – Gain Fame:** 
-- Start with 1 Fame (can spend to reroll kingdom checks)
+- Gain 1 Fame automatically
+- Current Fame: 1 (can spend to reroll kingdom checks)
 
-**Phase 2 – Apply Ongoing Modifiers:** 
+**Phase 2 – Apply Ongoing Modifiers & Check for Incidents:** 
 - Not at war (no unrest penalty)
+- Territory: 4 hexes (no passive unrest)
+- Current Unrest: 2 (Tier 0: Stable - no penalty, no incident check)
 - No special structure bonuses active
-- Current Unrest: 2 (no penalty, remains under 4)
 
 **Phase 3 – Check for Kingdom Events:** 
 - Roll flat check DC 16: Rolled 14 (failure)
@@ -599,18 +602,19 @@ Events should tie into the campaign story when possible, reflecting consequences
 - **Storage:** No Storehouses built → excess Lumber/Stone/Ore lost at end of turn
 - **Gold:** No income this turn (no commerce structures)
 
-**Phase 5 – Perform Kingdom Actions:**
+**Phase 5 – Perform Kingdom Actions (4 PCs, 4 actions):**
 - PC 1: **Develop Settlement** to add a Market Square (rolls success)
-- PC 2: **Deal with Unrest** using Diplomacy (rolls success, -2 Unrest)
-- Companions: **Send Scouts** to explore eastern hex (rolls success)
+- PC 2: **Deal with Unrest** using Diplomacy (rolls success, -1 Unrest)
+- PC 3: **Send Scouts** to explore eastern hex (rolls success)
+- PC 4: **Build Worksite** (Farmstead) in explored hex (rolls failure)
 
 **Phase 6 – End of Turn Resolution:** 
-- Unrest reduced to 0 (from the Deal with Unrest action)
+- Unrest reduced to 1 (from the Deal with Unrest action)
 - No lingering event effects
 - Unused Lumber/Stone/Ore lost (no storage capacity)
 - Gold balance remains at 3 (carried over)
 - Training Yard will complete next turn when final Stone is produced
 
-**Result:** Kingdom stable, construction progressing, Market Square added, eastern hex scouted.
+**Result:** Kingdom stable, construction progressing, Market Square added, eastern hex scouted, worksite attempt failed.
 
 ---

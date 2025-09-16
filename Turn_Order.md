@@ -4,20 +4,42 @@
 
 Fame represents your kingdom's reputation and standing in the world. It can help you overcome challenges during critical moments.
 
-* A Fame point may be spent to reroll a **kingdom roll**   
-  (Hero Points cannot be used on kingdom rolls)  
-* Maximum Fame is **3**  
-* Start with **1 Fame**  
+* Gain **1 Fame** automatically at the start of each turn
+* A Fame point may be spent to reroll a **kingdom roll** (must take new result)
 * Whenever you **critically succeed** on a kingdom roll, gain **1 Fame**
+* Fame does not carry over between turns unless specifically noted
+* There is no maximum Fame limit during a turn
 
-## **2\. Apply Ongoing Modifiers**
+## **2\. Apply Ongoing Modifiers & Check for Incidents**
 
-At the start of each turn, account for any persistent effects that impact your kingdom's status. 
+At the start of each turn, account for persistent effects and resolve any unrest incidents.
 
-* **If the nation is at War** → \+1 Unrest  
-* Certain **Structures** grant Fame or reduce Unrest  
+### Passive Unrest Sources
+* **If at War:** +1 Unrest per turn
+* **Territory Size:**
+  - 8-15 hexes: +1 Unrest per turn
+  - 16-23 hexes: +2 Unrest per turn
+  - 24-31 hexes: +3 Unrest per turn
+  - 32+ hexes: +4 Unrest per turn
+* **Each Metropolis:** +1 Unrest per turn
+
+### Unrest Tiers and Penalties
+* **Tier 0: Stable (0-2)** - No penalty, no incidents
+* **Tier 1: Discontent (3-5)** - -1 penalty to all checks
+* **Tier 2: Turmoil (6-8)** - -2 penalty to all checks
+* **Tier 3: Rebellion (9+)** - -3 penalty to all checks (capped)
+
+### Incident Check
+If Unrest is Tier 1 or higher, immediately roll d100 on the appropriate incident table:
+* **Tier 1:** Minor Incidents (20% chance of no incident)
+* **Tier 2:** Moderate Incidents (15% chance of no incident)
+* **Tier 3:** Major Incidents (10% chance of no incident)
+
+**Important:** Resolving incidents requires a skill check but does NOT consume a Kingdom Action. These are immediate crises that interrupt normal business.
+
+### Other Modifiers
+* Certain **Structures** reduce Unrest passively (Theater -1/turn, etc.)
 * Events may apply ongoing effects from previous turns
-* **Unrest Penalties:** For each 5 Unrest, suffer –1 status penalty to all kingdom rolls (1-5: –1; 6-10: –2; 11-15: –3, etc.)
 
 ## **3\. Check for Kingdom Events**
 
@@ -108,14 +130,16 @@ Gold represents your kingdom's liquid wealth and economic power. Unlike construc
 
 ## **5\. Perform Kingdom Actions**
 
-This is the active decision-making phase where leaders shape the kingdom's development. Each leader (plus companions collectively) chooses one action to execute.
+This is the active decision-making phase where the four player characters shape the kingdom's development through strategic actions.
 
 ### **Action Rules:**
-* Each **PC** takes **one** Kingdom Action per turn; **companions** take **one collective** action
+* Each of the **4 PCs** takes **one** Kingdom Action per turn (4 total actions)
 * Actions taken from the **Capital** gain a **+1 Circumstance Bonus**
 * Actions marked with **#** may only be taken **once per Kingdom Turn**
 * **Before** resolving actions, all players declare their actions, then skill checks are rolled
-* Skill checks use **Level-Based DCs** (using the Party Level) modified as appropriate
+* All checks use **Level-Based DCs** based on Party Level (see level_DC_progression.md)
+* Critical successes grant +1 Fame
+* Only certain critical failures cause +1 Unrest (military/crisis actions)
 
 ### **Available Actions:**
 
@@ -123,7 +147,8 @@ This is the active decision-making phase where leaders shape the kingdom's devel
 * *Provide Support:* Aid another PC's Kingdom Action
 * *Resolve a Kingdom Event:* Rise to meet disasters, uprisings, or opportunities
 * *Execute or Pardon Prisoners:* Deal with imprisoned unrest through justice
-* *Deal with Unrest:* Directly reduce unrest (end of turn only)
+* *Deal with Unrest:* Directly reduce unrest by 1-3 based on success
+* *Arrest Dissidents:* Convert current unrest to imprisoned unrest
 
 **Military Operations:** War must be waged with steel and strategy
 * *Recruit a Unit:* Raise new troops for your armies
