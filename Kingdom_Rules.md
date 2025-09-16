@@ -243,28 +243,31 @@ Support structures provide essential infrastructure for kingdom management, from
 - **Culture** - Morale and unrest management
 - **Revenue** - Tax collection and treasury
 
-### Damaged & Destroyed Structures
-
-Structures can be damaged or destroyed through events, warfare, or disasters. This creates meaningful consequences without completely devastating a settlement.
+### Structure Damage Mechanics
 
 #### Damaged Structures
-A damaged structure temporarily loses its benefits but can be repaired:
 
-- **Status:** Structure provides no benefits while damaged
-- **Settlement Level:** Still counts toward settlement structure limits
-- **Repair Cost:** Half the original construction cost (rounded up)
-- **Repair Time:** Resources applied normally through construction queue
-- **Alternative:** Can be demolished (1 Kingdom Action) to free the slot
-
-**Example:** A damaged Market (T1, originally 2 resources) requires 1 resource to repair.
+- **Effect:** Structure provides no benefits while damaged
+- **Repair:** Requires 1 Kingdom Action to repair
+- **Recovery:** Once repaired, structure returns to full functionality at its current tier
 
 #### Destroyed Structures
-A destroyed structure is completely removed:
 
-- **Status:** Structure and all benefits permanently lost
-- **Settlement Level:** No longer counts toward structure limits
-- **Rebuilding:** Must build from scratch using normal construction rules
-- **Cascade Effects:** If destruction drops below tier requirements, settlement may need to adjust
+- **Effect:** Structure loses one tier permanently AND becomes damaged
+- **T4 → T3 (damaged):** Must repair to use as T3, can later upgrade back to T4
+- **T3 → T2 (damaged):** Must repair to use as T2, can later upgrade back to T3
+- **T2 → T1 (damaged):** Must repair to use as T1, can later upgrade back to T2
+- **T1 → Ruined:** Structure is completely gone, must rebuild from scratch
+- **Recovery:** Requires 1 Kingdom Action to repair damage, then normal upgrade costs to restore tiers
+
+#### Example
+
+A T3 Market is destroyed in a riot:
+
+1. Market becomes a damaged T2 Trade Post
+2. Kingdom immediately loses all T3 Market benefits
+3. Must spend 1 Kingdom Action to repair to functioning T2 Trade Post
+4. Can later upgrade back to T3 Market for normal upgrade cost
 
 **Special Cases:**
 - If a settlement loses structures below its tier minimum (e.g., City with only 7 structures), it cannot advance levels until rebuilt

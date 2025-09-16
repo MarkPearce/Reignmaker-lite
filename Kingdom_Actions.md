@@ -212,7 +212,7 @@ _The land beckons. Seize new territory to grow your influence and resources._
 ### Claim Hexes
 _Assert sovereignty over new territories, expanding your kingdom's borders into unclaimed lands._
 
-**Failure Consequences:** Critical failures cause NO unrest (development action)
+ 
 
 **Skill:** **Nature** (harmonize with the land), **Survival** (establish frontier camps), **Intimidation** (force submission), **Occultism** (mystical claiming rituals), **Religion** (divine mandate)
 
@@ -239,7 +239,7 @@ _Assert sovereignty over new territories, expanding your kingdom's borders into 
 ### Build Roads
 _Construct pathways between settlements to improve trade, travel, and military movement._
 
-**Failure Consequences:** Critical failures cause NO unrest (development action)
+ 
 
 **Skill:** **Crafting** (engineering expertise), **Survival** (pathfinding routes), **Athletics** (manual labor), **Nature** (work with terrain)
 
@@ -271,7 +271,7 @@ _Dispatch explorers to gather intelligence about neighboring territories and pot
 ### Fortify Hex
 _Construct defensive structures and preparations in a hex to improve its resistance against invasion._
 
-**Failure Consequences:** Critical failures cause NO unrest (development action)
+ 
 
 **Skill:** **Crafting** (build fortifications), **Athletics** (manual construction), **Intimidation** (defensive displays), **Thievery** (trap placement), **Warfare Lore** (strategic defenses)
 
@@ -292,10 +292,8 @@ _Your people need places to live, work, trade, and worship._
 ### Establish a Settlement
 _Found a new community where settlers can establish homes and begin building infrastructure._
 
-**Failure Consequences:** Critical failures cause NO unrest (development action)
-
-You may found a new **Village** in a controlled hex.
-- Villages are typically Level 0–1.
+You may found a new **Village** in a hex you control.
+- Villages are typically Level 1.
 - A new settlement begins as a Village unless special story or GM circumstances apply.
 
 **Skill:** **Society** (organized settlement), **Survival** (frontier establishment), **Diplomacy** (attract settlers), **Religion** (blessed founding), **Medicine** (healthy community planning)
@@ -311,8 +309,6 @@ You may found a new **Village** in a controlled hex.
 
 ### Upgrade a Settlement
 _Expand an existing settlement's size and capabilities, transforming villages into thriving centers of civilization._
-
-**Failure Consequences:** Critical failures cause NO unrest (development action)
 
 **Skill:** **Crafting** (infrastructure expansion), **Society** (urban planning), **Performance** (inspire growth), **Arcana** (magical enhancement), **Medicine** (public health improvements)
 
@@ -334,8 +330,6 @@ To upgrade, the settlement must meet **both level and structure prerequisites**:
 ### Build Structure
 _Construct new buildings and infrastructure within a settlement to enhance its capabilities._
 
-**Failure Consequences:** Critical failures cause NO unrest (development action)
-
 **Skill:** **Crafting** (construction expertise), **Society** (organize workforce), **Athletics** (physical labor), **Acrobatics** (specialized construction), **Stealth** (discrete building)
 
 | Degree of Success | Effect |
@@ -344,6 +338,21 @@ _Construct new buildings and infrastructure within a settlement to enhance its c
 | Success | Build 1 Structure |
 | Failure | no progress  |
 | Critical Failure | No progress |
+
+---
+
+### Repair Structure
+
+_Repair damaged structures within a settlement to restore its capabilities._ 
+
+**Skill:** **Crafting** (construction expertise), **Society** (organize workforce), **Athletics** (physical labor), **Acrobatics** (specialized construction), **Stealth** (discrete building)
+
+| Degree of Success | Effect                                                     |
+| ----------------- | ---------------------------------------------------------- |
+| Critical Success  | The structure is repaired for free                         |
+| Success           | Pay 1d4 gold OR 1/2 the build cost for the structures tier |
+| Failure           | remains damaged                                            |
+| Critical Failure  | Lose 1 gold                                                |
 
 ---
 
@@ -471,7 +480,7 @@ Offer gold in exchange for a single resource type
 ### Create Worksite
 _Establish resource extraction operations to harness the natural wealth of your territories._
 
-**Failure Consequences:** Critical failures cause NO unrest (development action)
+ 
 
 **Skill:** **Crafting** (build infrastructure), **Nature** (identify resources), **Survival** (frontier operations), **Athletics** (manual labor), **Arcana** (magical extraction), **Religion** (blessed endeavors)
 
