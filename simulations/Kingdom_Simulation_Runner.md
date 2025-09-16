@@ -72,7 +72,6 @@ This document serves as a simulation runner for the Reignmaker-lite subsystem fo
 
 **Player Characters:**
 - 4 PCs at Level 4 (starting level)
-- Companions available for collective action
 - 2 PCs with Expert proficiency (+11) in their primary skill
 - 2 PCs with Trained proficiency (+8) in their primary skill
 
@@ -219,8 +218,7 @@ Each turn follows these 6 phases:
 - Resources not used/traded are lost at end of turn
 
 ### Phase 5: Kingdom Actions
-- Each PC takes one action
-- Companions take one collective action
+- Each PC takes one action (4 total)
 - Apply all modifiers including unrest penalty
 - Roll d20 for each action
 - Critical successes grant +1 Fame
@@ -304,12 +302,6 @@ Each turn follows these 6 phases:
 
 4. PC4 (Trained +8): [Action]
    - Modifiers: +8 skill -[unrest penalty] = +[total]
-   - Roll: [d20]+[total] = [Result] vs DC [X]
-   - Result: [Type]
-   - Effect: [What happened]
-
-5. Companions: [Action]
-   - Modifiers: +[base] -[unrest penalty] = +[total]
    - Roll: [d20]+[total] = [Result] vs DC [X]
    - Result: [Type]
    - Effect: [What happened]
