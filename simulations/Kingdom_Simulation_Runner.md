@@ -1,7 +1,7 @@
 # Kingdom Simulation Runner for Reignmaker-lite
 
 ## Purpose
-This document serves as a simulation runner for the Reignmaker-lite subsystem for pathfinder. Each time you run this simulation, it will:
+This document serves as a simulation runner for the Reignmaker-lite subsystem for Pathfinder 2e. Each time you run this simulation, it will:
 1. Generate a unique 50-turn simulation with fresh dice rolls
 2. Create a numbered output file (kingdom_simulation_001.md, _002.md, etc.)
 3. Update the master analysis document with aggregated results
@@ -68,6 +68,7 @@ This document serves as a simulation runner for the Reignmaker-lite subsystem fo
 - Unrest: 0
 - Fame: 1
 - Not at war
+- No diplomatic relationships yet
 
 **Player Characters:**
 - 4 PCs at Level 4 (starting level)
@@ -79,7 +80,17 @@ This document serves as a simulation runner for the Reignmaker-lite subsystem fo
 
 ## Core Mechanics
 
-### Unrest Generation Rules (Updated)
+### Unrest System (Updated)
+
+#### Unrest Tiers and Penalties
+The unrest system now uses a gentler penalty progression with specific incident triggers:
+
+| Tier | Unrest Range | Penalty | Incidents |
+|------|-------------|---------|-----------|
+| **0: Stable** | 0-2 | None | No incidents |
+| **1: Discontent** | 3-5 | -1 to all checks | Roll on Minor Incidents table |
+| **2: Turmoil** | 6-8 | -2 to all checks | Roll on Moderate Incidents table |
+| **3: Rebellion** | 9+ | -3 to all checks (capped) | Roll on Major Incidents table |
 
 #### Passive Unrest Sources
 **Territory Size:** The administrative burden of controlling territory generates unrest:
@@ -88,36 +99,43 @@ This document serves as a simulation runner for the Reignmaker-lite subsystem fo
 - **24-31 hexes:** +3 Unrest per turn
 - **32+ hexes:** +4 Unrest per turn
 
-**Metropolis Burden:** Each Metropolis generates **+1 additional Unrest per turn** due to urban complexity and population density.
+**Metropolis Burden:** Each Metropolis generates **+1 additional Unrest per turn** due to urban complexity.
 
-#### Unrest Mitigation
-- **Culture Buildings (T1-T3):** Provide bonuses to Deal with Unrest checks only
-- **Auditorium (T4):** -1 Unrest per turn (automatic) + bonuses to checks
-- **Critical Failures:** All critical failures generate +1 Unrest
-- **Imprisonment:** Arrest Dissidents converts regular unrest to imprisoned unrest
+#### Active Unrest Sources
+**Failed Actions (Selective):** Only certain critical actions cause unrest on failure:
+- Crisis Response Actions: Resolve Kingdom Event, Deal with Unrest, Execute/Pardon Prisoners
+- Military Operations: Recruit Army, Deploy Army, Disband Army
+- Public Order: Arrest Dissidents
+- Other development/economic actions: No unrest on failure
+
+**Resource Shortages:**
+- Food shortage: +1 Unrest per missing Food each turn
+- Unsupported armies: +1 Unrest per excess army each turn
+
+**Other Sources:**
+- Being at war: +1 Unrest per turn
+- Failed army morale checks: +1 Unrest (or +2 on critical failure)
+- Army disbanding: +1 Unrest (or +2 if through mutiny/desertion)
+- Unresolved kingdom events: Variable
+
+#### Incident Resolution
+**When:** At the start of each Kingdom Turn (Phase 2), after calculating current unrest tier
+
+**Process:**
+1. Determine unrest tier (0-3)
+2. If tier 1+, roll d100 on appropriate incident table
+3. Resolve incident with skill check (does NOT consume a Kingdom Action)
+4. Apply immediate consequences
+
+**Incident Tables:** See Unrest_incidents.md for complete tables
 
 ### Critical Implementation Requirements
 
 #### 1. Kingdom Level = Party Level
 The kingdom level advances in lockstep with party level. This represents the PCs' growing expertise as leaders and the kingdom's increasing sophistication.
 
-#### 2. All Actions Use On-Level DCs
-**Every kingdom action uses the On-Level DC from the skill progression table:**
-There are no fixed DCs - everything scales with kingdom/party level.
-
-#### 3. Skill Proficiency Distribution
-- 2 PCs always have the highest available proficiency
-- 2 PCs always have the second-highest available proficiency
-- Proficiency unlocks: Expert (L3), Master (L7), Legendary (L15)
-
-#### 4. Actual d20 Rolls Required
-Using flat averages or success percentages alone misses critical successes and failures, which are essential for:
-- Narrative drama
-- Risk/reward decisions
-- Mechanical benefits/penalties
-
-### DC Structure
-**ALL kingdom actions use On-Level DCs:**
+#### 2. All Actions Use Level-Based DCs
+**Every kingdom action uses the Level-based DC:**
 - Level 4: DC 19
 - Level 5: DC 20
 - Level 6: DC 22
@@ -133,6 +151,18 @@ Using flat averages or success percentages alone misses critical successes and f
 
 **No fixed DCs exist** - everything scales with kingdom/party level.
 
+#### 3. Skill Proficiency Distribution
+- 2 PCs always have the highest available proficiency
+- 2 PCs always have the second-highest available proficiency
+- Proficiency unlocks: Expert (L3), Master (L7), Legendary (L15)
+
+#### 4. Actual d20 Rolls Required
+Using flat averages or success percentages alone misses critical successes and failures, which are essential for:
+- Narrative drama
+- Risk/reward decisions
+- Fame generation (critical successes grant Fame)
+- Unrest consequences (critical failures may add Unrest)
+
 ### Dice Resolution (Pathfinder 2e Rules)
 **Use actual d20 rolls for each check:**
 - Roll: 1d20 + modifier vs DC
@@ -142,11 +172,6 @@ Using flat averages or success percentages alone misses critical successes and f
 - **Failure:** Total below DC (without critical)
 
 **IMPORTANT:** Natural 20s and 1s do NOT automatically create critical results in Pathfinder 2e. Only the degree of success matters (beating/failing by 10+).
-
-**Example at Level 4 (DC 19):**
-- Expert (+11): Needs 8+ to succeed, 18+ to crit succeed, fails on 7 or less, crit fails on roll of 1-7 (total 8 or less)
-- Trained (+8): Needs 11+ to succeed, never crits (can't reach 29), fails on 10 or less, crit fails on 1 (total 9 or less)
-- Companions (+6): Needs 13+ to succeed, never crits, fails on 12 or less, crit fails on 1-3 (total 9 or less)
 
 ### PC Skill Progression
 **Proficiency levels by party level:**
@@ -167,34 +192,44 @@ Using flat averages or success percentages alone misses critical successes and f
 Each turn follows these 6 phases:
 
 ### Phase 1: Gain Fame
-- Gain 1 Fame (if not at max)
+- Gain 1 Fame automatically at start of turn
+- Critical successes on kingdom actions grant additional Fame
 - Note available Fame for rerolls
 
-### Phase 2: Apply Modifiers
+### Phase 2: Apply Modifiers & Check for Incidents
 - Check if at war (+1 Unrest if yes)
+- Calculate passive unrest from territory/metropolises
+- Determine current unrest tier (0-3)
+- **If Tier 1+:** Roll d100 on appropriate incident table and resolve immediately
 - Apply structure bonuses
-- Calculate Unrest penalty (-1 per 5 Unrest)
+- Calculate Unrest penalty based on tier (-0 to -3)
 
 ### Phase 3: Kingdom Event Check
 - Start at DC 16
-- Reduce by 5 each turn without event
+- Reduce by 5 each turn without event (min DC 6)
 - Reset to DC 16 after event occurs
 - Roll d20 vs DC
 
 ### Phase 4: Resource Management
 - Calculate production from all worksites
 - Subtract consumption (settlements + armies)
+- Check for food shortages (generate unrest if any)
 - Apply storage limits
 - Process construction projects
+- Resources not used/traded are lost at end of turn
 
 ### Phase 5: Kingdom Actions
 - Each PC takes one action
 - Companions take one collective action
-- Apply all modifiers and roll d20 for each
+- Apply all modifiers including unrest penalty
+- Roll d20 for each action
+- Critical successes grant +1 Fame
+- Some critical failures cause +1 Unrest (see selective list)
 - Record actual roll, modifier, total, and result type
 
 ### Phase 6: End of Turn
 - Update all kingdom statistics
+- Lose unused Lumber/Stone/Ore (no storage)
 - Check for milestone achievements
 - Note any special conditions
 
@@ -208,18 +243,27 @@ Each turn follows these 6 phases:
 
 ### Phase 1: Gain Fame
 - Starting Fame: [X]
-- Gained: +1
+- Gained: +1 (automatic)
 - Total: [X]
 
-### Phase 2: Apply Modifiers
-- At War: [Yes/No]
+### Phase 2: Apply Modifiers & Incidents
+- At War: [Yes/No] (+1 Unrest if yes)
+- Territory Unrest: +[X] ([# hexes])
+- Metropolis Unrest: +[X] ([# metropolises])
+- Current Unrest: [X] (Tier [0-3]: [Name])
+- Unrest Penalty: -[0 to 3] to all checks
+- **Incident Check:** [If tier 1+]
+  - Roll d100: [Result]
+  - Incident: [Name or "No Incident"]
+  - Resolution: [Skill used, DC, roll, result]
+  - Effect: [Consequences]
 - Structure Bonuses: [List]
-- Unrest: [X] (Penalty: -[Y])
 
 ### Phase 3: Kingdom Event
 - DC: [Current DC]
 - Roll: [d20 result]
 - Event: [None/Event Type]
+- Resolution: [If event occurred]
 
 ### Phase 4: Resources
 **Production:**
@@ -231,36 +275,42 @@ Each turn follows these 6 phases:
 **Consumption:**
 - Settlements: -[X] Food
 - Armies: -[X] Food
-- Net: [+/- amounts]
+- Net Food: [+/- amount]
+- Food Shortage: [If any, causes +X Unrest]
 
 **Storage:**
-- Food: [X]/[Max]
+- Food Stored: [X]/[Max]
 - Gold: [X]
-- Resources: [List]
+- Resources Lost: [List of unused Lumber/Stone/Ore]
 
 ### Phase 5: Kingdom Actions
 1. PC1 (Expert +11): [Action]
-   - Roll: [d20]+11 = [Total] vs DC 19
+   - Modifiers: +11 skill -[unrest penalty] = +[total]
+   - Roll: [d20]+[total] = [Result] vs DC [X]
    - Result: [Critical Failure/Failure/Success/Critical Success]
-   - Effect: [What happened]
+   - Effect: [What happened, +1 Fame if crit success, +1 Unrest if applicable crit fail]
 
 2. PC2 (Expert +11): [Action]
-   - Roll: [d20]+11 = [Total] vs DC 19
+   - Modifiers: +11 skill -[unrest penalty] = +[total]
+   - Roll: [d20]+[total] = [Result] vs DC [X]
    - Result: [Type]
    - Effect: [What happened]
 
 3. PC3 (Trained +8): [Action]
-   - Roll: [d20]+8 = [Total] vs DC 19
+   - Modifiers: +8 skill -[unrest penalty] = +[total]
+   - Roll: [d20]+[total] = [Result] vs DC [X]
    - Result: [Type]
    - Effect: [What happened]
 
 4. PC4 (Trained +8): [Action]
-   - Roll: [d20]+8 = [Total] vs DC 19
+   - Modifiers: +8 skill -[unrest penalty] = +[total]
+   - Roll: [d20]+[total] = [Result] vs DC [X]
    - Result: [Type]
    - Effect: [What happened]
 
 5. Companions: [Action]
-   - Roll: [d20]+[Mod] = [Total] vs DC 19
+   - Modifiers: +[base] -[unrest penalty] = +[total]
+   - Roll: [d20]+[total] = [Result] vs DC [X]
    - Result: [Type]
    - Effect: [What happened]
 
@@ -268,7 +318,8 @@ Each turn follows these 6 phases:
 - Hexes: [X]
 - Settlement: [Type and Level]
 - Armies: [X]
-- Unrest: [X]
+- Unrest: [Final] (Tier [X])
+- Fame: [X]
 - Key Achievement: [If any]
 ```
 
@@ -285,6 +336,7 @@ Expected Status:
 - 3-4 worksites active
 - 2-3 structures built
 - 0-1 armies
+- Unrest: 0-3 (manageable)
 
 ### Turn 20 (Level 8)
 Expected Status:
@@ -293,6 +345,7 @@ Expected Status:
 - 5-6 worksites active
 - 4-5 structures built
 - 1-2 armies
+- Unrest: 2-5 (some incidents)
 
 ### Turn 30 (Level 10)
 Expected Status:
@@ -301,6 +354,7 @@ Expected Status:
 - 7-9 worksites active
 - 6-7 structures built
 - 2-3 armies
+- Unrest: 3-6 (regular management needed)
 
 ### Turn 40 (Level 12)
 Expected Status:
@@ -309,6 +363,7 @@ Expected Status:
 - 10-12 worksites active
 - 8-9 structures built
 - 3-4 armies
+- Unrest: 4-7 (active mitigation required)
 
 ### Turn 50 (Level 15)
 Expected Status:
@@ -317,6 +372,7 @@ Expected Status:
 - 13-15 worksites active
 - 10-12 structures built
 - 4-5 armies
+- Unrest: 5-8 (constant attention needed)
 
 ---
 
@@ -327,23 +383,45 @@ Evaluate each simulation against these targets:
 ### Minimum Success
 - [ ] Town achieved (Level 2+)
 - [ ] 15+ hexes controlled
-- [ ] Unrest never exceeded 10
+- [ ] Unrest never exceeded Tier 3 (9+)
 - [ ] No settlement lost
 - [ ] Positive gold balance
 
 ### Standard Success
 - [ ] City achieved (Level 5+)
 - [ ] 20-25 hexes controlled
-- [ ] Average unrest below 5
-- [ ] Won at least 1 conflict
+- [ ] Average unrest below Tier 2 (6)
+- [ ] Successfully resolved 5+ incidents
 - [ ] 50+ gold accumulated
 
 ### Exceptional Success
 - [ ] Metropolis achieved (Level 8+)
 - [ ] 30+ hexes controlled
-- [ ] Average unrest below 3
-- [ ] Multiple victories
+- [ ] Average unrest below Tier 1 (3)
+- [ ] No major incidents triggered
 - [ ] 100+ gold accumulated
+
+---
+
+## Unrest Incident Quick Reference
+
+### Minor Incidents (Tier 1: Unrest 3-5)
+Roll d100, 20% chance of no incident:
+- Crime Wave, Work Stoppage, Emigration Threat
+- Protests, Corruption Scandal, Rising Tensions
+- Bandit Activity, Minor Diplomatic Incident
+
+### Moderate Incidents (Tier 2: Unrest 6-8)
+Roll d100, 15% chance of no incident:
+- Production Strike, Tax Revolt, Infrastructure Damage
+- Disease Outbreak, Riot, Settlement Crisis
+- Assassination Attempt, Trade Embargo, Mass Exodus
+
+### Major Incidents (Tier 3: Unrest 9+)
+Roll d100, 10% chance of no incident:
+- Guerrilla Movement, Mass Desertion Threat, International Scandal
+- Prison Breaks, Noble Conspiracy, Economic Crash
+- Religious Schism, Border Raid, Secession Crisis
 
 ---
 
@@ -381,13 +459,15 @@ Roll d20 for random events or use this sequence for comparable simulations:
 - **Military:** Elite unit or major victory
 - **Diplomacy:** Alliance or major trade deal
 - **Crisis:** Complete resolution + bonus
+- **Always:** +1 Fame gained
 
 ### Critical Failure Effects
-- **Development:** No progress + damage
+- **Development:** No progress + possible damage
 - **Resources:** Loss or accident
-- **Military:** Desertion or defeat
+- **Military:** Desertion or defeat (+1 Unrest for military actions)
 - **Diplomacy:** War or embargo
-- **Crisis:** Escalation + new problem
+- **Crisis:** Escalation + new problem (+1 Unrest for crisis actions)
+- **Selective:** Only certain actions cause +1 Unrest on crit fail
 
 ---
 
@@ -395,10 +475,11 @@ Roll d20 for random events or use this sequence for comparable simulations:
 
 When deciding PC actions each turn:
 
-### Crisis Priority (Unrest 5+)
-1. Deal with Unrest
-2. Address root causes
-3. Build stability structures
+### Crisis Priority (Unrest Tier 2+)
+1. Deal with Unrest (always available)
+2. Arrest Dissidents (convert to imprisoned unrest)
+3. Build unrest-reducing structures
+4. Address incident root causes
 
 ### Growth Priority (Stable)
 1. Develop settlements
@@ -414,6 +495,23 @@ When deciding PC actions each turn:
 
 ---
 
+## Diplomatic Relations Tracking
+
+### Attitude Levels
+- **Helpful:** Military aid, favorable trade (-1 Gold on purchases), allows passage
+- **Friendly:** Open to trade/alliances, -1 DC to diplomatic checks
+- **Indifferent:** Standard rates, neutral in conflicts
+- **Unfriendly:** Trade restrictions (+1 Gold tax), +2 DC to checks
+- **Hostile:** No trade, may attack, +4 DC to checks, +1 Unrest per turn
+
+### Diplomatic Capacity
+Without diplomatic structures, cannot maintain Helpful relationships.
+- Embassy (T2): +1 Helpful capacity
+- Grand Embassy (T3): +2 Helpful capacity
+- Diplomatic Quarter (T4): +3 Helpful capacity
+
+---
+
 ## Simulation Output Format
 
 ### Main Simulation File (`kingdom_simulation_###.md`)
@@ -422,6 +520,7 @@ Should include:
 - Initial statistics summary
 - Detailed turn-by-turn logs (all 50 turns)
 - Each turn showing rolls, decisions, and outcomes
+- All incident resolutions
 - Final statistics and analysis
 
 ### Summary File (`kingdom_simulation_###_summary.md`)
@@ -438,21 +537,23 @@ Should include a concise, readable summary with:
 - Territory: [X hexes]
 - Gold: [Final amount]
 - Armies: [Final count]
+- Final Unrest: [X] (Tier [Y])
 
 ## Growth Trajectory
 [Brief timeline showing major phases]
 
 ## Unrest Management
-- Maximum Unrest: [Peak value and when]
-- Crisis/Rebellion Thresholds: [Were they crossed?]
+- Maximum Unrest: [Peak value and tier]
+- Incidents Faced: [Total number and severity]
+- Crisis Points: [When tier changes occurred]
 - Average Unrest: [Overall average]
 
 ## Critical Moments
 ### Game-Changing Successes
-[2-4 most impactful critical successes]
+[2-4 most impactful critical successes with Fame gains]
 
 ### Major Setbacks
-[2-3 significant failures or challenges]
+[2-3 significant failures or incidents]
 
 ## Key Turning Points
 [3-5 moments that defined the simulation]
@@ -476,7 +577,7 @@ After completing your simulation:
    - Main file: `kingdom_simulation_###.md` (detailed turns)
    - Summary: `kingdom_simulation_###_summary.md` (highlights)
 
-2. **Update master analysis** in `kingdom_system_analysis.md`:
+2. **Update master analysis** in `kingdom_system_analysis_master.md`:
    - Add summary statistics
    - Compare to previous runs
    - Note any patterns
@@ -497,28 +598,41 @@ After completing your simulation:
 
 ## Quick Reference Tables
 
-### Settlement Levels
-- Level 0: Village
-- Level 1: Village+
-- Level 2-4: Town
-- Level 5-7: City  
-- Level 8+: Metropolis
+### Settlement Progression
+| Level | Settlement Type | Food/Turn | Max Structures | Army Support |
+|-------|----------------|-----------|----------------|--------------|
+| 0-1 | Village | 1 | 2 | 1 |
+| 2-4 | Town | 4 | 4 | 2 |
+| 5-7 | City | 8 | 8 | 3 |
+| 8+ | Metropolis | 12 | Unlimited | 4 |
 
-### Structure Tiers
-- T1: Village structures
-- T2: Town structures
-- T3: City structures
-- T4: Metropolis structures
+**Advancement Requirements:**
+- Must have maximum structures for current tier before advancing
+- Example: Village needs 2 structures to become Town at level 2
 
-### Army Costs
-- Recruit: 1 action
-- Maintain: 1 Food/turn
-- Capacity: Based on structures
+### Structure Tiers & Prerequisites
+- T1: Village structures (available immediately)
+- T2: Town structures (requires Town)
+- T3: City structures (requires City)
+- T4: Metropolis structures (requires Metropolis)
 
-### Resource Storage (without structures)
-- Food: 12 (Granary: +12)
-- Gold: Unlimited
-- Materials: 0 (need Storehouse)
+### Resource Management
+| Resource | Storage Without Structures | Notes |
+|----------|---------------------------|--------|
+| Food | 0 | Only stockpiled resource |
+| Gold | Unlimited | Flexible currency |
+| Lumber/Stone/Ore | 0 | Lost if unused each turn |
+
+**Trade Rates (Base):**
+- Purchase: 2 Gold → 1 Resource
+- Sell: 2 Resources → 1 Gold
+- Commerce structures improve these rates
+
+### Army Costs & Support
+- Recruit: 1 Kingdom Action
+- Maintain: 1 Food/turn per army
+- Unsupported armies must make morale checks
+- Failed morale: +1 Unrest (or +2 on crit fail)
 
 ---
 
@@ -526,43 +640,45 @@ After completing your simulation:
 
 ### Common Implementation Errors to Avoid
 
-#### 1. Using Fixed DCs
+#### 1. Wrong Unrest System
+❌ **Wrong:** "-1 per 5 unrest" or "escalating -2, -4, -6"
+✅ **Correct:** Tier-based: 0-2 = no penalty, 3-5 = -1, 6-8 = -2, 9+ = -3
+
+#### 2. Forgetting Incidents
+❌ **Wrong:** Only tracking unrest penalties
+✅ **Correct:** Roll on incident tables when tier 1+ each turn
+
+#### 3. All Actions Cause Unrest on Failure
+❌ **Wrong:** Every critical failure adds unrest
+✅ **Correct:** Only crisis/military/public order actions
+
+#### 4. Using Fixed DCs
 ❌ **Wrong:** "Claim Hex is always DC 14"
-✅ **Correct:** Use On-Level DC from table
+✅ **Correct:** Use Level-based DC from table
 
-#### 2. Ignoring Critical Results
-❌ **Wrong:** Using only success percentages
-✅ **Correct:** Roll actual d20s for full outcome range
-
-#### 3. Wrong Proficiency Distribution
-❌ **Wrong:** All PCs at same proficiency
-✅ **Correct:** 2 at highest, 2 at second-highest
-
-#### 4. Separating Kingdom and Party Level
-❌ **Wrong:** Tracking separate progression
-✅ **Correct:** They advance together
-
-### Common Issues
+### Common Issues & Solutions
 
 **Unrest Spiral:**
-- Prioritize Deal with Unrest
-- Build Theater/cultural structures
-- Avoid critical failures
+- Deal with Unrest action available every turn
+- Arrest Dissidents to convert to imprisoned unrest
+- Build Theater (T3): -1 Unrest per turn
+- Resolve incidents quickly
 
 **Food Shortage:**
-- Build more Farmsteads
-- Trade for food
+- Build Farmsteads (2 Food each)
+- Trade gold for food if desperate
 - Reduce army size
+- Check settlement consumption
 
-**Expansion Stall:**
-- Wait for Master proficiency (Level 7)
-- Use Coordinated Actions
-- Focus on other growth
+**Incident Cascade:**
+- Focus on reducing unrest below tier thresholds
+- Use Fame for rerolls on critical incident checks
+- Prioritize stability over growth during crisis
 
 **Gold Shortage:**
-- Build economic structures
-- Focus on Trade actions
-- Develop settlements for taxes
+- Build commerce structures for better trade rates
+- Focus on economic development actions
+- Complete beneficial events
 
 ---
 
@@ -573,12 +689,14 @@ After completing your simulation:
 - Note any software/tools used for dice rolling
 - Keep the narrative engaging but accurate
 - Focus on demonstrating the rules in action
+- Track all incidents and their resolutions
 
-**Remember:** The goal is to test whether the kingdom rules consistently produce balanced, enjoyable gameplay across multiple unique simulations.
+**Remember:** The goal is to test whether the kingdom rules consistently produce balanced, enjoyable gameplay across multiple unique simulations while managing the tension between growth and stability through the unrest/incident system.
 
 ---
 
 ## Version History
 
 - v1.0: Initial runner created from guidelines
+- v2.0: Updated with new unrest tier system and incident mechanics
 - [Future versions will be listed here]

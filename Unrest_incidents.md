@@ -1,57 +1,8 @@
-# Unrest Consequences
+# Unrest Incident Tables
 
-## Core Philosophy
+This document contains the incident tables for the unrest system. When unrest reaches certain tiers, roll on the appropriate table to determine what crisis occurs in your kingdom. Each incident is a skill-based event that requires resolution using Level-based DC for all checks.
 
-Rather than making all actions harder through escalating penalties, unrest should create specific crises and consequences that demand attention. The penalty progression is gentler, but the narrative and mechanical consequences become increasingly severe.
-
-## Structure Damage Mechanics
-
-### Damaged Structures
-- **Effect:** Structure provides no benefits while damaged
-- **Repair:** Requires 1 Kingdom Action to repair
-- **Recovery:** Once repaired, structure returns to full functionality at its current tier
-
-### Destroyed Structures
-- **Effect:** Structure loses one tier permanently AND becomes damaged
-- **T4 → T3 (damaged):** Must repair to use as T3, can later upgrade back to T4
-- **T3 → T2 (damaged):** Must repair to use as T2, can later upgrade back to T3
-- **T2 → T1 (damaged):** Must repair to use as T1, can later upgrade back to T2
-- **T1 → Ruined:** Structure is completely gone, must rebuild from scratch
-- **Recovery:** Requires 1 Kingdom Action to repair damage, then normal upgrade costs to restore tiers
-
-### Example
-A T3 Market is destroyed in a riot:
-1. Market becomes a damaged T2 Trade Post
-2. Kingdom immediately loses all T3 Market benefits
-3. Must spend 1 Kingdom Action to repair to functioning T2 Trade Post
-4. Can later upgrade back to T3 Market for normal upgrade cost
-
-## Unrest Tiers and Effects
-
-### Tier 0: Stable (0-2 Unrest)
-
-- **Penalty:** None
-- **Incident Roll:** None
-- **Description:** The kingdom is content and functioning normally
-
-### Tier 1: Discontent (3-5 Unrest)
-
-- **Penalty:** -1 to all kingdom checks
-- **Incident Roll:** Roll d100 on Minor Incidents table each turn
-
-### Tier 2: Turmoil (6-8 Unrest)
-
-- **Penalty:** -2 to all kingdom checks
-- **Incident Roll:** Roll d100 on Moderate Incidents table each turn
-
-### Tier 3: Rebellion (9+ Unrest)
-
-- **Penalty:** -3 to all kingdom checks (capped)
-- **Incident Roll:** Roll d100 on Major Incidents table each turn
-
-## Unrest Incident Tables
-
-Each incident is a skill-based event that requires resolution. Use Level-based DC for all checks.
+For the complete unrest system mechanics, including tiers, effects, and how incident rolls work, see the **Unrest** section in **Kingdom_Rules.md**.
 
 ### Discontent -  Minor Incidents
 
@@ -130,17 +81,16 @@ Tensions simmer but nothing erupts this turn
 | Roll | Result |
 |------|--------|
 | 01-15 | No Incident |
-| 16-23 | Production Strike |
-| 24-31 | Diplomatic Incident |
-| 32-39 | Tax Revolt |
-| 40-47 | Infrastructure Damage |
-| 48-55 | Disease Outbreak |
-| 56-63 | Riot |
-| 64-71 | Settlement Crisis |
-| 72-79 | Assassination Attempt |
-| 80-87 | Trade Embargo |
-| 88-95 | Mass Exodus |
-| 96-00 | Roll on Major Incidents Table |
+| 16-24 | Production Strike |
+| 25-33 | Diplomatic Incident |
+| 34-42 | Tax Revolt |
+| 43-51 | Infrastructure Damage |
+| 52-60 | Disease Outbreak |
+| 61-69 | Riot |
+| 70-78 | Settlement Crisis |
+| 79-87 | Assassination Attempt |
+| 88-93 | Trade Embargo |
+| 94-00 | Mass Exodus |
 
 #### **No Incident**
 Close calls but the kingdom holds steady
@@ -211,10 +161,7 @@ Close calls but the kingdom holds steady
 - **Failure:** Lose 1 worksite permanently, +1 Unrest
 - **Critical Failure:** Lose 1 worksite permanently, +1 Unrest, -1 Fame
 
-#### **Escalation**
-The situation deteriorates rapidly - roll on the Major Incidents table instead
-
-### Rebellion - Major Incidents 
+### Rebellion - Major Incidents
 
 **Percentile Distribution Table**
 | Roll | Result |
@@ -245,8 +192,19 @@ The crisis simmers without boiling over
 #### **Mass Desertion Threat**
 **Diplomacy** (rally troops), **Intimidation** (threaten deserters), **Performance** (inspire loyalty)
 - **Success:** Troops remain loyal, no effect
-- **Failure:** 1 army makes morale checks, highest tier military structure is damaged
-- **Critical Failure:** 2 armies make morale checks, highest tier military structure is destroyed
+- **Failure:** 1 army makes morale checks (see below), highest tier military structure is damaged
+- **Critical Failure:** 2 armies make morale checks (see below), highest tier military structure is destroyed
+
+**Morale Check:**
+- **DC:** Use the Level-based DC for the army's level  
+- **Skill:** The kingdom may roll **Diplomacy** (rallying loyalty) or **Intimidation** (enforcing discipline)
+
+| Result               | Effect                                                       |
+| -------------------- | ------------------------------------------------------------ |
+| **Critical Success** | The army rallies for this turn, despite lack of supplies     |
+| **Success**          | The army remains intact for this turn. **+1 Unrest**         |
+| **Failure**          | The army disbands (soldiers desert or disperse). **+1 Unrest** |
+| **Critical Failure** | The army disbands (soldiers defect, riot, or mutiny). **+2 Unrest** |
 
 #### **Trade Embargo**
 **Diplomacy** (negotiate), **Society** (find loopholes), **Deception** (smuggling routes), **Arcana** (teleportation network)
@@ -314,114 +272,3 @@ A prison break occurs at your nation's highest-tier justice structure. If there 
 - **Success:** Crisis contained, no effect
 - **Failure:** One kingdom's attitude towards you worsens by 2 steps
 - **Critical Failure:** Two kingdoms' attitudes towards you worsen by 2 steps, -1 fame
-
-## Incident Roll Mechanics
-
-### How Incident Rolls Work
-
-**When:** At the start of each Kingdom Turn (Phase 2), after calculating current unrest tier
-
-**Action Economy:** Incidents do NOT consume Kingdom Actions - they are bonus negative events that must be resolved with a skill check
-
-**Who Rolls:** The kingdom rolls on the appropriate incident table based on tier:
-
-- **Tier 0 (0-2):** No roll
-- **Tier 1 (3-5):** Roll d100 on Minor Incidents table
-- **Tier 2 (6-8):** Roll d100 on Moderate Incidents table
-- **Tier 3 (9+):** Roll d100 on Major Incidents table
-
-**No Incident Results:**
-
-- Minor Incidents: 20% chance (01-20)
-- Moderate Incidents: 15% chance (01-15)
-- Major Incidents: 10% chance (01-10)
-- Represents tensions that don't escalate into crisis
-
-### Incident Resolution
-
-When an incident is rolled:
-
-**Resolution Process:**
-
-1. **Roll for Incident:** Determine which incident occurs
-2. **Choose Approach:** Select which skill to use from the incident's options
-3. **Make Skill Check:** One PC rolls using Level-based DC
-4. **Apply Results:** Based on success/failure degree
-
-**Important:** Resolving an incident requires a skill check but does NOT consume a Kingdom Action. These are immediate crises that interrupt normal kingdom business. All incidents resolve immediately - there are no ongoing or persistent incidents.
-
-
-## Morale Check Mechanics
-
-Using the existing unsupported army rules as a template:
-
-**Base Morale Check:**
-
-- **DC:** Level-based DC for party level
-- **Skill:** Diplomacy (inspire) or Intimidation (enforce)
-- **Modifiers:**
-  - -1 per tier of unrest above 1
-  - +1 if army recently victorious
-  - +1 if in fortified position
-  - -2 if recently defeated
-
-**Results:**
-
-- **Critical Success:** Army rallies, gains +1 morale bonus for next battle
-- **Success:** Army remains loyal
-- **Failure:** Army disbands peacefully, +1 Unrest
-- **Critical Failure:** Army mutinies or turns bandit, +2 Unrest
-
-## Implementation Notes
-
-### Why This Works Better
-
-1. **Lower Penalty Cap:** Maximum -3 instead of escalating forever
-2. **Meaningful Choices:** Each tier introduces specific problems to solve
-3. **Death Spiral Prevention:** Penalties cap while consequences escalate
-4. **Narrative Drama:** Rebellions and secessions create story moments
-5. **Strategic Depth:** Different consequences require different responses
-
-### Balancing Passive Generation
-
-With these consequences, the hex-based generation becomes more reasonable:
-
-- **+1 per 8 hexes** creates real tension without being overwhelming
-- **Metropolis +1** is significant but manageable
-- Players must balance expansion with stability infrastructure
-
-### Recovery Strategies
-
-Different tiers require different approaches:
-
-- **Tier 0:** No action needed - kingdom is stable
-- **Tier 1:** Standard unrest management, preventive measures
-- **Tier 2:** Active crisis management, moderate incidents
-- **Tier 3:** Emergency measures required, major incidents and possible territorial losses
-
-## Example in Play
-
-**Kingdom with 16 hexes and Metropolis:**
-
-- Passive: +2 (hexes) +1 (Metropolis) = +3/turn
-- Reaches Tier 1 (3 Unrest) by Turn 1
-- Without management, hits Tier 2 (6 Unrest) by Turn 2
-- Moderate incidents begin triggering - strikes, riots, disease
-- By Turn 3: Reaches Tier 3 (9 Unrest) - rebellions now possible!
-- Must balance dealing with consequences vs preventing escalation
-- Imprisonment becomes critical to prevent unrest from spiraling out of control
-
-## Recommended Adjustments
-
-### For Hex-Based Generation:
-
-- **Keep +1 per 8 hexes** with these new consequences
-- **Keep Metropolis +1** as urban complexity cost
-- **Add Relief Valve:** First Deal with Unrest action each turn at +2 bonus
-
-### For Culture Buildings:
-
-- **T1-T3:** Bonus to checks only
-- **T4 Auditorium:** -1 Unrest/turn OR prevent one consequence/turn (player choice)
-
-This creates a system where unrest truly threatens the kingdom through specific, escalating crises rather than just making everything harder to accomplish.
