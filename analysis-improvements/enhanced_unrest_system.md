@@ -4,6 +4,28 @@
 
 Rather than making all actions harder through escalating penalties, unrest should create specific crises and consequences that demand attention. The penalty progression is gentler, but the narrative and mechanical consequences become increasingly severe.
 
+## Structure Damage Mechanics
+
+### Damaged Structures
+- **Effect:** Structure provides no benefits while damaged
+- **Repair:** Requires 1 Kingdom Action to repair
+- **Recovery:** Once repaired, structure returns to full functionality at its current tier
+
+### Destroyed Structures
+- **Effect:** Structure loses one tier permanently AND becomes damaged
+- **T4 → T3 (damaged):** Must repair to use as T3, can later upgrade back to T4
+- **T3 → T2 (damaged):** Must repair to use as T2, can later upgrade back to T3
+- **T2 → T1 (damaged):** Must repair to use as T1, can later upgrade back to T2
+- **T1 → Ruined:** Structure is completely gone, must rebuild from scratch
+- **Recovery:** Requires 1 Kingdom Action to repair damage, then normal upgrade costs to restore tiers
+
+### Example
+A T3 Market is destroyed in a riot:
+1. Market becomes a damaged T2 Trade Post
+2. Kingdom immediately loses all T3 Market benefits
+3. Must spend 1 Kingdom Action to repair to functioning T2 Trade Post
+4. Can later upgrade back to T3 Market for normal upgrade cost
+
 ## Unrest Tiers and Effects
 
 ### Tier 0: Stable (0-2 Unrest)
@@ -15,243 +37,283 @@ Rather than making all actions harder through escalating penalties, unrest shoul
 ### Tier 1: Discontent (3-5 Unrest)
 
 - **Penalty:** -1 to all kingdom checks
-- **Incident Roll:** Roll d10 on Minor Incidents table each turn
+- **Incident Roll:** Roll d100 on Minor Incidents table each turn
 
 ### Tier 2: Turmoil (6-8 Unrest)
 
 - **Penalty:** -2 to all kingdom checks
-- **Incident Roll:** Roll d12 on Moderate Incidents table each turn
+- **Incident Roll:** Roll d100 on Moderate Incidents table each turn
 
 ### Tier 3: Rebellion (9+ Unrest)
 
 - **Penalty:** -3 to all kingdom checks (capped)
-- **Incident Roll:** Roll d12 on Major Incidents table each turn
+- **Incident Roll:** Roll d100 on Major Incidents table each turn
 
 ## Unrest Incident Tables
 
 Each incident is a skill-based event that requires resolution. Use Level-based DC for all checks.
 
-### Minor Incidents (d10) - Used at Tier 1: Discontent
+### Discontent -  Minor Incidents
 
-1-2. **No Incident** - Tensions simmer but nothing erupts this turn
+**Percentile Distribution Table**
+| Roll | Result |
+|------|--------|
+| 01-20 | No Incident |
+| 21-30 | Crime Wave |
+| 31-40 | Work Stoppage |
+| 41-50 | Emigration Threat |
+| 51-60 | Protests |
+| 61-70 | Corruption Scandal |
+| 71-80 | Rising Tensions |
+| 81-90 | Bandit Activity |
+| 91-00 | Minor Diplomatic Incident |
 
-3. **Crime Wave**
-   **Intimidation** (crack down), **Thievery** (infiltrate gangs), **Society** (legal reform), **Occultism** (divine the source)
-   - **Success:** Crime suppressed, no effect
-   - **Failure:** Lose 1d4 Gold
-   - **Critical Failure:** Lose 2d4 Gold, +1 Unrest
-   - _if you don't have enough gold, lose what you have and gain an additional 1 unrest_
-4. **Work Stoppage**
-   **Diplomacy** (negotiate), **Intimidation** (force work), **Performance** (inspire), **Medicine** (address health concerns)
+#### **No Incident**
+Tensions simmer but nothing erupts this turn
 
-   - **Success:** Workers return, no effect
-   - **Failure:** One random worksite produces nothing this turn
-   - **Critical Failure:** two worksites produce nothing, +1 Unrest
+#### **Crime Wave**
+**Intimidation** (crack down), **Thievery** (infiltrate gangs), **Society** (legal reform), **Occultism** (divine the source)
+- **Success:** Crime suppressed, no effect
+- **Failure:** Lose 1d4 Gold
+- **Critical Failure:** Lose 2d4 Gold, +1 Unrest
+- _if you don't have enough gold, lose what you have and gain an additional 1 unrest_
 
-5. **Emigration Threat**
-   **Diplomacy** (convince to stay), **Society** (address concerns), **Religion** (appeal to faith), **Nature** (improve local conditions)
+#### **Work Stoppage**
+**Diplomacy** (negotiate), **Intimidation** (force work), **Performance** (inspire), **Medicine** (address health concerns)
+- **Success:** Workers return, no effect
+- **Failure:** One random worksite produces nothing this turn
+- **Critical Failure:** Two worksites produce nothing, +1 Unrest
 
-   - **Success:** Population stays, no effect
-   - **Failure:** Lose 1 a random worksite permanently
-   - **Critical Failure:** Lose 1 a random worksite permanently, +1 unrest
+#### **Emigration Threat**
+**Diplomacy** (convince to stay), **Society** (address concerns), **Religion** (appeal to faith), **Nature** (improve local conditions)
+- **Success:** Population stays, no effect
+- **Failure:** Lose 1 random worksite permanently
+- **Critical Failure:** Lose 1 random worksite permanently, +1 unrest
 
-6. **Protests**
-   **Diplomacy** (address crowd), **Intimidation** (disperse), **Performance** (distract), **Arcana** (magical calming)
+#### **Protests**
+**Diplomacy** (address crowd), **Intimidation** (disperse), **Performance** (distract), **Arcana** (magical calming)
+- **Success:** Peaceful resolution, no effect
+- **Failure:** Lose 1d4 Gold (property damage, lost productivity)
+- **Critical Failure:** Lose 2d4 Gold, -1 Fame
+- _if you don't have enough gold, lose what you have and gain 1 unrest_
 
-   - **Success:** Peaceful resolution, no effect
-   - **Failure:** Lose 1d4 Gold (property damage, lost productivity)
-   - **Critical Failure:** Lose 2d4 Gold, -1 Fame
-   - _if you don't have enough gold, lose what you have and gain 1 unrest_
+#### **Corruption Scandal**
+**Society** (investigation), **Deception** (cover-up), **Intimidation** (purge), **Diplomacy** (manage public relations)
+- **Success:** Scandal contained, no effect
+- **Failure:** Lose 1d4 Gold (embezzlement/graft discovered)
+- **Critical Failure:** Lose 2d4 Gold, -1 Fame (major corruption exposed publicly)
+- _if you don't have enough gold, lose what you have and gain 1 unrest_
 
-7. **Corruption Scandal**
-   **Society** (investigation), **Deception** (cover-up), **Intimidation** (purge), **Diplomacy** (manage public relations)
-   - **Success:** Scandal contained, no effect
-   - **Failure:** Lose 1d4 Gold (embezzlement/graft discovered)
-   - **Critical Failure:** Lose 2d4 Gold, -1 Fame (major corruption exposed publicly)
-   - _if you don't have enough gold, lose what you have and gain 1 unrest_
-8. **Rising Tensions**
-   **Diplomacy** (calm populace), **Religion** (spiritual guidance), **Performance** (entertainment), **Arcana** (magical displays)
+#### **Rising Tensions**
+**Diplomacy** (calm populace), **Religion** (spiritual guidance), **Performance** (entertainment), **Arcana** (magical displays)
+- **Success:** Tensions ease, no effect
+- **Failure:** +1 Unrest
+- **Critical Failure:** +2 Unrest
 
-   - **Success:** Tensions ease, no effect
-   - **Failure:** +1 Unrest
-   - **Critical Failure:** +2 Unrest
+#### **Bandit Activity**
+**Intimidation** (show force), **Stealth** (infiltrate), **Survival** (track to lair), **Occultism** (scrying)
+- **Success:** Bandits deterred, no effect
+- **Failure:** Lose 1d4 Gold to raids
+- **Critical Failure:** Lose 2d4 Gold, bandits destroy a random worksite
+- _if you don't have enough gold, lose what you have and gain an additional 1 unrest_
 
-9. **Bandit Activity**
-   **Intimidation** (show force), **Stealth** (infiltrate), **Survival** (track to lair), **Occultism** (scrying)
-   - **Success:** Bandits deterred, no effect
-   - **Failure:** Lose 1d4 Gold to raids
-   - **Critical Failure:** Lose 2d4 Gold, bandits destroy a random worksite
-   - _if you don't have enough gold, lose what you have and gain an additional 1 unrest_
-10. **Minor Diplomatic Incident**
-    **Diplomacy** (smooth over), **Society** (formal apology), **Deception** (deny involvement)
-    - **Success:** Relations maintained, no effect
-    - **Failure:** One neighbouring kingdom's attitude worsens by 1 step
-    - **Critical Failure:** Two random kingdoms' attitudes worsen by 1 step (or one twice)
+#### **Minor Diplomatic Incident**
+**Diplomacy** (smooth over), **Society** (formal apology), **Deception** (deny involvement)
+- **Success:** Relations maintained, no effect
+- **Failure:** One neighbouring kingdom's attitude worsens by 1 step
+- **Critical Failure:** Two random kingdoms' attitudes worsen by 1 step (or one twice)
 
-### Moderate Incidents (d12) - Used at Tier 2: Turmoil
+### Turmoil - Moderate Incidents
 
-1-2. **No Incident** - Close calls but the kingdom holds steady
+**Percentile Distribution Table**
 
-3. **Production Strike**
-   **Diplomacy** (negotiate), **Society** (arbitrate), **Crafting** (work alongside), **Arcana** (automate production)
-   - **Success:** Strike ends, no effect
-   - **Failure:** Lose 1d4+1 of a random resource (Lumber, Ore, Stone)
-   - **Critical Failure:** Lose 2d4+1 of a random resource (Lumber, Ore, Stone)
-   - _if you don't have enough of the resource, lose what you have and gain 1 unrest_
+| Roll | Result |
+|------|--------|
+| 01-15 | No Incident |
+| 16-23 | Production Strike |
+| 24-31 | Diplomatic Incident |
+| 32-39 | Tax Revolt |
+| 40-47 | Infrastructure Damage |
+| 48-55 | Disease Outbreak |
+| 56-63 | Riot |
+| 64-71 | Settlement Crisis |
+| 72-79 | Assassination Attempt |
+| 80-87 | Trade Embargo |
+| 88-95 | Mass Exodus |
+| 96-00 | Roll on Major Incidents Table |
 
-4. **Diplomatic Incident**
-   **Diplomacy** (smooth over), **Deception** (deny responsibility), **Society** (formal apology)
+#### **No Incident**
+Close calls but the kingdom holds steady
 
-   - **Success:** Relations maintained, no effect
-   - **Failure:** One neighbouring kingdom's attitude worsens by 1 step
-   - **Critical Failure:** Two random kingdoms' attitudes worsen by 1 step (or one twice)
+#### **Production Strike**
+**Diplomacy** (negotiate), **Society** (arbitrate), **Crafting** (work alongside), **Arcana** (automate production)
+- **Success:** Strike ends, no effect
+- **Failure:** Lose 1d4+1 of a random resource (Lumber, Ore, Stone)
+- **Critical Failure:** Lose 2d4+1 of a random resource (Lumber, Ore, Stone)
+- _if you don't have enough of the resource, lose what you have and gain 1 unrest_
 
-5. **Tax Revolt**
-   **Intimidation** (enforce collection), **Diplomacy** (negotiate rates), **Society** (tax reform), **Deception** (creative accounting)
+#### **Diplomatic Incident**
+**Diplomacy** (smooth over), **Deception** (deny responsibility), **Society** (formal apology)
+- **Success:** Relations maintained, no effect
+- **Failure:** One neighbouring kingdom's attitude worsens by 1 step
+- **Critical Failure:** Two random kingdoms' attitudes worsen by 1 step (or one twice)
 
-   - **Success:** Taxes collected normally
-   - **Failure:** Lose 1d4 Gold (reduced tax collection)
-   - **Critical Failure:** Lose 2d4 Gold, +1 Unrest
-   - _if you don't have enough gold, lose what you have and gain 1 unrest_
+#### **Tax Revolt**
+**Intimidation** (enforce collection), **Diplomacy** (negotiate rates), **Society** (tax reform), **Deception** (creative accounting)
+- **Success:** Taxes collected normally
+- **Failure:** Lose 1d4 Gold (reduced tax collection)
+- **Critical Failure:** Lose 2d4 Gold, +1 Unrest
+- _if you don't have enough gold, lose what you have and gain 1 unrest_
 
-6. **Infrastructure Damage**
-   **Crafting** (emergency repairs), **Athletics** (labor mobilization), **Society** (organize response), **Arcana** (magical restoration)
-   - **Success:** Damage prevented, no effect
-   - **Failure:** One random structure in a random settlement becomes damaged
-   - **Critical Failure:** 1d3 random structures become damaged (random settlements), +1 unrest
+#### **Infrastructure Damage**
+**Crafting** (emergency repairs), **Athletics** (labor mobilization), **Society** (organize response), **Arcana** (magical restoration)
+- **Success:** Damage prevented, no effect
+- **Failure:** One random structure in a random settlement becomes damaged
+- **Critical Failure:** 1d3 random structures become damaged (random settlements), +1 unrest
 
-7. **Disease Outbreak**
-   **Medicine** (treat disease), **Nature** (natural remedies), **Religion** (divine healing)
-   - **Success:** Disease contained, no effect
-   - **Failure:** Lose 1d4 Food (feeding the sick), +1 Unrest
-   - **Critical Failure:** Lose 2d4 Food, one Medicine or Faith structure becomes damaged, +1 Unrest
-   - _if you don't have enough food , lose what you have and gain 1 unrest_
-   - _if you don't have a Medicine or Faith structure, lose 1 fame_
+#### **Disease Outbreak**
+**Medicine** (treat disease), **Nature** (natural remedies), **Religion** (divine healing)
+- **Success:** Disease contained, no effect
+- **Failure:** Lose 1d4 Food (feeding the sick), +1 Unrest
+- **Critical Failure:** Lose 2d4 Food, one Medicine or Faith structure becomes damaged, +1 Unrest
+- _if you don't have enough food, lose what you have and gain 1 unrest_
+- _if you don't have a Medicine or Faith structure, lose 1 fame_
 
-8. **Riot**
-   **Intimidation** (suppress), **Diplomacy** (negotiate), **Athletics** (contain), **Medicine** (treat injured)
-   - **Success:** Riot quelled, no effect
-   - **Failure:** +1 Unrest, 1 structure damaged
-   - **Critical Failure:** +1 Unrest, 1 structure destroyed
+#### **Riot**
+**Intimidation** (suppress), **Diplomacy** (negotiate), **Athletics** (contain), **Medicine** (treat injured)
+- **Success:** Riot quelled, no effect
+- **Failure:** +1 Unrest, 1 structure damaged
+- **Critical Failure:** +1 Unrest, 1 structure destroyed
 
-9. **Settlement Crisis**
-   **Diplomacy** (address concerns), **Society** (emergency aid), **Religion** (provide hope)
-   - **Success:** Settlement stabilized, no effect
-   - **Failure:** Random settlement loses 1d4 Gold OR 1 structure damaged (economic/social breakdown)
-   - **Critical Failure:** Random settlement loses one level (minimum level 1), +1 unrest
+#### **Settlement Crisis**
+**Diplomacy** (address concerns), **Society** (emergency aid), **Religion** (provide hope)
+- **Success:** Settlement stabilized, no effect
+- **Failure:** Random settlement loses 1d4 Gold OR 1 structure damaged (economic/social breakdown)
+- **Critical Failure:** Random settlement loses one level (minimum level 1), +1 unrest
 
-10. **Assassination Attempt**
-    **Athletics** (protect target), **Medicine** (treat wounds), **Stealth** (counter-ambush)
+#### **Assassination Attempt**
+**Athletics** (protect target), **Medicine** (treat wounds), **Stealth** (avoid the assassin)
 
-    - **Success:** Assassination prevented, no effect
-    - **Failure:** Random leader wounded (unavailable for 1d3 turns)
-    - **Critical Failure:** Leader critically wounded (unavailable for 2d3 turns), +2 Unrest
+- **Success:** Assassination prevented, no effect
+- **Failure:** Leader escapes; +1 Unrest
+- **Critical Failure:** Leader wounded; +2 Unrest, that PC cannot take a Kingdom Action this turn
 
-11. **Trade Embargo**
-    **Diplomacy** (negotiate), **Society** (find loopholes), **Deception** (smuggling routes), **Occultism** (divine trade routes)
+#### **Trade Embargo**
+**Diplomacy** (negotiate), **Society** (find loopholes), **Deception** (smuggling routes), **Occultism** (divine trade routes)
+- **Success:** Trade continues, no effect
+- **Failure:** Lose 1d4 Gold OR 1d4+1 Resources (player's choice)
+- **Critical Failure:** Lose 2d4 Gold AND 1d4+1 Resources, +1 Unrest
+- _if you don't have enough gold/resources, lose what you have and gain 1 unrest_
 
-    - **Success:** Trade continues, no effect
-    - **Failure:** Lose 1d4 Gold OR 1d4+1 Resources (player's choice)
-    - **Critical Failure:** Lose 2d4 Gold AND 1d4+1 Resources, +1 Unrest
-    - _if you don't have enough gold/resources, lose what you have and gain 1 unrest_
+#### **Mass Exodus**
+**Diplomacy** (convince to stay), **Performance** (inspire hope), **Religion** (spiritual guidance)
+- **Success:** Population remains, no effect
+- **Failure:** Lose 1 worksite permanently, +1 Unrest
+- **Critical Failure:** Lose 1 worksite permanently, +1 Unrest, -1 Fame
 
-12. **Mass Exodus**
-    **Diplomacy** (convince to stay), **Performance** (inspire hope), **Religion** (spiritual guidance)
-    - **Success:** Population remains, no effect
-    - **Failure:** Lose 1 worksite permanently, +1 Unrest
-    - **Critical Failure:** Lose 1 worksite permanently, +1 Unrest, -1 Fame
+#### **Escalation**
+The situation deteriorates rapidly - roll on the Major Incidents table instead
 
-### Major Incidents (d12) - Used at Tier 3: Rebellion
+### Rebellion - Major Incidents 
 
-1-2. **No Incident** - The crisis simmers without boiling over
+**Percentile Distribution Table**
+| Roll | Result |
+|------|--------|
+| 01-10 | No Incident |
+| 11-17 | Guerrilla Movement |
+| 18-24 | Mass Desertion Threat |
+| 25-31 | Trade Embargo |
+| 32-38 | Settlement Crisis |
+| 39-45 | International Scandal |
+| 46-52 | Prison Breaks |
+| 53-59 | Noble Conspiracy |
+| 60-66 | Economic Crash |
+| 67-73 | Religious Schism |
+| 74-80 | Border Raid |
+| 81-87 | Secession Crisis |
+| 88-00 | International Crisis |
 
-3. **Rebellion**
-   **Diplomacy** (negotiate), **Intimidation** (crush rebellion), **Society** (address grievances), **Religion** (appeal to faith)
+#### **No Incident**
+The crisis simmers without boiling over
 
-   - **Success:** Rebellion delayed, rebels remain active but don't expand this turn
-   - **Failure:** Rebels seize 1d3 hexes
-   - **Critical Failure:** Rebels seize 2d3 hexes and gain an army
+#### **Guerrilla Movement**
+**Diplomacy** (negotiate), **Intimidation** (crush rebellion), **Society** (address grievances), **Religion** (appeal to faith)
+- **Success:** Rebellion dispersed
+- **Failure:** Rebels seize 1d3 hexes
+- **Critical Failure:** Rebels seize 2d3 hexes and gain an army (kingdom level -1)
 
-4. **Mass Desertion Threat**
-   **Diplomacy** (rally troops), **Intimidation** (threaten deserters), **Performance** (inspire loyalty)
+#### **Mass Desertion Threat**
+**Diplomacy** (rally troops), **Intimidation** (threaten deserters), **Performance** (inspire loyalty)
+- **Success:** Troops remain loyal, no effect
+- **Failure:** 1 army makes morale checks, highest tier military structure is damaged
+- **Critical Failure:** 2 armies make morale checks, highest tier military structure is destroyed
 
-   - **Success:** Troops remain loyal, no effect
-   - **Failure:** 1 army make morale checks, highest tier logistics structure is damaged
-   - **Critical Failure:** 2 armies make morale checks, highest tier logistics structure is destroyed
+#### **Trade Embargo**
+**Diplomacy** (negotiate), **Society** (find loopholes), **Deception** (smuggling routes), **Arcana** (teleportation network)
+- **Success:** Trade continues, no effect
+- **Failure:** Lose 2d4 Gold OR 2d4+1 Resources (player's choice)
+- **Critical Failure:** Lose 3d4 Gold AND 2d4+1 Resources, +1 Unrest
+- _if you don't have enough gold/resources, lose what you have and gain 1 unrest_
 
-5. **Trade Embargo**
-   **Diplomacy** (negotiate), **Society** (find loopholes), **Deception** (smuggling routes), **Arcana** (teleportation network)
+#### **Settlement Crisis**
+**Diplomacy** (address concerns), **Society** (emergency aid), **Religion** (provide hope)
+- **Success:** Settlement stabilized, no effect
+- **Failure:** Random settlement loses 2d4 Gold OR 2 structures damaged
+- **Critical Failure:** Random settlement loses one level (minimum level 1), 1 structure destroyed, +1 unrest
 
-   - **Success:** Trade continues, no effect
-   - **Failure:** Lose 2d4 Gold OR 2d4+1 Resources (player's choice)
-   - **Critical Failure:** Lose 3d4 Gold AND 2d4+1 Resources, +1 Unrest
-   - _if you don't have enough gold/resources, lose what you have and gain 1 unrest_
+#### **International Scandal**
+**Performance** (grand gesture), **Diplomacy** (public relations), **Deception** (propaganda)
+- **Success:** Reputation maintained, no effect
+- **Failure:** Lose 1 Fame AND 1d4 gold
+- **Critical Failure:** King has zero fame this round and cannot gain fame this round, lose 2d4 gold, +1 Unrest
+- _if you don't have enough gold, lose what you have and gain an additional 1 unrest_
 
-6. **Settlement Crisis**
-   **Diplomacy** (address concerns), **Society** (emergency aid), **Religion** (provide hope)
-
-   - **Success:** Settlement stabilized, no effect
-   - **Failure:** Random settlement loses 2d4 Gold OR 2 structures damaged
-   - **Critical Failure:** Random settlement loses one level (minimum level 1), 1 structure destroyed, +1 unrest
-
-7. **International Scandal**
-   **Performance** (grand gesture), **Diplomacy** (public relations), **Deception** (propaganda)
-
-   - **Success:** Reputation maintained, no effect
-   - **Failure:** Lose 1 Fame AND 1d4 gold
-   - **Critical Failure:** King has Zero fame this round, and cannot gain fame this round, lose 2d4 gold, +1 Unrest
-     _if you don't have enough gold, lose what you have and gain an additional 1 unrest_
-
-8. **Prison Breaks**
-   **Intimidation** (lockdown), **Athletics** (pursuit), **Society** (negotiation)
-   A prison break occurs at your nation's highest-tier justice structure. If there is no justice structure, then crime runs rampant instead +2 unrest.
-
+#### **Prison Breaks**
+**Intimidation** (lockdown), **Athletics** (pursuit), **Society** (negotiation)
+A prison break occurs at your nation's highest-tier justice structure. If there is no justice structure, then crime runs rampant instead +2 unrest.
 - **Success:** Break prevented, no effect
 - **Failure:** Half imprisoned unrest becomes regular unrest, the justice structure is damaged
 - **Critical Failure:** All imprisoned unrest becomes regular unrest, the justice structure is destroyed
 
-9. **Noble Conspiracy**
-   **Stealth** (uncover plot), **Intimidation** (arrests), **Society** (political maneuvering), **Occultism** (divine truth)
+#### **Noble Conspiracy**
+**Stealth** (uncover plot), **Intimidation** (arrests), **Society** (political maneuvering), **Occultism** (divine truth)
+- **Success:** Conspiracy exposed and dealt with, no effect
+- **Failure:** Lose 1d4 Gold, -1 fame
+- **Critical Failure:** Lose 2d4 Gold, -1 fame, one random PC loses kingdom action this turn, +1 unrest
 
-   - **Success:** Conspiracy exposed and dealt with, no effect
-   - **Failure:**  Lose 1d4 Gold, -1 fame
-   - **Critical Failure:** - Lose 2d4 Gold , -1 fame, A random PC loses kingdom action this turn, + 1 unrest
-   -
+#### **Economic Crash**
+**Society** (economic reform), **Diplomacy** (secure loans), **Crafting** (boost production), **Arcana** (transmute resources)
+- **Success:** Economy stabilized, no effect
+- **Failure:** Lose 2d6 gold, your highest tier commerce structure is damaged
+- **Critical Failure:** Lose 4d6 gold, your highest tier commerce structure is destroyed
+- _If no commerce structures exist, -1 Fame instead_
+- _If you don't have enough gold, lose what you have and gain 1 unrest_
 
-10. **Economic Crash**
-    **Society** (economic reform), **Diplomacy** (secure loans), **Crafting** (boost production), **Arcana** (transmute resources)
+#### **Religious Schism**
+**Religion** (theological debate), **Diplomacy** (mediate factions), **Occultism** (divine intervention), **Society** (secular compromise)
+- **Success:** Schism averted, no effect
+- **Failure:** Church factions form, lose 2d6 gold, your highest tier religious structure is damaged
+- **Critical Failure:** Church splits, lose 4d6 gold, your highest tier religious structure is destroyed
+- _If no religious structures exist, -1 Fame instead_
+- _If you don't have enough gold, lose what you have and gain 1 unrest_
 
-    - **Success:** Economy stabilized, no effect
-    - **Failure:** lose 2d6 gold, and your highest tier commerce structure is damaged
-    - **Critical Failure:** lose 4d6 gold, and your highest tier commerce structure is destroyed
-    - *If no commerce structures exist, -1 Fame instead**
-    - **If you don't have enough gold, lose what you have and gain 1 unrest*
+#### **Border Raid**
+**Athletics** (rapid response), **Intimidation** (retaliation), **Survival** (tracking), **Nature** (use terrain)
+- **Success:** Raiders repelled, no effect
+- **Failure:** Lose 1 border hex permanently, lose 1d4 Gold (pillaging)
+- **Critical Failure:** Lose 1d3 border hexes permanently, lose 2d4 Gold
 
-11. **Religious Schism**
-    **Religion** (theological debate), **Diplomacy** (mediate factions), **Occultism** (divine intervention), **Society** (secular compromise)
-    - **Success:** Schism averted
-    - **Failure:** factions ,lose 2d6 gold, and your highest tier religious structure is damaged
-    - **Critical Failure:** church splits, lose 4d6 gold, and your highest tier religious structure is destroyed
-    - *If no religious structures exist, -1 Fame instead**
-    - **If you don't have enough gold, lose what you have and gain 1 unrest*
-    
-12. **Border Raid**
-    **Athletics** (rapid response), **Intimidation** (retaliation), **Survival** (tracking), **Nature** (use terrain)
-    - **Success:** Raiders repelled, no effect
-    - **Failure:** Lose 1 border hex permanently, lose 1d4 Gold (pillaging)
-    - **Critical Failure:** Lose 1d3 border hexes permanently, lose 2d4 Gold
+#### **Secession Crisis**
+**Diplomacy** (negotiate autonomy), **Intimidation** (suppress movement), **Society** (address grievances), **Performance** (inspire loyalty)
+- **Success:** Independence movement quelled, no effect
+- **Failure:** Settlement in revolt - loses one level (minimum 1), highest tier structure in that settlement is destroyed, lose 2d4 Gold
+- **Critical Failure:** Settlement declares independence with all adjacent hexes (becomes free city-state), +2 Unrest, any armies located in the hexes defect
 
-13. **Secession Crisis**
-    **Diplomacy** (negotiate autonomy), **Intimidation** (suppress movement), **Society** (address grievances), **Performance** (inspire loyalty)
-    - **Success:** Independence movement quelled, no effect
-    - **Failure:** Settlement in revolt - loses one level (minimum 1), highest tier structures in that settlement is destroyed, lose 2d4 Gold
-    - **Critical Failure:** Settlement declares independence with all adjacent hexes (becomes free city-state), +2 Unrest, any armies located in the hexes defect
-
-14. **International Crisis**
-    **Athletics** (rapid response), **Intimidation** (retaliation), **Survival** (tracking), **Nature** (use terrain)
-    - **Success:** Crisis contained, no effect
-    - **Failure:** One kingdom's attitude towards you worsens by 2 steps
-    - **Critical Failure:** Two kingdom's attitude towards you worsens by 2 steps, -1 fame
+#### **International Crisis**
+**Diplomacy** (damage control), **Deception** (blame shifting), **Society** (formal reparations), **Performance** (public relations)
+- **Success:** Crisis contained, no effect
+- **Failure:** One kingdom's attitude towards you worsens by 2 steps
+- **Critical Failure:** Two kingdoms' attitudes towards you worsen by 2 steps, -1 fame
 
 ## Incident Roll Mechanics
 
@@ -259,33 +321,21 @@ Each incident is a skill-based event that requires resolution. Use Level-based D
 
 **When:** At the start of each Kingdom Turn (Phase 2), after calculating current unrest tier
 
+**Action Economy:** Incidents do NOT consume Kingdom Actions - they are bonus negative events that must be resolved with a skill check
+
 **Who Rolls:** The kingdom rolls on the appropriate incident table based on tier:
 
 - **Tier 0 (0-2):** No roll
-- **Tier 1 (3-5):** Roll d10 on Minor Incidents table
-- **Tier 2 (6-8):** Roll d12 on Moderate Incidents table
-- **Tier 3 (9+):** Roll d12 on Major Incidents table
+- **Tier 1 (3-5):** Roll d100 on Minor Incidents table
+- **Tier 2 (6-8):** Roll d100 on Moderate Incidents table
+- **Tier 3 (9+):** Roll d100 on Major Incidents table
 
 **No Incident Results:**
 
-- Each table includes "No Incident" entries (typically on 1-2)
+- Minor Incidents: 20% chance (01-20)
+- Moderate Incidents: 15% chance (01-15)
+- Major Incidents: 10% chance (01-10)
 - Represents tensions that don't escalate into crisis
-- At higher tiers, additional incidents are guaranteed
-
-**Modifying Incident Rolls:**
-
-- **Justice Infrastructure:** Can spend to reroll incident die once per turn
-  - T1 Stocks: Spend 1 Gold to reroll
-  - T2 Jail: Reroll for free once per turn
-  - T3 Prison: Reroll for free, +1 to roll
-  - T4 Donjon: Reroll for free, +2 to roll
-- **Cultural Infrastructure:** Modifies incident severity
-  - T1 Open Stage: No effect
-  - T2 Amphitheater: Treat one result as "No Incident" (3 becomes 1)
-  - T3 Playhouse: Treat two results as "No Incident" (3-4 become 1-2)
-  - T4 Auditorium: Prevent one incident per turn OR treat three results as "No Incident"
-
-**Special:** The Auditorium (T4 Culture) can completely prevent one incident per turn instead of modifying the roll
 
 ### Incident Resolution
 
@@ -297,63 +347,9 @@ When an incident is rolled:
 2. **Choose Approach:** Select which skill to use from the incident's options
 3. **Make Skill Check:** One PC rolls using Level-based DC
 4. **Apply Results:** Based on success/failure degree
-5. **Track Ongoing:** Some incidents persist if not resolved
 
-**Resolution Timing:**
+**Important:** Resolving an incident requires a skill check but does NOT consume a Kingdom Action. These are immediate crises that interrupt normal kingdom business. All incidents resolve immediately - there are no ongoing or persistent incidents.
 
-- **Immediate:** Incident must be resolved this turn (uses 1 Kingdom Action)
-- **Continuous:** Remains active until resolved (can attempt each turn)
-- **Escalating:** Worsens each turn not addressed
-
-**Modifiers to Incident Checks:**
-
-- **Relevant Structures:** +1 to +4 based on tier of relevant skill structure
-- **Multiple PCs:** Can use Coordinated Effort if available
-- **Fame:** Spend 1 Fame to reroll the skill check
-- **Auditorium:** Once per turn, auto-succeed one incident check
-
-**Preventing Incidents:**
-
-- **Roll "No Incident":** Natural result on table (25% chance at lower tiers)
-- **Infrastructure:** Justice/Culture buildings can modify rolls
-- **Auditorium (T4):** Can completely negate one incident per turn
-- **Fame:** Spend 2 Fame to reroll the incident die
-
-## New Rebellion Mechanics
-
-### Rebellion Event
-
-When triggered by unrest consequences:
-
-**Initial Rebellion:**
-
-- Rebels seize 1d3 hexes including at least 1 worksite
-- Create rebel army (Level = Kingdom Level -2)
-- Must be resolved within 3 turns or spreads
-
-**Rebellion Spread (if not resolved):**
-
-- Gains 1d3 additional hexes per turn
-- 25% chance to gain another rebel army
-- If rebels control a settlement, it declares independence
-
-**Resolution Options:**
-
-1. **Military:** Deploy armies to reclaim territory
-2. **Diplomatic:** Negotiate (reduces some Unrest if successful)
-3. **Concessions:** Grant autonomy (lose hexes but reduce Unrest)
-
-### Secession Mechanics
-
-When a settlement secedes:
-
-- Settlement becomes independent city-state
-- Takes all hexes within 2 spaces
-- Forms defensive alliance with other secessionist settlements
-- Can only be reclaimed through:
-  - Military conquest (causes +2d4 Unrest)
-  - Diplomatic reunification (requires Helpful attitude)
-  - Waiting 10 turns for referendum option
 
 ## Morale Check Mechanics
 
