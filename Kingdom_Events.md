@@ -89,7 +89,7 @@ _Citizens demand that a specific structure be built._
 | --- | --- |
 | Critical Success | Citizens convinced; -1 Unrest, **event ends** |
 | Success | Demands are satisfied; **event ends** |
-| Failure | Protests continue; +1 Unrest, must pay 1 Gold as concessions or gain additional Unrest |
+| Failure | Protests continue; +1 Unrest, or pay 1 Gold as concessions |
 | Critical Failure | Violence erupts; +2 Unrest, event escalates |
 
 **Special:** If you build a structure of the demanded type, the event ends (automatic success).

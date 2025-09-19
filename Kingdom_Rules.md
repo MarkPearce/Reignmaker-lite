@@ -48,6 +48,114 @@ This represents your kingdom leveraging its reputation and past achievements to 
 
 ---
 
+## **Resources**
+
+Resource production forms the economic backbone of your kingdom. Each hex of controlled territory generates resources based on its terrain type and the worksite you construct there. Food sustains your settlements and armies, while Lumber, Stone, and Ore provide the raw materials needed for construction and development. Strategic placement of worksites based on terrain advantages and kingdom needs is crucial for maintaining a thriving realm.
+
+### **Resource Collection**
+
+**Resource Types:**
+- **Food** - Required for population and army upkeep, can be stored
+- **Lumber** - Used for buildings and roads (must be used or traded each turn)
+- **Stone** - Used for fortifications and structures (must be used or traded each turn)
+- **Ore** - Used for weapons and advanced buildings (must be used or traded each turn)
+- **Gold** - Flexible resource for trade, upkeep, and special actions (accumulates)
+
+### **Terrain and Worksites** 
+
+Each hex of land can hold **one Worksite**. The **terrain** determines what it can produce:
+
+| Terrain | Worksite Options | Yield/Turn |
+| :---- | :---- | :---- |
+| Plains | Farmstead | 2 Food |
+| Forest | Logging Camp | 2 Lumber |
+| Hills | Quarry **or** Farmstead | 1 Stone **or** 1 Food |
+| Mountains | Mine **or** Quarry | 1 Ore **or** 1 Stone |
+| Swamp | Hunting/Fishing Camp **or** Bog Mine | 1 Food **or** 1 Ore |
+| Desert | — (unless Oasis special) | 0 (Oasis = 1 Food) |
+
+**Special hex traits** (e.g., Fertile, Rich Vein) add **+1 yield** to production.
+
+### **Food Consumption**
+
+Settlements require food to sustain their populations. Food shortages directly create unrest.
+
+**Consumption by Settlement Tier:**
+| Settlement | Food Required/Turn |
+|------------|-------------------|
+| Village | 1 Food |
+| Town | 4 Food |
+| City | 8 Food |
+| Metropolis | 12 Food |
+
+**Food Shortage Consequences:**
+- **Shortfall:** Each missing Food causes **+1 Unrest** immediately
+- Example: A City needs 8 Food but only receives 5 → +3 Unrest
+
+**Food Storage:**
+- Food is the **only resource that can be stored** between turns
+- Storage capacity depends on structures:
+  - **T1 Granary:** +4 Food capacity
+  - **T2 Storehouses:** +8 Food, +4 Lumber capacity
+  - **T3 Warehouses:** +16 Food, +8 Lumber, +4 Stone, +4 Ore capacity
+  - **T4 Strategic Reserves:** +36 Food, +18 Lumber, +9 Stone, +9 Ore (immune to spoilage)
+
+### **Military Support Costs**
+
+Armies require infrastructure and supply lines. Exceeding your support capacity strains the kingdom.
+
+**Army Food Consumption:**
+- Each army requires **1 Food per turn** regardless of support status
+- This food requirement is in addition to settlement consumption
+- Food shortages for armies count toward unrest just like settlement shortages
+
+**Army Support Capacity:**
+| Settlement | Armies Supported |
+|------------|--------------------|
+| Village | 1 Army |
+| Town | 2 Armies |
+| City | 3 Armies |
+| Metropolis | 4 Armies |
+
+**Total Capacity:** Sum of all settlements' support values
+
+**Unsupported Armies:**
+When you have more armies than your capacity supports:
+- Each unsupported army must make a **Morale check** (Diplomacy or Intimidation vs Level-based DC)
+  - **Critical Success:** Army rallies despite lack of supplies
+  - **Success:** Army remains, **+1 Unrest**
+  - **Failure:** Army disbands, **+1 Unrest**
+  - **Critical Failure:** Army disbands (mutiny/defection), **+2 Unrest**
+- **Ongoing Penalty:** -1 to Morale checks for each turn an army remains unsupported (-2 if Unrest 10+)
+
+### **Build Queue Management**
+
+Construction resources (Lumber, Stone, Ore) must be used immediately or they are lost.
+
+**Resource Application:**
+- Production automatically applies to current construction project each turn
+- Structures have tiered resource costs:
+  - **Tier 1:** ~2 resources total
+  - **Tier 2:** ~4 resources total
+  - **Tier 3:** ~8 resources total
+  - **Tier 4:** ~16 resources total
+- Project completes when all resource costs are met
+- **Important:** Lumber, Stone, and Ore not used for construction or traded are **lost at end of turn**
+
+### **Trade and Commerce**
+
+Trading requires a Kingdom Action during Phase 5 - it is not automatic. Resources can be converted to/from gold, though at unfavorable base rates:
+
+**Base Trade Rates:**
+
+- **Sell Resources:** 2 Resources → 1 Gold
+- **Purchase Resources:** 2 Gold → 1 Resource
+
+**Commerce Structure Improvements:**
+- **T2 Trade Bazaar:** +1 Gold/turn income
+- **T3 Merchant Guildhall:** Sell at 3 Resources → 2 Gold
+- **T4 Royal Bank:** Buy at 1:1 (Gold to Resources)
+
 ## **Unrest**
 
 Unrest represents the dissatisfaction, tension, and disorder within your kingdom. Rather than simply making all actions harder through escalating penalties, unrest creates specific crises and consequences that demand attention. The penalty progression is gentler, but the narrative and mechanical consequences become increasingly severe through incident rolls.
@@ -58,27 +166,20 @@ The unrest system creates dynamic challenges that require strategic response rat
 
 ### **Unrest Tiers and Effects**
 
-#### **Tier 0: Stable (0-2 Unrest)**
-- **Penalty:** None
-- **Incident Roll:** None
-- **Description:** The kingdom is content and functioning normally
+| Tier | Name | Unrest Range | Penalty | Incident Table (d100) | Description |
+|------|------|--------------|---------|----------------|-------------|
+| **0** | **Stable** | 0-2 | None | None | The kingdom is content and functioning normally |
+| **1** | **Discontent** | 3-5 | -1 to all checks | Minor Incidents | Growing dissatisfaction requires attention |
+| **2** | **Turmoil** | 6-8 | -2 to all checks | Moderate Incidents | Serious unrest threatens stability |
+| **3** | **Rebellion** | 9+ | -3 to all checks | Major Incidents | Open revolt endangers the kingdom |
 
-#### **Tier 1: Discontent (3-5 Unrest)**
-- **Penalty:** -1 to all kingdom checks
-- **Incident Roll:** Roll d100 on Minor Incidents table each turn (see Unrest_incidents.md)
-
-#### **Tier 2: Turmoil (6-8 Unrest)**
-- **Penalty:** -2 to all kingdom checks
-- **Incident Roll:** Roll d100 on Moderate Incidents table each turn (see Unrest_incidents.md)
-
-#### **Tier 3: Rebellion (9+ Unrest)**
-- **Penalty:** -3 to all kingdom checks (capped)
-- **Incident Roll:** Roll d100 on Major Incidents table each turn (see Unrest_incidents.md)
+*See Unrest_incidents.md for complete incident tables*
 
 ### **Common Sources of Unrest**
 
 **Failed Actions - Selective Consequences:**
 Only certain critical failures on specific actions cause +1 Unrest:
+
 - **Crisis Response Actions:** Resolve Kingdom Event, Deal with Unrest, Execute/Pardon Prisoners
 - **Military Operations:** Recruit Army, Deploy Army, Disband Army  
 - **Public Order:** Arrest Dissidents
@@ -160,37 +261,7 @@ Different tiers require different approaches:
 - **Tier 1:** Standard unrest management, preventive measures
 - **Tier 2:** Active crisis management, moderate incidents
 - **Tier 3:** Emergency measures required, major incidents and possible territorial losses
-
 ---
-
-## **Resource Production**
-
-Resource production forms the economic backbone of your kingdom. Each hex of controlled territory generates resources based on its terrain type and the worksite you construct there. Food sustains your settlements and armies, while Lumber, Stone, and Ore provide the raw materials needed for construction and development. Strategic placement of worksites based on terrain advantages and kingdom needs is crucial for maintaining a thriving realm.
-
-### **Terrain and Worksites** 
-
-- Each hex of land can hold **one Worksite**.  
-- The **terrain** determines what it can produce:
-
-| Terrain | Worksite Options | Yield/Turn |
-| :---- | :---- | :---- |
-| Plains | Farmstead | 2 Food |
-| Forest | Logging Camp | 2 Lumber |
-| Hills | Quarry **or** Farmstead | 1 Stone **or** 1 Food |
-| Mountains | Mine **or** Quarry | 1 Ore **or** 1 Stone |
-| Swamp | Hunting/Fishing Camp **or** Bog Mine | 1 Food **or** 1 Ore |
-| Desert | — (unless Oasis special) | 0 (Oasis = 1 Food) |
-
-- **Special hex traits** (e.g., Fertile, Rich Vein) may increase yield or provide additional benefits.
-
-### **Storage**
-
-- **Food is the only stockpiled resource**
-- **Resources (Lumber, Stone, Ore)** must be used or traded on the turn they are acquired otherwise, they are lost at the end of the turn.
-- Excess Resources can be traded for Gold as a Kingdom Action (2 resources: gold. The ratio improves with structures). 
-- Resources can be purchased as a Kingdom Action (1 gold: 2 resources)
-
-
 ## Settlements
 
 Settlements are the heart of your kingdom, representing population centers that drive growth, cultural development, and military power. From humble villages to sprawling metropolises, each settlement serves as a hub for resource consumption, structure construction, and army support. As settlements grow in size and sophistication, they unlock access to more advanced structures, support larger military forces, and become centers of specialized knowledge and industry. The careful development and protection of settlements forms the cornerstone of any successful kingdom's strategy.
@@ -359,7 +430,7 @@ Commerce structures improve these conversion rates and provide additional benefi
 
 Settlements provide the logistical foundation for supporting armies. This represents the infrastructure, supply lines, and population base needed to field and maintain armies. The military capacity of your kingdom determines how many armies you can sustain without straining your population and resources.
 
-### Army Capacity by Settlement Tier
+### Army Capacity and Support
 
 Each settlement provides military support based on its tier. The kingdom's total army capacity is the sum of all settlements' individual capacities.
 
@@ -369,6 +440,11 @@ Each settlement provides military support based on its tier. The kingdom's total
 | Town (Tier 2)    | 2 Armies |
 | City (Tier 3)    | 3 Armies |
 | Metropolis (Tier 4) | 4 Armies |
+
+**Army Food Consumption:**
+- Each army requires **1 Food per turn** to maintain
+- This is separate from and additional to settlement food consumption
+- Army food shortages cause unrest exactly like settlement food shortages (+1 Unrest per missing Food)
 
 **Exceeding Capacity:** If the kingdom fields more armies than its total military support capacity, each excess army increases **Unrest by 1 per Kingdom Turn**, reflecting the strain on the population and logistics.
 
@@ -502,6 +578,69 @@ These structures from the Civic & Governance category enable and enhance diploma
 | **Diplomatic Quarter** | T4 | 3 Helpful relationships | +2 bonus to diplomatic checks with all factions |
 
 **Note:** These structures also function as skill-based structures for earning income through Diplomacy, Society, and Deception skills.
+
+---
+
+## Kingdom Actions
+
+During Phase 5 of each Kingdom Turn, each of the four player characters takes one Kingdom Action. These actions represent the strategic decisions and leadership efforts that shape your kingdom's development. All actions use Level-based DCs based on the party level.
+
+### Action Rules
+- **Each PC takes ONE action per turn** (4 total actions)
+- **Actions taken from the Capital** gain a +1 circumstance bonus
+- **Critical successes** grant +1 Fame
+- **Only certain critical failures** cause +1 Unrest (crisis/military actions)
+- **Full action details** are found in Kingdom_Actions.md
+
+### Available Action Categories
+
+#### **Uphold Stability**
+Maintain the kingdom's cohesion by resolving crises and quelling unrest.
+- **Coordinated Effort** - Two PCs work together on a single action with bonus
+- **Resolve a Kingdom Event** - Rise to meet disasters, uprisings, or opportunities
+- **Arrest Dissidents** - Convert unrest into imprisoned unrest
+- **Execute or Pardon Prisoners** - Deal with imprisoned unrest through justice
+- **Deal with Unrest** - Directly reduce unrest by 1-3 based on success
+
+#### **Military Operations**
+War must be waged with steel and strategy.
+- **Recruit a Unit** - Raise new troops for your armies
+- **Outfit Army** - Equip troops with armor, weapons, runes, or equipment
+- **Deploy Army** - Move troops to strategic positions
+- **Recover Army** - Heal and restore damaged units
+- **Train Army** - Improve unit levels up to party level
+- **Disband Army** - Decommission troops and return soldiers home
+
+#### **Expand the Borders**
+Seize new territory to grow your influence and resources.
+- **Claim Hexes** - Add new territory to your kingdom
+- **Build Roads** - Connect your territory with infrastructure
+- **Send Scouts** - Learn about unexplored hexes
+- **Fortify Hex** - Strengthen defensive positions
+- **Create Worksite** - Establish farms, mines, quarries, or lumber camps
+
+#### **Urban Planning**
+Your people need places to live, work, trade, and worship.
+- **Establish a Settlement** - Found a new village
+- **Upgrade a Settlement** - Advance settlement tiers
+- **Build Structure** - Add markets, temples, barracks, and other structures
+- **Repair Structure** - Fix damaged structures
+
+#### **Foreign Affairs**
+No kingdom stands alone.
+- **Establish Diplomatic Relations** - Form alliances with other nations
+- **Request Economic Aid** - Ask allies for resources or gold
+- **Request Military Aid** - Call for allied troops in battle
+- **Infiltration** - Gather intelligence through espionage
+- **Hire Adventurers** - Pay gold to resolve events (2 Gold cost)
+
+#### **Economic Actions**
+Manage trade and personal wealth.
+- **Sell Surplus** - Trade resources for gold
+- **Purchase Resources** - Spend gold for resources
+- **Create Worksite** - Establish resource extraction sites
+- **Collect Resources** - Gather from hexes with or without worksites
+- **Collect Stipend** - Extract personal income (requires Counting House)
 
 ---
 
