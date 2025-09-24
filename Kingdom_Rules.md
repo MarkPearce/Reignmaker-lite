@@ -299,6 +299,21 @@ Each tier unlocks access to more advanced structures:
 - **City (Tier 3):** Unlocks Tier 3 structures
 - **Metropolis (Tier 4):** Unlocks Tier 4 structures and Great Works
 
+### Settlement Gold Generation
+
+Settlements that are properly supported with food generate wealth for the kingdom through taxes, trade, and economic activity.
+
+**Gold Generation:** A settlement which is properly supported with food earns its tier level in gold each turn.
+
+| Settlement | Tier | Gold/Turn (when fed) |
+|------------|------|---------------------|
+| Village | 1 | 1 Gold |
+| Town | 2 | 2 Gold |
+| City | 3 | 3 Gold |
+| Metropolis | 4 | 4 Gold |
+
+**Important:** Settlements experiencing food shortages do not generate gold that turn, as the population focuses on survival rather than economic activity.
+
 ---
 
 ## Structures
@@ -747,7 +762,7 @@ Events should tie into the campaign story when possible, reflecting consequences
 - PC 3: **Send Scouts** to explore eastern hex (rolls success)
 - PC 4: **Build Worksite** (Farmstead) in explored hex (rolls failure)
 
-**Phase 6 – End of Turn Resolution:** 
+**Phase 6 – Upkeep:**
 - Unrest reduced to 1 (from the Deal with Unrest action)
 - No lingering event effects
 - Unused Lumber/Stone/Ore lost (no storage capacity)

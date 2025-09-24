@@ -124,7 +124,7 @@ _Rally citizens to arms, drawing from the population to form new military units 
 ---
 
 ### Outfit Army
-_Equip your troops with superior arms, armor, and supplies to enhance their battlefield effectiveness._
+_Equip your troops with superior arms, armour, and supplies to enhance their battlefield effectiveness._
 
 **Failure Consequences:** Critical failures cause NO unrest (equipment action, not crisis/military operation)
 

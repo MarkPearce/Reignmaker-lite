@@ -1,23 +1,20 @@
 # **Turn Order Overview**
 
-## **Phase 1: Kingdom Status Phase**
+## **Phase 1: Status**
 - **Step 1:** Gain Fame
 - **Step 2:** Apply Ongoing Modifiers
 
-## **Phase 2: Resource Phase**
+## **Phase 2: Resources**
 - **Step 1:** Collect Resources and Revenue
-- **Step 2:** Food Consumption
-- **Step 3:** Military Support
-- **Step 4:** Build Queue
 
-## **Phase 3: Unrest & Incidents Phase**
+## **Phase 3: Unrest**
 - **Step 1:** Apply Unrest
 - **Step 2:** Check for Incidents
 
-## **Phase 4: Events Phase**
+## **Phase 4: Events**
 - Check for Kingdom Events
 
-## **Phase 5: Action Phase**
+## **Phase 5: Actions**
 - Perform Kingdom Actions (4 PC actions total)
 
 #### **Uphold Stability**
@@ -68,5 +65,8 @@ Manage trade and personal wealth.
 - **Collect Resources** - Gather from hexes with or without worksites
 - **Collect Stipend** - Extract personal income (requires Counting House)
 
-## **Phase 6: Resolution Phase**
-- End of Turn Resolution
+## **Phase 6: Upkeep**
+- **Step 1:** Food Consumption
+- **Step 2:** Military Support
+- **Step 3:** Build Queue
+- **Step 4:** End of Turn Resolution
