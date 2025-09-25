@@ -721,9 +721,105 @@ Events should tie into the campaign story when possible, reflecting consequences
 
 ---
 
+## Unresolved Kingdom Events
+
+Kingdom events represent challenges and opportunities that demand leadership attention. Unlike incidents (which are triggered by unrest and resolved immediately), events require deliberate action to address. This section clarifies what happens when players choose not to resolve events.
+
+### Event Resolution Timing
+
+**Phase 4 - Event Generation:**
+- Events occur based on escalating DC mechanic (base DC 16)
+- Event details are announced: type, location, available skills
+- Players are NOT required to resolve events immediately
+
+**Phase 5 - Kingdom Actions:**
+Players have three options for each active event:
+1. **Active Resolution:** Spend 1 Kingdom Action to "Resolve Kingdom Event" (roll skill check)
+2. **Ignore:** Take no action (automatic Failure result applied)
+3. **Alternative Resolution:** Some events allow resource/gold payment to auto-resolve
+
+**Phase 6 - Upkeep:**
+- Unresolved events automatically apply their **Failure** result
+- Events become **Continuous** if not already
+- Continuous events persist into next turn
+
+### Consequences of Ignoring Events
+
+When an event is not addressed during Kingdom Actions:
+- The event's **Failure** result applies automatically during Phase 6
+- The event becomes **Continuous** (remains active)
+- Each subsequent turn ignored: Failure result applies again
+- Multiple unresolved events stack their consequences
+
+**Events only end when:**
+- Successfully resolved (Success or Critical Success)
+- Specific conditions met (e.g., building demanded structure)
+- Event-specific end conditions triggered
+
+### Special Event Transformations
+
+Some instantaneous events transform into ongoing crises when ignored:
+
+| Original Event | Transforms Into | Ongoing Effect |
+|----------------|-----------------|----------------|
+| **Assassination Attempt** | Security Crisis | +1 Unrest per turn until resolved |
+| **Local Disaster** | Disaster Recovery | +1 Unrest per turn + rebuild costs |
+| **Natural Disaster** | Relief Efforts | Ongoing resource loss + Unrest |
+| **Monster Attack** | Monster Lair Nearby | +1 Unrest per turn, threat of raids |
+| **Public Scandal** | Ongoing Scandal | +1 Unrest per turn, diplomatic penalties |
+| **Food Shortage** | Continuing Shortage | -2 Food per turn after initial loss |
+
+### Time-Sensitive Events
+
+Some opportunities expire if not seized immediately (apply Failure once, then end):
+- **Land Rush** - Settlers disperse if ignored
+- **Nature's Blessing** - Natural phenomenon passes
+- **Festive Invitation** - One-time diplomatic opportunity
+- **Visiting Celebrity** - Guest departs offended
+
+### Managing Multiple Events
+
+When multiple events are active:
+- Each unresolved event applies its Failure result
+- Players must prioritize which crises to address
+- Limited Kingdom Actions force difficult choices
+- Some events may compound each other's effects
+
+**Strategic Considerations:**
+- Continuous events drain resources every turn
+- Unrest from multiple events stacks
+- Some Failure results are more tolerable than others
+- Risk of Critical Failure vs. guaranteed Failure
+
+### Example: Multiple Unresolved Events
+
+**Turn 1:**
+- **New Event:** Bandit Activity occurs
+- **Decision:** Players ignore it to focus on expansion
+- **Result:** Lose 1 Resource, +1 Unrest (Failure applied)
+
+**Turn 2:**
+- **Ongoing:** Bandit Activity (unresolved)
+- **New Event:** Trade Agreement opportunity
+- **Decisions:** 
+  - Resolve Bandit Activity (1 action)
+  - Ignore Trade Agreement
+- **Results:**
+  - Bandits: Resolved if successful
+  - Trade: -1 Gold (Failure), becomes "Failed Negotiations"
+
+**Turn 3:**
+- **Ongoing:** Failed Negotiations (continuing from Trade Agreement)
+- **New Event:** Food Surplus
+- **Result:** Failed Negotiations continues draining resources
+
+This system ensures that ignored problems don't simply vanish, creating realistic pressure on kingdom leadership to balance immediate crises against long-term development.
+
+---
+
 ## Example Kingdom Turn
 
-**Kingdom:** 1 Town (Level 3, needs 4 Food)  
+**Kingdom:** 1 Town (Level 3, needs 4 Food)
 **Controlled hexes:**
 - 2x Plains with Farmsteads = 4 Food
 - 1x Forest with Logging Camp = 2 Lumber

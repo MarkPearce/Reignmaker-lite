@@ -212,7 +212,9 @@ Lumber, Stone, and Ore are vital for building projects. These resources must be 
 
 The final step wraps up the current turn and prepares for the next. All lingering effects are processed and the kingdom's status is updated.
 
-* Apply lingering effects from unresolved Events  
+* **Unresolved Events:** Apply Failure result for any events not addressed with an action  
+  - Events become Continuous and will persist into next turn
+  - See Unresolved Kingdom Events in Kingdom_Rules.md for details
 * Process consequences of unsupported armies (if not already handled)  
 * Carry over stored resources (Gold and any stored Food in storage structures)  
 * Clear any single-turn effects and prepare for next turn

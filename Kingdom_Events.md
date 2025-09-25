@@ -3,6 +3,19 @@ _Adapted from Pathfinder 2E Kingmaker Campaign_
 
 This document contains all kingdom events adapted for the simplified Reignmaker rules system. Events are organized alphabetically for easy reference.
 
+## Event Resolution Rules
+
+**Important:** Kingdom events are different from unrest incidents:
+- **Events** require a Kingdom Action to resolve (or can be ignored with consequences)
+- **Incidents** are triggered by unrest and must be resolved immediately for free
+
+When an event occurs in Phase 4, players may:
+1. **Resolve it** in Phase 5 by spending 1 Kingdom Action
+2. **Ignore it** and automatically suffer the Failure result in Phase 6
+3. **Pay costs** if the event offers alternative resolution
+
+Unresolved events become **Continuous** and apply their Failure result each turn until resolved. See the Unresolved Kingdom Events section in Kingdom_Rules.md for complete details.
+
 ---
 
 ## Archaeological Find
@@ -20,6 +33,8 @@ _Ancient ruins or artifacts are discovered in your territory._
 | Critical Failure | Dangerous site; +1 Unrest |
 
 **Special:** If you have Knowledge & Magic structures, gain an untyped bonus equal to the tier to the check.
+
+**If Unresolved:** Site is looted by locals (Failure result). Each turn: gain 1 Resource but site becomes increasingly dangerous. After 3 turns unresolved, becomes "Cursed Excavation" (+1 Unrest per turn).
 
 ---
 
@@ -39,6 +54,8 @@ _Someone attempts to kill one of your leaders._
 
 **Special:** If the target has a bodyguard or is in a fortified location, gain +2 to the check.
 
+**If Unresolved:** First turn: Leader escapes (Failure result). Event transforms into "Security Crisis" - assassin remains at large, +1 Unrest per turn until resolved.
+
 ---
 
 ## Bandit Activity
@@ -57,6 +74,8 @@ _Bandits establish a camp and begin raiding travelers._
 
 **Special:** Once per event, you can try to recruit the bandits (Diplomacy only) - on success, gain a free Garrison.
 
+**If Unresolved:** Each turn: lose 1 Resource and +1 Unrest (Failure result). Bandits entrench themselves and grow stronger.
+
 ---
 
 ## Boomtown
@@ -74,6 +93,8 @@ _A settlement experiences sudden, dramatic growth._
 | Critical Failure | Boom goes bust; +1 Unrest, **event ends** |
 
 **Special:** While active gain +1 untyped bonus to all Crafting and Society checks in that settlement
+
+**If Unresolved:** First turn: Growth stalls (Failure result, event ends). Unmanaged growth leads to overcrowding.
 
 ---
 
@@ -94,6 +115,8 @@ _Citizens demand that a specific structure be built._
 
 **Special:** If you build a structure of the demanded type, the event ends (automatic success).
 
+**If Unresolved:** Each turn: +1 Unrest (or pay 1 Gold concession). Protests continue and grow more organized.
+
 ---
 
 ## Food Shortage
@@ -108,6 +131,8 @@ _Disease, weather, or pests destroy agricultural production._
 | Success | Shortage controlled; lose 4 Food this turn, **event ends** |
 | Failure | Severe shortage; lose 6 Food this turn, +1 Unrest |
 | Critical Failure | Famine threatens; lose 8 Food this turn, +2 Unrest |
+
+**If Unresolved:** First turn: lose 6 Food, +1 Unrest. Subsequent turns: lose 2 Food, +1 Unrest per turn as shortage continues.
 
 ---
 
@@ -127,6 +152,8 @@ _A dangerous cult begins operating in secret within your kingdom._
 
 **Special:** Settlements with a Faith & Nature structure gain an untyped bonus equal to the tier to defeat the cult 
  Settlements with a Crime & Intrigue structure gain an untyped bonus equal to the tier to locate the cult 
+
+**If Unresolved:** Each turn: +1 Unrest (Failure result). Cult recruits more members and spreads influence.
 
 ---
 
@@ -149,6 +176,8 @@ _A neighboring kingdom reaches out to establish or improve diplomatic relations.
 - Cannot establish Helpful relations without appropriate diplomatic capacity (see Diplomatic Relations rules)
 - If relations are already Helpful, critical success grants 2 Gold instead
 
+**If Unresolved:** First turn only: Diplomatic opportunity expires (Failure result, event ends). Neighboring kingdom feels snubbed.
+
 ---
 
 ## Drug Den
@@ -166,6 +195,8 @@ _An illicit drug trade threatens to corrupt your settlement._
 | Critical Failure | Major drug crisis; +2 Unrest, one structure becomes damaged. |
 
 **Special:** If the settlement has Crime & Intrigue structures, gain an untyped bonus equal to the tier to checks.
+
+**If Unresolved:** Each turn: +1 Unrest, -1 Gold (Failure result). Drug trade expands unchecked.
 
 ---
 
@@ -185,6 +216,8 @@ _Trade and productivity boom throughout your kingdom._
 
 **Special:** Commerce structures provide an untyped bonus equal to the tier to checks.
 
+**If Unresolved:** First turn: Surge slows (Failure result, event ends). Opportunity for growth is missed.
+
 ---
 
 ## Demand Expansion
@@ -201,6 +234,8 @@ _Citizens demand the kingdom claim new territory._
 | Critical Failure | Major dissatisfaction; +2 Unrest |
 
 **Special:** If you expand your territory this turn (claim a new hex), automatically succeed and event ends.
+
+**If Unresolved:** Each turn: +1 Unrest (Failure result). Citizens grow increasingly frustrated with lack of expansion.
 
 ---
 
@@ -221,6 +256,8 @@ _A neighboring kingdom invites your leaders to a grand festival._
 
 **Special:** If you bring at least 1 Resource as a gift, gain +2 to the check.
 
+**If Unresolved:** First turn only: Invitation expires (Failure result, event ends). Your absence is noted and causes diplomatic friction.
+
 ---
 
 ## Feud
@@ -237,6 +274,8 @@ _Rival factions from different settlements escalate their conflict._
 | Failure | Feud disrupts trade; +1 Unrest, |
 | Critical Failure | Private war erupts; +2 Unrest, a random structure becomes damaged in one of the settlements |
 
+**If Unresolved:** Each turn: +1 Unrest (Failure result). Feud escalates and disrupts trade between settlements.
+
 ---
 
 ## Food Surplus
@@ -251,6 +290,8 @@ _Exceptional harvests provide abundant food._
 | Success | Good harvest; +2 Gold |
 | Failure | Minor surplus; +1 Gold |
 | Critical Failure | Surplus spoils; +1 Unrest |
+
+**If Unresolved:** First turn: +1 Gold (Failure result). Second turn: Spoilage begins, +1 Unrest per turn as surplus rots.
 
 ---
 
@@ -267,6 +308,8 @@ _Perfect weather conditions boost morale and productivity._
 | Failure | Weather changes; **event ends** |
 | Critical Failure | Weather turns bad; +1 Unrest, **event ends** |
 
+**If Unresolved:** First turn: +2 Food (automatic). Second turn: Weather changes (Failure result, event ends).
+
 ---
 
 ## Immigration
@@ -281,6 +324,8 @@ _New settlers arrive seeking homes in your kingdom._
 | Success | Steady immigration; +1 Gold, +1 untyped bonus to Build Structure actions this turn |
 | Failure | Few settlers stay; no significant effect |
 | Critical Failure | Integration problems; +1 Unrest |
+
+**If Unresolved:** First turn: Few settlers stay (Failure result). Second turn: Unintegrated immigrants cause tensions, +1 Unrest per turn.
 
 ---
 
@@ -300,6 +345,8 @@ _Zealots mobilize against a minority group or belief._
 
 **Special:** If you have Faith & Nature structures, gain an untyped bonus equal to the tier to Religion checks.
 
+**If Unresolved:** Each turn: +2 Unrest (Failure result). Zealots continue persecution unchecked.
+
 ---
 
 ## Justice Prevails
@@ -318,6 +365,8 @@ _Authorities catch a notorious criminal or resolve a major injustice._
 
 **Special:** If you have Civic & Governance structures, gain an untyped bonus equal to the tier to the check.
 
+**If Unresolved:** First turn: Criminal escapes, justice delayed (Failure result). Event transforms to "Miscarriage of Justice" - +1 Unrest per turn.
+
 ---
 
 ## Land Rush
@@ -334,6 +383,8 @@ _Settlers attempt to claim wilderness at the kingdom's border._
 | Critical Failure | Violence erupts at border; +2 Unrest |
 
 **Special:** These hexes are claimed without requiring the normal Claim Hex action or resources. Choose adjacent unclaimed hexes.
+
+**If Unresolved:** First turn only: Settlers disperse (Failure result, event ends). Opportunity for expansion is lost.
 
 ---
 
@@ -353,6 +404,8 @@ _Fire, flood, or structural collapse strikes a settlement._
 
 **Special:** Settlements with Fortifications increase the result by one degree of success.
 
+**If Unresolved:** First turn: Major damage (Failure result). Event transforms to "Disaster Recovery" - +1 Unrest per turn until cleanup completed.
+
 ---
 
 ## Magical Discovery
@@ -371,6 +424,8 @@ _A powerful magical site or artifact is discovered in your kingdom._
 
 **Special:** If you have Knowledge & Magic structures, gain an untyped bonus equal to the tier to check.
 
+**If Unresolved:** First turn: Magic proves dangerous (Failure result). Second turn onwards: Unstable magic causes +1 Unrest per turn.
+
 ---
 
 ## Monster Attack
@@ -388,6 +443,8 @@ _A dangerous creature attacks a settlement or travellers._
 | Critical Failure | Monster rampages; one structure becomes destroyed, +2 Unrest |
 
 **Special:** If the settlement has Fortifications, gain an untyped bonus equal to the tier to checks.
+
+**If Unresolved:** First turn: Monster damages structure (Failure result). Event transforms to "Monster Lair Nearby" - +1 Unrest per turn from ongoing raids.
 
 ---
 
@@ -409,6 +466,8 @@ _Earthquake, tornado, wildfire, or severe flooding strikes the kingdom._
 
 If one of the adjacent hexes has a settlement, treat it as a Local Disaster for that settlement.
 
+**If Unresolved:** Per hex: lose all production, +1 Unrest (Failure result). Event transforms to "Relief Efforts" - ongoing recovery +1 Unrest per turn until resolved.
+
 ---
 
 ## Nature's Blessing
@@ -426,6 +485,8 @@ _A natural wonder appears in your kingdom - rare flowers, aurora, or returning w
 | Critical Failure | Arguments over meaning; +1 Unrest |
 
 **Special:** If you have Faith & Nature or Exploration & Wilderness structures, gain an untyped bonus equal to the tier to check.
+
+**If Unresolved:** First turn only: Brief wonder passes (Failure result, event ends). Natural phenomenon cannot be captured.
 
 ---
 
@@ -445,6 +506,8 @@ _Religious pilgrims seek passage or sanctuary in your kingdom._
 
 **Special:** If you have Faith & Nature structures, gain an untyped bonus equal to the tier to check.
 
+**If Unresolved:** First turn: Minor disruption (Failure result). Second turn onwards: Pilgrims spread word of poor hospitality, -1 diplomatic reputation.
+
 ---
 
 ## Plague
@@ -463,6 +526,8 @@ _Disease spreads rapidly through your settlements._
 
 **Special:** Settlements with Medicine & Healing or Faith & Nature structures gain an untyped bonus equal to the tier to checks. Bonuses from different structure types stack.
 
+**If Unresolved:** Each turn: +1 Unrest, -2 Gold, spreads to connected settlements (Failure result). Disease continues unchecked.
+
 ---
 
 ## Public Scandal
@@ -478,6 +543,8 @@ _A leader is implicated in an embarrassing or criminal situation._
 | Success | Damage controlled; +1 Unrest |
 | Failure | Public outrage; +2 Unrest |
 | Critical Failure | Leader must lay low; +2 Unrest, that PC cannot take a Kingdom Action this turn |
+
+**If Unresolved:** First turn: Public outrage (Failure result). Event transforms to "Ongoing Scandal" - +1 Unrest per turn as rumors spread.
 
 ---
 
@@ -497,6 +564,8 @@ _Armed raiders threaten settlements and trade routes._
 
 **Special:** Can pay 2 Gold tribute to immediately end the event (no check required). Fortifications provide an untyped bonus equal to the tier to checks.
 
+**If Unresolved:** Each turn: -2 Gold, -2 Food, +1 Unrest (Failure result). Raiders continue pillaging unchecked.
+
 ---
 
 ## Remarkable Treasure
@@ -513,6 +582,8 @@ _Explorers discover valuable resources or ancient treasure._
 | Critical Failure | Treasure cursed or false; +1 Unrest |
 
 **Special:** Gain +1 to the check for each mine or quarry you control (prospecting experience).
+
+**If Unresolved:** First turn: Modest value (Failure result). Second turn onwards: Others claim the treasure, causing dispute (+1 Unrest per turn).
 
 ---
 
@@ -532,6 +603,8 @@ _A notorious crime captures public attention._
 
 **Special:** Crime & Intrigue structures provide an untyped bonus equal to their tier to checks.
 
+**If Unresolved:** First turn: Criminal escapes (Failure result). Event becomes "Crime Wave" - +1 Unrest per turn as fear spreads.
+
 ---
 
 ## Trade Agreement
@@ -549,6 +622,8 @@ _Merchants propose a lucrative trade arrangement._
 | Critical Failure | Trade dispute; -1 Gold, +1 Unrest |
 
 **Special:** Commerce structures provide an untyped bonus equal to their tier to checks.
+
+**If Unresolved:** First turn only: Merchants leave for other markets (Failure result, event ends). Trade opportunity is lost.
 
 ---
 
@@ -568,6 +643,8 @@ _The dead rise from their graves to threaten the living._
 
 **Special:** Settlements with Faith & Nature or Knowledge & Magic structures gain an untyped bonus equal to their tier to checks.
 
+**If Unresolved:** Each turn: +1 Unrest, one structure damaged (Failure result). Undead continue spreading unchecked.
+
 ---
 
 ## Visiting Celebrity
@@ -585,6 +662,8 @@ _A famous person visits your kingdom, bringing attention and opportunity._
 | Critical Failure | Celebrity offended; +1 Unrest, -2 to next celebrity event |
 
 **Special:** If you have Performance & Culture structures, gain an untyped bonus equal to their tier to the check.
+
+**If Unresolved:** First turn only: Celebrity leaves disappointed (Failure result, event ends). Word spreads of poor hospitality.
 
 ---
 
