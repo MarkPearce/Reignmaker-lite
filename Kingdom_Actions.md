@@ -7,32 +7,52 @@ This document merges all Kingdom Actions into a single reference. Actions are gr
 ## 1. Uphold Stability
 _Maintain the kingdom's cohesion by resolving crises, supporting allies, and quelling unrest before it can take root._
 
-### Coordinated Effort
-_When two leaders form a partnership on a single action, their combined expertise ensures the best possible outcome._
+### Aid Another
+_Support an ally's kingdom action through preparation and assistance, improving their chances of success._
 
-**Limitations:**
-- **Partnership:** Exactly TWO PCs may use Coordinated Effort together
-- **Frequency:** May only be used ONCE per Kingdom Turn (one partnership total)
-- **Other PCs:** May take any action independently, including the same action as the partnership (but without the coordination bonus)
+**Requirements:**
+- **Preparation:** You must declare you are preparing to Aid a specific PC's action at the start of the Kingdom Turn
+- **Action Cost:** Preparing to Aid counts as your Kingdom Action for the turn
+- **Proximity:** You must be working in the same region or settlement as the PC you're aiding
 
 **How it Works:**
-- Two PCs declare they are using Coordinated Effort on a specific Kingdom Action
-- Both participating PCs roll the skill check for that action with a +1 circumstance bonus
-- Take the highest result between the two participants
-- Other PCs may also choose the same action if they wish, but they roll independently without the +1 bonus
+When your ally attempts their declared Kingdom Action:
+1. You make a skill check using an appropriate skill for the action (DC 15, adjusted by GM for difficulty)
+2. Your assistance modifies your ally's roll based on your degree of success
 
-**Special Benefits:**
-- No risk of failure for coordination itself
-- The +1 bonus represents teamwork and shared knowledge 
-- Creates a strategic choice: which action is most important to coordinate?
+**Aid Check Results:**
 
-**Example:** PC1 and PC2 form a partnership to "Build Roads" using Coordinated Effort
-- PC1 rolls Crafting: 1d20+8+1 = 16
-- PC2 rolls Survival: 1d20+12+1 = 24  
-- Result: The Build Roads action uses the 24 for their partnership
-- PC3 could also choose "Build Roads" independently and would roll normally (without +1)
-- PC4 could choose any action
-- Only one Coordinated Effort partnership is allowed per turn
+| Degree of Success | Effect on Ally's Check |
+| --- | --- |
+| Critical Success | +2/+3/+4 circumstance bonus (based on proficiency*) + aided PC may reroll if they fail** |
+| Success | +2/+3/+4 circumstance bonus (based on proficiency*) |
+| Failure | +1 circumstance bonus |
+| Critical Failure | -1 circumstance penalty |
+
+*Proficiency bonuses:
+
+- **Trained or Expert:** +2 bonus
+- **Master:** +3 bonus
+- **Legendary:** +4 bonus
+
+**If the aided check fails, the PC may immediately reroll the check and must take the new result.
+
+**Limitations:**
+
+- **Declaration Required:** Both the helper and the helped must declare their intentions at the start of the turn
+
+**Example:** PC1 (Master in Engineering Lore) declares they will Aid PC2's "Build Roads" action
+
+- PC1 rolls Engineering Lore to Aid: 1d20+12 vs DC 15 = Success
+- PC2 gets +3 circumstance bonus to their Build Roads check (Master proficiency)
+- PC2 attempts Build Roads with the +3 bonus
+- If PC3 also wanted to Aid the same action, they would roll vs DC 20
+
+**Strategic Considerations:**
+- Even failed Aid attempts provide a +1 bonus, making it rarely a wasted action
+- Higher proficiency characters provide significantly better bonuses
+- Critical success provides valuable insurance against failure on crucial checks
+- Consider the importance of the action being aided vs. taking independent actions
 
 ---
 
@@ -460,20 +480,20 @@ Trade a single resource type for gold
 ---
 
 ### Purchase Resources
-_Use the kingdom's treasury to acquire needed materials from trade partners._
+_Use the kingdom's treasury to acquire needed materials from trade partners. Roll to determine the exchange rate, then purchase any amount at that rate._
 
 **Failure Consequences:** Critical failures cause NO unrest (economic action)
 
 **Skill:** **Society** (find suppliers), **Diplomacy** (negotiate deals), **Intimidation** (demand better prices), **Deception** (misleading negotiations), **Mercantile Lore** (market expertise)
 
-Offer gold in exchange for a single resource type
+Choose a single resource type, then purchase any amount at the determined rate.
 
 | Degree of Success | Effect |
 | --- | --- |
-| Critical Success | Spend 2 Gold → Gain 1 Resource, +1 free resource of the same type |
-| Success | Spend 2 Gold → Gain 1 Resource |
-| Failure | No effect |
-| Critical Failure | Lose 2 Gold |
+| Critical Success | Establish 1:1 exchange rate (pay 1 gold per resource) |
+| Success | Establish 2:1 exchange rate (pay 2 gold per resource) |
+| Failure | No trade available this turn |
+| Critical Failure | Negotiations fail; lose 1d4 gold |
 
 ---
 
@@ -495,22 +515,21 @@ Choose a controlled hex. Establish a valid Worksite (Farm, Quarry, Mine, or Lumb
 
 ---
 
-### Collect Resources
-_Harvest materials from your territories, either through established worksites or direct extraction._
+### Harvest Resources
+_Harvest materials from your territories through direct extraction from the land._
 
 **Failure Consequences:** Critical failures cause NO unrest (economic action)
 
 **Skill:** **Nature** (natural harvesting), **Survival** (efficient extraction), **Crafting** (process materials), **Athletics** (physical labor), **Occultism** (mystical gathering), **Medicine** (herb collection)
 
-Choose one controlled hex. Either:  
-- Collect 1 resource of the appropriate type without a Worksite or collect from the worksite (once/turn)  
+Each hex can only be harvested once per turn. Resource type depends on terrain.
 
 | Degree of Success | Effect |
 | --- | --- |
-| Critical Success | Gain an additional +1 Resource of the same type |
-| Success | Collect resources from hex or worksite |
+| Critical Success | Gain 1 resource from the hex + identify ideal location (+2 untyped bonus to Create Worksite in this hex) |
+| Success | Gain 1 resource from the hex |
 | Failure | No effect |
-| Critical Failure | No effect |
+| Critical Failure | The hex is depleted; it cannot be harvested again next turn |
 
 ### Collect Stipend
 _Draw personal funds from the kingdom's treasury as compensation for your service._
@@ -582,13 +601,13 @@ This index shows all Kingdom Actions available for each skill, helping players c
 - **Military:** Recruit a Unit (demonstrations of prowess), Deploy Army (forced march), Train Army (physical conditioning)
 - **Borders:** Build Roads (manual labor), Send Scouts (rapid exploration), Fortify Hex (manual construction)
 - **Urban:** Build Structure (physical labor)
-- **Economic:** Create Worksite (manual labor), Collect Resources (physical labor)
+- **Economic:** Create Worksite (manual labor), Harvest Resources (physical labor)
 
 ### **Crafting**
 - **Military:** Outfit Army (forge equipment), Recover Army (repair equipment)
 - **Borders:** Build Roads (engineering expertise), Fortify Hex (build fortifications)
 - **Urban:** Upgrade a Settlement (infrastructure expansion), Build Structure (construction expertise)
-- **Economic:** Create Worksite (build infrastructure), Collect Resources (process materials)
+- **Economic:** Create Worksite (build infrastructure), Harvest Resources (process materials)
 
 ### **Deception**
 - **Stability:** Arrest Dissidents (infiltration tactics)
@@ -614,18 +633,18 @@ This index shows all Kingdom Actions available for each skill, helping players c
 - **Military:** Recover Army (heal the wounded)
 - **Urban:** Establish a Settlement (healthy community planning), Upgrade a Settlement (public health improvements)
 - **Foreign:** Request Economic Aid (humanitarian aid)
-- **Economic:** Collect Resources (herb collection)
+- **Economic:** Harvest Resources (herb collection)
 
 ### **Nature**
 - **Military:** Deploy Army (natural pathways), Recover Army (natural remedies)
 - **Borders:** Claim Hexes (harmonize with the land), Build Roads (work with terrain), Send Scouts (read the land)
-- **Economic:** Create Worksite (identify resources), Collect Resources (natural harvesting)
+- **Economic:** Create Worksite (identify resources), Harvest Resources (natural harvesting)
 
 ### **Occultism**
 - **Stability:** Deal with Unrest (mystical demonstrations)
 - **Borders:** Claim Hexes (mystical claiming rituals)
 - **Foreign:** Establish Diplomatic Relations (mystical bonds)
-- **Economic:** Sell Surplus (mystical trade), Collect Resources (mystical gathering)
+- **Economic:** Sell Surplus (mystical trade), Harvest Resources (mystical gathering)
 
 ### **Performance**
 - **Stability:** Execute or Pardon Prisoners (pardon approach), Deal with Unrest (entertainment and festivities)
@@ -661,7 +680,7 @@ This index shows all Kingdom Actions available for each skill, helping players c
 - **Military:** Deploy Army (wilderness navigation), Train Army (endurance exercises)
 - **Borders:** Claim Hexes (establish frontier camps), Build Roads (pathfinding routes), Send Scouts (wilderness expertise)
 - **Urban:** Establish a Settlement (frontier establishment)
-- **Economic:** Create Worksite (frontier operations), Collect Resources (efficient extraction)
+- **Economic:** Create Worksite (frontier operations), Harvest Resources (efficient extraction)
 
 ### **Thievery**
 - **Military:** Outfit Army (acquire through subterfuge)
@@ -679,4 +698,4 @@ This index shows all Kingdom Actions available for each skill, helping players c
 
 ---
 
-**Note:** Some actions like Resolve a Kingdom Event vary by specific event and are not included in this index. The Coordinated Effort action uses the skill of whichever action is being coordinated.
+**Note:** Some actions like Resolve a Kingdom Event vary by specific event and are not included in this index. The Aid Another action uses an appropriate skill for whichever action is being aided.
