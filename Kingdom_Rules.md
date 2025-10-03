@@ -93,6 +93,12 @@ Settlements require food to sustain their populations. Food shortages directly c
 - Village: +1 Unrest | Town: +2 Unrest | City: +3 Unrest | Metropolis: +4 Unrest
 - Example: A City needs 8 Food but only receives 5 → +3 Unrest (tier 3)
 
+**Food Allocation Priority:**
+- Settlements are fed in tier order from highest to lowest (Metropolis → City → Town → Village)
+- Each settlement receives its full food requirement before the next tier is fed
+- This automatic allocation ensures higher-tier settlements are prioritized
+- If insufficient food remains for a settlement, it receives no food and generates tier-based Unrest
+
 **Food Storage:**
 - Food is the **only resource that can be stored** between turns
 - Storage capacity depends on structures:
