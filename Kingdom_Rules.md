@@ -99,6 +99,8 @@ Settlements require food to sustain their populations. Food shortages directly c
 - This automatic allocation ensures higher-tier settlements are prioritized
 - If insufficient food remains for a settlement, it receives no food and generates tier-based Unrest
 
+"let them eat cake"
+
 **Food Storage:**
 - Food is the **only resource that can be stored** between turns
 - Storage capacity depends on structures:
