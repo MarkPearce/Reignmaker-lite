@@ -89,8 +89,9 @@ Settlements require food to sustain their populations. Food shortages directly c
 | Metropolis | 12 Food |
 
 **Food Shortage Consequences:**
-- **Shortfall:** Each missing Food causes **+1 Unrest** immediately
-- Example: A City needs 8 Food but only receives 5 → +3 Unrest
+- **Unfed Settlement:** Any settlement that receives less than its full food requirement generates Unrest equal to its settlement tier
+- Village: +1 Unrest | Town: +2 Unrest | City: +3 Unrest | Metropolis: +4 Unrest
+- Example: A City needs 8 Food but only receives 5 → +3 Unrest (tier 3)
 
 **Food Storage:**
 - Food is the **only resource that can be stored** between turns
@@ -186,7 +187,8 @@ Only certain critical failures on specific actions cause +1 Unrest:
 - **Other actions (development, economic, etc.):** No unrest on critical failure
 
 **Resource Shortages:**
-- Food shortage: +1 Unrest per missing Food each turn
+- Unfed settlement: Unrest equal to settlement tier (Village: +1, Town: +2, City: +3, Metropolis: +4)
+- Unfed army: +1 Unrest per army without food
 - Unsupported armies: +1 Unrest per excess army each turn
 
 **Military Issues:**
