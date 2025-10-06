@@ -10,11 +10,11 @@ This document contains all kingdom events adapted for the simplified Reignmaker 
 - **Incidents** are triggered by unrest and must be resolved immediately for free
 
 When an event occurs in Phase 4, players may:
-1. **Resolve it** in Phase 5 by spending 1 Kingdom Action
-2. **Ignore it** and automatically suffer the Failure result in Phase 6
+1. **Resolve it**  by spending 1 Kingdom Action
+2. **Ignore it** and automatically suffer the Failure result, if dangerous the
 3. **Pay costs** if the event offers alternative resolution
 
-Unresolved events become **Continuous** and apply their Failure result each turn until resolved. See the Unresolved Kingdom Events section in Kingdom_Rules.md for complete details.
+Unresolved events become **Ongoing** and apply their Failure result each turn until resolved. See the Unresolved Kingdom Events section in Kingdom_Rules.md for complete details.
 
 ---
 

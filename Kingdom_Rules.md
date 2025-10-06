@@ -165,6 +165,21 @@ Trading requires a Kingdom Action during Phase 5 - it is not automatic. Resource
 - **T3 Merchant Guildhall:** Sell at 3 Resources → 2 Gold
 - **T4 Royal Bank:** Buy at 1:1 (Gold to Resources)
 
+### **Insufficient Resources (Events & Incidents)**
+
+When an event or incident requires payment of resources (gold, food, lumber, stone, or ore) and you cannot afford the full cost:
+
+- **Lose what you have:** Reduce the resource to 0
+- **Gain +1 Unrest:** A flat penalty for any resource shortage (not per resource)
+- **Message:** "You gained 1 unrest from shortage."
+
+**Important:** This rule applies ONLY to events and incidents. Settlement food consumption and army support costs use their own tier-based Unrest calculations (see Food Consumption and Military Support Costs sections above).
+
+**Example:** An incident requires you to lose 5 gold, but you only have 3 gold. You lose 3 gold (reduced to 0) and gain +1 Unrest from shortage.
+
+
+---
+
 ## **Unrest**
 
 Unrest represents the dissatisfaction, tension, and disorder within your kingdom. Rather than simply making all actions harder through escalating penalties, unrest creates specific crises and consequences that demand attention. The penalty progression is gentler, but the narrative and mechanical consequences become increasingly severe through incident rolls.
