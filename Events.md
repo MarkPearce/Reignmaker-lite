@@ -1,20 +1,35 @@
 # Kingdom Events
-_Adapted from Pathfinder 2E Kingmaker Campaign_
 
-This document contains all kingdom events adapted for the simplified Reignmaker rules system. Events are organized alphabetically for easy reference.
+## What Are Events?
+
+Events are random occurrences that may happen to your kingdom during a turn. They represent opportunities, challenges, and surprises that require your leaders' attention and decision-making.
+
+The probability of an event occurring increases each turn without one, resetting after an event happens.
+
+**Event Types:**
+
+- **Beneficial** - Positive opportunities (Archaeological Find, Food Surplus, Immigration)
+- **Dangerous** - Threats and challenges (Bandit Activity, Plague, Monster Attack)
+
+**Event Duration:**
+
+- **Immediate** - Resolved in a single turn or become ongoing modifiers
+- **Continuous** - Persist across multiple turns until successfully resolved
+
+**Key Difference from Incidents:**
+
+- **Events** occur randomly and require a Kingdom Action to resolve (or can be ignored)
+- **Incidents** are triggered by high unrest and must be resolved immediately for free
 
 ## Event Resolution Rules
 
-**Important:** Kingdom events are different from unrest incidents:
-- **Events** require a Kingdom Action to resolve (or can be ignored with consequences)
-- **Incidents** are triggered by unrest and must be resolved immediately for free
+When an event occurs in Phase 4 (Events), players may:
 
-When an event occurs in Phase 4, players may:
-1. **Resolve it**  by spending 1 Kingdom Action
-2. **Ignore it** and automatically suffer the Failure result, if dangerous the
-3. **Pay costs** if the event offers alternative resolution
+1. **Resolve it** by spending 1 Kingdom Action and making a skill check
+2. **Ignore it** and automatically suffer the Failure result
+3. **Pay costs** if the event offers an alternative resolution option
 
-Unresolved events become **Ongoing** and apply their Failure result each turn until resolved. See the Unresolved Kingdom Events section in Kingdom_Rules.md for complete details.
+**Unresolved Events:** Continuous events that are ignored or failed become **Ongoing** and apply their Failure result each turn until successfully resolved. See the Unresolved Kingdom Events section in Kingdom_Rules.md for complete details.
 
 ---
 

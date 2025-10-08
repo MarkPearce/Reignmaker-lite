@@ -4,7 +4,7 @@ Resource production forms the economic backbone of your kingdom. Each hex of con
 
 ## Resource Collection
 
-**Resource Types:**
+**Resource Types:**<br>
 - **Food** - Required for population and army upkeep, can be stored
 - **Lumber** - Used for buildings and roads (must be used or traded each turn)
 - **Stone** - Used for fortifications and structures (must be used or traded each turn)
@@ -23,6 +23,7 @@ Each hex of land can hold **one Worksite**. The **terrain** determines what it c
 | Mountains | Mine **or** Quarry | 1 Ore **or** 1 Stone |
 | Swamp | Hunting/Fishing Camp **or** Bog Mine | 1 Food **or** 1 Ore |
 | Desert | — (unless Oasis special) | 0 (Oasis = 1 Food) |
+| Water | 1 Food (no worksite needed) | counts as road
 
 **Special hex traits** (e.g., Fertile, Rich Vein) add **+1 yield** to production.
 

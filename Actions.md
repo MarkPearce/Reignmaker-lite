@@ -1,10 +1,24 @@
 # Kingdom Actions
 
-This document merges all Kingdom Actions into a single reference. Actions are grouped into their categories: Uphold Stability, Manage Armies, Expand the Borders, Urban Planning, Foreign Affairs, and General Economic Actions.
+## What Are Kingdom Actions?
+
+Kingdom Actions represent the decisions and efforts your leaders make to guide the kingdom's development, respond to crises, and achieve strategic goals. Each turn, your 4 PCs each take one Kingdom Action, allowing you to shape the kingdom through construction, expansion, diplomacy, military operations, and more.
+
+**How Actions Are Resolved:**
+- Each action requires a skill check using a Level-based DC appropriate to your party's level
+- Different skills can often be used for the same action, representing different approaches
+- Success degrees (Critical Success, Success, Failure, Critical Failure) determine the outcome
+- Some actions grant bonuses when performed from your Capital settlement
+
+**The Aid Action:**
+Instead of taking their own action, a PC can choose to Aid another PC's Kingdom Action. The aiding PC makes a skill check (DC 15+), and their degree of success provides bonuses to the assisted action. This allows strategic cooperation on crucial actions - see the Aid Another action below for complete details.
+
+**Action Categories:**
+This document organizes all Kingdom Actions into their thematic categories: Uphold Stability, Manage Armies, Expand the Borders, Urban Planning, Foreign Affairs, and General Economic Actions.
 
 ---
 
-## 1. Uphold Stability
+## Maintain Order
 _Maintain the kingdom's cohesion by resolving crises, supporting allies, and quelling unrest before it can take root._
 
 ### Aid Another
@@ -24,7 +38,7 @@ When your ally attempts their declared Kingdom Action:
 
 | Degree of Success | Effect on Ally's Check |
 | --- | --- |
-| Critical Success | +2/+3/+4 circumstance bonus (based on proficiency*) + aided PC may reroll if they fail** |
+| Critical Success | +2/+3/+4 circumstance bonus (based on proficiency*) + aided PC rolls twice takes highest result |
 | Success | +2/+3/+4 circumstance bonus (based on proficiency*) |
 | Failure | +1 circumstance bonus |
 | Critical Failure | -1 circumstance penalty |
@@ -34,8 +48,6 @@ When your ally attempts their declared Kingdom Action:
 - **Trained or Expert:** +2 bonus
 - **Master:** +3 bonus
 - **Legendary:** +4 bonus
-
-**If the aided check fails, the PC may immediately reroll the check and must take the new result.
 
 **Limitations:**
 
@@ -124,7 +136,7 @@ _Address grievances and calm tensions through various approaches: entertainment,
 
 ---
 
-## 2. Military Operations
+## Military Operations
 _War must be waged with steel and strategy._
 
 ### Recruit a Unit
@@ -226,7 +238,7 @@ _Release military units from service, returning soldiers to civilian life._
 | Critical Failure | Army disbands, +1 Unrest |
 ---
 
-## 3. Expand the Borders
+## Expansion
 _The land beckons. Seize new territory to grow your influence and resources._
 
 ### Claim Hexes
@@ -306,7 +318,7 @@ _Construct defensive structures and preparations in a hex to improve its resista
 
 ---
 
-## 4. Urban Planning
+## Construction
 _Your people need places to live, work, trade, and worship._
 
 ### Establish a Settlement
@@ -376,7 +388,7 @@ _Repair damaged structures within a settlement to restore its capabilities._
 
 ---
 
-## 5. Foreign Affairs
+## Foreign Affairs
 _No kingdom stands alone._
 
 ### Establish Diplomatic Relations
